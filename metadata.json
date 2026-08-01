@@ -1,0 +1,6 @@
+{
+  "name": "Mix Mobile",
+  "description": "Pre-owned and new mobile phone marketplace with neon dark glassmorphism design, catalog management, physical listings, condition ratings, and IMEI registration status.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

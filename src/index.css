@@ -1,0 +1,171 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --bg-dark-1: #0D0714;
+    --bg-dark-2: #160B24;
+    --neon-pink: #FF2E93;
+    --neon-pink-glow: #FF007F;
+    --neon-cyan: #00F0FF;
+    --surface-glass: rgba(26, 15, 46, 0.7);
+    --surface-border: rgba(255, 46, 147, 0.25);
+    --text-primary: #FFFFFF;
+    --text-muted: #C3B2D9;
+  }
+
+  body {
+    background-color: var(--bg-dark-1);
+    background-image: 
+      radial-gradient(circle at 15% 15%, rgba(255, 46, 147, 0.15) 0%, transparent 40%),
+      radial-gradient(circle at 85% 65%, rgba(0, 240, 255, 0.08) 0%, transparent 45%),
+      linear-gradient(180deg, #0D0714 0%, #160B24 100%);
+    background-attachment: fixed;
+    color: var(--text-primary);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
+}
+
+/* Glassmorphism & Neon Theme Utilities */
+.glass {
+  background: rgba(26, 15, 46, 0.7);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 46, 147, 0.25);
+  border-radius: 12px;
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+.glass-panel {
+  background: rgba(26, 15, 46, 0.7);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 46, 147, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.4), inset 0 0 0 1px rgba(255, 255, 255, 0.05);
+}
+
+.glass-panel-hover {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.glass-panel-hover:hover {
+  border-color: #FF2E93;
+  box-shadow: 0 0 15px rgba(255, 46, 147, 0.3), 0 12px 36px 0 rgba(0, 0, 0, 0.6);
+  transform: translateY(-4px);
+}
+
+.listing-card {
+  transition: all 0.3s ease;
+}
+
+.listing-card:hover {
+  transform: translateY(-4px);
+  border-color: #FF2E93 !important;
+  box-shadow: 0 0 15px rgba(255, 46, 147, 0.3) !important;
+}
+
+/* Theme Typography & Colors */
+.neon-pink {
+  color: #FF2E93;
+}
+
+.neon-pink-bg {
+  background-color: #FF2E93;
+}
+
+.neon-pink-border {
+  border: 1px solid #FF2E93;
+}
+
+.neon-glow-pink {
+  box-shadow: 0 0 10px rgba(255, 46, 147, 0.4);
+}
+
+.secondary-text {
+  color: #C3B2D9;
+}
+
+/* Badges */
+.badge {
+  padding: 4px 10px;
+  border-radius: 100px;
+  font-size: 10px;
+  text-transform: uppercase;
+  font-weight: bold;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  white-space: nowrap;
+}
+
+.badge-new {
+  background: rgba(16, 185, 129, 0.2);
+  color: #10b981;
+  border: 1px solid #10b981;
+}
+
+.badge-ideal {
+  background: rgba(59, 130, 246, 0.2);
+  color: #3b82f6;
+  border: 1px solid #3b82f6;
+}
+
+.badge-used {
+  background: rgba(245, 158, 11, 0.2);
+  color: #f59e0b;
+  border: 1px solid #f59e0b;
+}
+
+.badge-imei {
+  background: rgba(255, 46, 147, 0.1);
+  color: #FF2E93;
+  border: 1px solid rgba(255, 46, 147, 0.5);
+}
+
+.sidebar-link {
+  transition: all 0.2s ease;
+}
+
+.sidebar-link:hover {
+  background: rgba(255, 46, 147, 0.1);
+  color: #FF2E93;
+}
+
+.neon-border {
+  border: 1px solid #FF2E93;
+  box-shadow: 0 0 15px rgba(255, 46, 147, 0.4);
+}
+
+.neon-btn-pink {
+  background: linear-gradient(135deg, #FF2E93 0%, #D80068 100%);
+  color: #FFFFFF;
+  box-shadow: 0 0 15px rgba(255, 46, 147, 0.4);
+  transition: all 0.25s ease-in-out;
+}
+
+.neon-btn-pink:hover {
+  background: linear-gradient(135deg, #FF54A7 0%, #FF007F 100%);
+  box-shadow: 0 0 25px rgba(255, 46, 147, 0.8), 0 0 40px rgba(255, 0, 127, 0.4);
+  transform: translateY(-1px);
+}
+
+.neon-text-pink {
+  color: #FF2E93;
+  text-shadow: 0 0 10px rgba(255, 46, 147, 0.5);
+}
+
+.neon-text-cyan {
+  color: #00F0FF;
+  text-shadow: 0 0 10px rgba(0, 240, 255, 0.5);
+}
+
+/* Hide scrollbars for clean UI sliders */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+

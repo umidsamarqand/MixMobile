@@ -1,0 +1,128 @@
+import { PhoneModel } from '../../types';
+
+export const HUAWEI_MODELS: PhoneModel[] = [
+  // Pura / P Series Flagships
+  {
+    id: 'm-huawei-p60-pro',
+    brand: 'Huawei',
+    modelName: 'Huawei P60 Pro',
+    colorVariants: ['Rococo Pearl', 'Black', 'Emerald Green'],
+    storageOptions: ['256GB', '512GB'],
+    ramOptions: ['8GB', '12GB'],
+    displaySpecs: '6.67" LTPO OLED 120Hz Kunlun Glass Quad-Curved',
+    chipset: 'Snapdragon 8+ Gen 1 4G',
+    cameraSpecs: 'XMAGE 48MP Ultra Lighting Variable f/1.4-f/4.0 Main + 48MP 3.5x Night Vision Periscope + 13MP Ultrawide',
+    batterySpecs: '4815 mAh (88W SuperCharge / 50W Wireless)',
+    releaseYear: 2023,
+    overview: 'Unique handcrafted Rococo Pearl mother-of-pearl back design with XMAGE Night Vision periscope zoom.',
+    pros: ['One-of-a-kind Rococo Pearl natural texture', 'XMAGE low light periscope telephoto lens', 'Kunlun Glass durability'],
+    cons: ['4G network connection ceiling'],
+    recommendedFor: 'Luxury design & low light camera lovers.'
+  },
+  {
+    id: 'm-huawei-pura-70-ultra',
+    brand: 'Huawei',
+    modelName: 'Huawei Pura 70 Ultra',
+    colorVariants: ['Starry Black', 'Chanson Green', 'Mocha Brown', 'Bursting White'],
+    storageOptions: ['512GB', '1TB'],
+    ramOptions: ['16GB'],
+    displaySpecs: '6.8" LTPO OLED 120Hz 2500 nits Kunlun Glass 2.0',
+    chipset: 'Kirin 9010 (7nm SMIC 5G) + Satellite Connectivity',
+    cameraSpecs: 'World\'s First Retractable 1" XMAGE Main Lens (f/1.6-f/4.0) + 50MP 3.5x Macro Periscope + 40MP Ultrawide',
+    batterySpecs: '5200 mAh (100W Wired / 80W Wireless)',
+    releaseYear: 2024,
+    overview: 'Mechanized retractable 1-inch camera lens stepping out on startup with 35x macro telephoto magnification.',
+    pros: ['Mechanized pop-out 1-inch retractable lens', '35x macro telephoto zoom capability', 'Satellite calling support', '80W fast wireless charging'],
+    cons: ['High flagship price ceiling'],
+    recommendedFor: 'Professional camera collectors & mobile photogs.'
+  },
+
+  // Mate Series Flagships & Foldables
+  {
+    id: 'm-huawei-mate-60-pro',
+    brand: 'Huawei',
+    modelName: 'Huawei Mate 60 Pro',
+    colorVariants: ['Yachuan Green', 'Baisha Silver', 'Nanyang Black', 'Yadan Purple'],
+    storageOptions: ['256GB', '512GB', '1TB'],
+    ramOptions: ['12GB'],
+    displaySpecs: '6.82" LTPO OLED 120Hz 2nd Gen Kunlun Glass 3 Punch Holes',
+    chipset: 'Kirin 9000s (7nm 5G)',
+    cameraSpecs: 'XMAGE 50MP Main (f/1.4-f/4.0) + 48MP 3.5x Telephoto Macro + 12MP Ultrawide',
+    batterySpecs: '5000 mAh (88W Wired / 50W Wireless)',
+    releaseYear: 2023,
+    overview: 'Breakthrough Kirin 5G chip return with satellite calls and two-tone metallic glass body.',
+    pros: ['Kirin 5G chip return', 'Satellite phone call support', 'Triple punch-hole 3D face unlock'],
+    cons: ['China regional OS emphasis'],
+    recommendedFor: 'Tech history enthusiasts & business executives.'
+  },
+  {
+    id: 'm-huawei-mate-70-pro',
+    brand: 'Huawei',
+    modelName: 'Huawei Mate 70 Pro',
+    colorVariants: ['Spruce Green', 'Hyacinth Purple', 'Obsidian Black', 'Snow White'],
+    storageOptions: ['256GB', '512GB', '1TB'],
+    ramOptions: ['12GB', '16GB'],
+    displaySpecs: '6.9" LTPO OLED 120Hz 2500 nits Basalt Tempered Kunlun Glass',
+    chipset: 'Kirin 9100 (5nm)',
+    cameraSpecs: 'XMAGE 50MP Main + 48MP 4x Periscope Macro + 40MP Ultrawide + Red Maple Color Sensor',
+    batterySpecs: '5500 mAh (100W Wired / 80W Wireless)',
+    releaseYear: 2024,
+    overview: 'Debuted HarmonyOS NEXT native platform with Red Maple color spectrum sensor and Basalt glass.',
+    pros: ['Basalt Tempered Kunlun Glass protection', 'Red Maple true spectrum camera sensor', '5500 mAh battery'],
+    cons: ['HarmonyOS NEXT independent app ecosystem'],
+    recommendedFor: 'Executive mobile workstation users.'
+  },
+  {
+    id: 'm-huawei-mate-xt-ultimate',
+    brand: 'Huawei',
+    modelName: 'Huawei Mate XT Ultimate Design',
+    colorVariants: ['Ruihong Red (Leather)', 'Dark Black (Leather)'],
+    storageOptions: ['512GB', '1TB'],
+    ramOptions: ['16GB'],
+    displaySpecs: 'World\'s First Tri-Fold 10.2" OLED (Folds down to 7.9" or 6.4")',
+    chipset: 'Kirin 9010',
+    cameraSpecs: 'XMAGE 50MP Main Variable Aperture + 12MP 5.5x Periscope + 12MP Ultrawide',
+    batterySpecs: '5600 mAh Ultra-Thin Silicon-Carbon (66W Wired / 50W Wireless)',
+    releaseYear: 2024,
+    overview: 'World\'s first commercial Tri-Fold smartphone expanding into a full 10.2-inch workstation tablet.',
+    pros: ['Tri-Fold 10.2-inch full tablet display', 'Dual hinge inward/outward engineering', 'Luxury gold trim branding'],
+    cons: ['Extreme collector price point'],
+    recommendedFor: 'Luxury tech collectors & visionary executives.'
+  },
+  {
+    id: 'm-huawei-mate-x5',
+    brand: 'Huawei',
+    modelName: 'Huawei Mate X5',
+    colorVariants: ['Feather White', 'Feather Black', 'Phantom Purple (Leather)', 'Aoyama Green (Leather)'],
+    storageOptions: ['256GB', '512GB', '1TB'],
+    ramOptions: ['12GB', '16GB'],
+    displaySpecs: '7.85" Inner 120Hz OLED + 6.4" Outer Basalt Tempered Screen IPX8',
+    chipset: 'Kirin 9000s 5G',
+    cameraSpecs: '50MP Main + 12MP 5x Periscope + 13MP Ultrawide',
+    batterySpecs: '5060 mAh (66W Wired / 50W Wireless)',
+    releaseYear: 2023,
+    overview: 'IPX8 waterproof foldable with Basalt Tempered glass and 5x periscope telephoto lens.',
+    pros: ['Basalt Tempered shatterproof outer screen', '5x periscope lens on foldable', 'IPX8 waterproof rating'],
+    cons: ['Heavy weight'],
+    recommendedFor: 'Foldable business power users.'
+  },
+
+  // nova Series
+  {
+    id: 'm-huawei-nova-12-pro',
+    brand: 'Huawei',
+    modelName: 'Huawei nova 12 Pro',
+    colorVariants: ['Color 12 (Cobalt Blue)', 'Obsidian Black', 'Cherry White'],
+    storageOptions: ['256GB', '512GB'],
+    ramOptions: ['12GB'],
+    displaySpecs: '6.76" OLED 120Hz Quad-Curved',
+    chipset: 'Kirin 9000S 5G',
+    cameraSpecs: '50MP Variable f/1.4-f/4.0 Main + 8MP Ultrawide Macro + Dual Front 60MP Ultrawide + 8MP Portrait',
+    batterySpecs: '4600 mAh (100W SuperCharge)',
+    releaseYear: 2024,
+    overview: 'Dual 60MP ultrawide front selfie camera with physical variable aperture main camera.',
+    pros: ['Dual 60MP front selfie system', 'Variable aperture f/1.4 - f/4.0 lens', 'Vibrant Cobalt Blue colorway'],
+    cons: ['Plastic side accents'],
+    recommendedFor: 'Selfie creators & vloggers.'
+  }
+];

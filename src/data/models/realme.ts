@@ -1,0 +1,128 @@
+import { PhoneModel } from '../../types';
+
+export const REALME_MODELS: PhoneModel[] = [
+  // GT Series Flagships & Speed Champions
+  {
+    id: 'm-realme-gt-neo-5',
+    brand: 'Realme',
+    modelName: 'Realme GT Neo 5 (240W)',
+    colorVariants: ['Pulse White', 'Uncharted Black', 'Purple (RGB Light Window)'],
+    storageOptions: ['256GB', '512GB', '1TB'],
+    ramOptions: ['16GB'],
+    displaySpecs: '6.74" 1.5K AMOLED 144Hz 1400 nits',
+    chipset: 'Snapdragon 8+ Gen 1 (4nm)',
+    cameraSpecs: '50MP Sony IMX890 (OIS) + 8MP Ultrawide + 2MP Microscope',
+    batterySpecs: '4600 mAh (World\'s Fastest 240W Fast Charge - 0 to 100% in 9 mins)',
+    releaseYear: 2023,
+    overview: 'World record 240W charging speed filling battery 0 to 100% in under 10 minutes with transparent RGB Halo light.',
+    pros: ['Record breaking 240W charging speed', 'Transparent RGB Halo notification window', '144Hz high refresh display screen'],
+    cons: ['Polycarbonate frame'],
+    recommendedFor: 'Charging speed tech enthusiasts & mobile gamers.'
+  },
+  {
+    id: 'm-realme-gt-5-pro',
+    brand: 'Realme',
+    modelName: 'Realme GT 5 Pro',
+    colorVariants: ['Red Rock (Vegan Leather)', 'Starry Night (Glass)', 'Bright Moon (Leather)'],
+    storageOptions: ['256GB', '512GB', '1TB'],
+    ramOptions: ['12GB', '16GB'],
+    displaySpecs: '6.78" 1.5K AMOLED 144Hz 4500 nits Palm Unlock',
+    chipset: 'Snapdragon 8 Gen 3 (4nm)',
+    cameraSpecs: '50MP Sony LYT-808 (OIS) + 50MP 3x Sony IMX890 Periscope Telephoto + 8MP Ultrawide',
+    batterySpecs: '5400 mAh (100W Wired / 50W Wireless)',
+    releaseYear: 2023,
+    overview: 'Palm gesture air controls, Sony LYT-808 sensor, 50MP periscope zoom camera lens, 5400 mAh battery.',
+    pros: ['50MP Sony IMX890 periscope telephoto lens', '4500 nits screen peak brightness', 'Air gesture palm unlock', '50W wireless charging'],
+    cons: ['China launch priority'],
+    recommendedFor: 'Value flagship power buyers.'
+  },
+  {
+    id: 'm-realme-gt-6',
+    brand: 'Realme',
+    modelName: 'Realme GT 6',
+    colorVariants: ['Fluid Silver', 'Razor Green'],
+    storageOptions: ['256GB', '512GB'],
+    ramOptions: ['8GB', '12GB', '16GB'],
+    displaySpecs: '6.78" 1.5K 8T LTPO AMOLED 120Hz 6000 nits Peak',
+    chipset: 'Snapdragon 8s Gen 3 (4nm)',
+    cameraSpecs: '50MP Sony LYT-808 (OIS) + 50MP 2x Telephoto + 8MP Ultrawide',
+    batterySpecs: '5500 mAh (120W SUPERVOOC)',
+    releaseYear: 2024,
+    overview: 'World record 6000 nits display screen peak brightness with Next AI Smart Removal and Loop Vision.',
+    pros: ['World highest 6000 nits display brightness', '5500 mAh battery capacity', '50MP telephoto camera lens', '120W fast charging'],
+    cons: ['Plastic side borders'],
+    recommendedFor: 'Outdoor power users & gamers.'
+  },
+  {
+    id: 'm-realme-gt-7-pro',
+    brand: 'Realme',
+    modelName: 'Realme GT 7 Pro',
+    colorVariants: ['Mars Orange', 'Galaxy Gray', 'White Light'],
+    storageOptions: ['256GB', '512GB', '1TB'],
+    ramOptions: ['12GB', '16GB'],
+    displaySpecs: '6.78" RealWorld Eco2 OLED 120Hz 6000 nits IP68/IP69 Underwater Camera Mode',
+    chipset: 'Snapdragon 8 Elite (3nm TSMC)',
+    cameraSpecs: '50MP Sony IMX906 Main + 50MP 3x Sony IMX882 Periscope Telephoto + 8MP Ultrawide',
+    batterySpecs: '6500 mAh Titan Battery (120W SUPERVOOC)',
+    releaseYear: 2024,
+    overview: '6500 mAh Titan Silicon-Carbon battery, Snapdragon 8 Elite power, IP69 underwater photography camera mode.',
+    pros: ['6500 mAh massive Titan battery', 'IP68 / IP69 underwater camera mode', 'Snapdragon 8 Elite speed', 'Qualcomm Ultrasonic fingerprint scanner'],
+    cons: ['Top tier cost'],
+    recommendedFor: 'Heavy gamers, endurance seekers, underwater photographers.'
+  },
+
+  // Number Series
+  {
+    id: 'm-realme-12-pro-plus-5g',
+    brand: 'Realme',
+    modelName: 'Realme 12 Pro+ 5G',
+    colorVariants: ['Submarine Blue (Leather)', 'Navigator Beige (Leather)', 'Explorer Red'],
+    storageOptions: ['128GB', '256GB', '512GB'],
+    ramOptions: ['8GB', '12GB'],
+    displaySpecs: '6.7" OLED 120Hz 3D Curved Screen',
+    chipset: 'Snapdragon 7s Gen 2 (4nm)',
+    cameraSpecs: '50MP Sony IMX890 (OIS) + 64MP 3x OmniVision OV64B Periscope Telephoto (120x Zoom) + 8MP Ultrawide',
+    batterySpecs: '5000 mAh (67W SUPERVOOC)',
+    releaseYear: 2024,
+    overview: 'Luxury watch-inspired camera dial design featuring a dedicated 64MP periscope telephoto lens at mid-range pricing.',
+    pros: ['64MP periscope telephoto lens at mid-range price', 'Luxury watch polished dial trim', 'Ergonomic vegan leather back'],
+    cons: ['Snapdragon 7s Gen 2 mid-level speed'],
+    recommendedFor: 'Budget periscope zoom photography seekers.'
+  },
+  {
+    id: 'm-realme-13-pro-plus-5g',
+    brand: 'Realme',
+    modelName: 'Realme 13 Pro+ 5G',
+    colorVariants: ['Monet Gold', 'Emerald Green'],
+    storageOptions: ['256GB', '512GB'],
+    ramOptions: ['8GB', '12GB'],
+    displaySpecs: '6.7" AMOLED 120Hz 3D Curved Corning Gorilla Glass 7i',
+    chipset: 'Snapdragon 7s Gen 2',
+    cameraSpecs: 'World\'s First Dual Sony AI Lenses (50MP Sony LYT-701 Main + 50MP Sony LYT-600 3x Periscope Telephoto) + 8MP Ultrawide',
+    batterySpecs: '5200 mAh (80W SUPERVOOC)',
+    releaseYear: 2024,
+    overview: 'Monet impressionist glass artwork back panel with dual Sony LYT camera sensors and AI Ultra Clarity.',
+    pros: ['Dual Sony LYT camera sensors', '50MP 3x periscope telephoto lens', 'Monet inspired frosted glass back'],
+    cons: ['Slightly thicker camera dial'],
+    recommendedFor: 'Art lovers & mobile photographers.'
+  },
+
+  // C Series & Narzo
+  {
+    id: 'm-realme-c67-5g',
+    brand: 'Realme',
+    modelName: 'Realme C67 5G',
+    colorVariants: ['Sunny Oasis', 'Dark Purple'],
+    storageOptions: ['128GB'],
+    ramOptions: ['4GB', '6GB'],
+    displaySpecs: '6.72" FHD+ 120Hz Mini Capsule 2.0',
+    chipset: 'MediaTek Dimensity 6100+ (6nm)',
+    cameraSpecs: '50MP Main + 2MP Portrait',
+    batterySpecs: '5000 mAh (33W SUPERVOOC)',
+    releaseYear: 2023,
+    overview: 'Mini Capsule 2.0 dynamic notifications bar around front punch hole display.',
+    pros: ['Mini Capsule notification dynamic bar', '120Hz 1080p display screen', '5000 mAh battery'],
+    cons: ['Water resistance IP54 only'],
+    recommendedFor: 'Budget 5G users.'
+  }
+];

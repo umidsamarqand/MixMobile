@@ -1,0 +1,128 @@
+import { PhoneModel } from '../../types';
+
+export const HONOR_MODELS: PhoneModel[] = [
+  // Magic Series Flagships & Foldables
+  {
+    id: 'm-honor-magic5-pro',
+    brand: 'Honor',
+    modelName: 'Honor Magic5 Pro',
+    colorVariants: ['Meadow Green', 'Black', 'Coral Purple'],
+    storageOptions: ['256GB', '512GB'],
+    ramOptions: ['12GB'],
+    displaySpecs: '6.81" LTPO OLED 120Hz 2160Hz PWM 1800 nits Quad-Curved',
+    chipset: 'Snapdragon 8 Gen 2 (4nm)',
+    cameraSpecs: 'Triple 50MP Falcon Camera System (Main OIS + 3.5x Periscope Tele + Ultrawide)',
+    batterySpecs: '5100 mAh (66W SuperCharge / 50W Wireless)',
+    releaseYear: 2023,
+    overview: 'Falcon AI Motion Sensing capture with 2160Hz eye-safe PWM dimming screen.',
+    pros: ['Falcon Motion AI action photo capture', '2160Hz eye-friendly dimming screen', '5100 mAh battery'],
+    cons: ['Dual selfie notch cutout'],
+    recommendedFor: 'Sports action photography.'
+  },
+  {
+    id: 'm-honor-magic6-pro',
+    brand: 'Honor',
+    modelName: 'Honor Magic6 Pro',
+    colorVariants: ['Epi Green (Leather)', 'Black', 'Cloud Purple'],
+    storageOptions: ['256GB', '512GB', '1TB'],
+    ramOptions: ['12GB', '16GB'],
+    displaySpecs: '6.8" LTPO OLED 120Hz 4320Hz PWM 5000 nits Jurassic Glass',
+    chipset: 'Snapdragon 8 Gen 3',
+    cameraSpecs: '180MP 2.5x Periscope Telephoto + 50MP Variable f/1.4-f/2.0 Main + 50MP Ultrawide',
+    batterySpecs: '5600 mAh Silicon-Carbon (80W Wired / 66W Wireless)',
+    releaseYear: 2024,
+    overview: '180MP periscope telephoto lens camera, 5600 mAh Silicon-Carbon battery, and 4320Hz ultra eye-safe PWM dimming.',
+    pros: ['180MP periscope zoom sensor', '5600 mAh Silicon-Carbon battery', '4320Hz eye comfort PWM dimming', 'Drop resistant Jurassic Glass screen'],
+    cons: ['Substantial width'],
+    recommendedFor: 'Eye sensitivity users & zoom photographers.'
+  },
+  {
+    id: 'm-honor-magic-v2',
+    brand: 'Honor',
+    modelName: 'Honor Magic V2',
+    colorVariants: ['Purple', 'Black (Leather)', 'Black (Glass)', 'Gold'],
+    storageOptions: ['256GB', '512GB', '1TB'],
+    ramOptions: ['16GB'],
+    displaySpecs: '7.92" Inner 120Hz OLED + 6.43" Outer Screen 3840Hz PWM',
+    chipset: 'Snapdragon 8 Gen 2 Overclocked',
+    cameraSpecs: '50MP Main (OIS) + 20MP 2.5x Telephoto + 50MP Ultrawide',
+    batterySpecs: '5000 mAh Silicon-Carbon (66W SuperCharge)',
+    releaseYear: 2023,
+    overview: 'Milestone 9.9mm ultra-thin foldable under 231g weight with dual 5000 mAh Silicon-Carbon batteries.',
+    pros: ['Ultra thin 9.9mm folded profile', 'Under 231g weight', 'Dual 3840Hz eye-safe screens'],
+    cons: ['No wireless charging'],
+    recommendedFor: 'Ultra thin foldable seekers.'
+  },
+  {
+    id: 'm-honor-magic-v3',
+    brand: 'Honor',
+    modelName: 'Honor Magic V3',
+    colorVariants: ['Reddish Brown (Leather)', 'Green', 'Black', 'Silk Brown'],
+    storageOptions: ['256GB', '512GB', '1TB'],
+    ramOptions: ['12GB', '16GB'],
+    displaySpecs: '7.92" Inner 120Hz LTPO OLED + 6.43" Outer Screen IPX8',
+    chipset: 'Snapdragon 8 Gen 3',
+    cameraSpecs: '50MP Falcon Main + 50MP 3.5x Periscope Telephoto + 40MP Ultrawide',
+    batterySpecs: '5150 mAh Silicon-Carbon (66W Wired / 50W Wireless)',
+    releaseYear: 2024,
+    overview: 'World\'s thinnest foldable at 9.2mm profile with IPX8 water resistance rating and 50MP periscope zoom lens.',
+    pros: ['Thinnest 9.2mm folded body', '50MP 3.5x periscope telephoto lens', 'IPX8 waterproof rating', '50W wireless charge'],
+    cons: ['High launch cost'],
+    recommendedFor: 'Ultimate foldable phone enthusiasts.'
+  },
+
+  // Number Series
+  {
+    id: 'm-honor-90-5g',
+    brand: 'Honor',
+    modelName: 'Honor 90 5G',
+    colorVariants: ['Diamond Silver', 'Peacock Blue', 'Midnight Black', 'Emerald Green'],
+    storageOptions: ['256GB', '512GB'],
+    ramOptions: ['8GB', '12GB', '16GB'],
+    displaySpecs: '6.7" Quad-Curved AMOLED 120Hz 3840Hz PWM Dimming',
+    chipset: 'Snapdragon 7 Gen 1 Accelerated Edition (4nm)',
+    cameraSpecs: '200MP Main 1/1.4" + 12MP Ultrawide Macro + 2MP Depth + 50MP 4K Selfie',
+    batterySpecs: '5000 mAh (66W SuperCharge)',
+    releaseYear: 2023,
+    overview: '200MP main sensor camera paired with 50MP 4K front selfie camera and 3840Hz eye-comfort screen.',
+    pros: ['200MP main photo resolution', '50MP 4K front selfie camera', '3840Hz zero flicker PWM dimming'],
+    cons: ['Mono bottom speaker'],
+    recommendedFor: 'Vloggers & selfie photo creators.'
+  },
+  {
+    id: 'm-honor-200-pro',
+    brand: 'Honor',
+    modelName: 'Honor 200 Pro',
+    colorVariants: ['Ocean Cyan', 'Moonlight White', 'Black'],
+    storageOptions: ['256GB', '512GB', '1TB'],
+    ramOptions: ['12GB', '16GB'],
+    displaySpecs: '6.78" Quad-Curved OLED 120Hz 4000 nits 3840Hz PWM',
+    chipset: 'Snapdragon 8s Gen 3 (4nm)',
+    cameraSpecs: '50MP Studio Harcourt Main H9000 + 50MP 2.5x Telephoto Sony IMX856 + 12MP Ultrawide + 50MP Selfie',
+    batterySpecs: '5200 mAh Silicon-Carbon (100W Wired / 66W Wireless)',
+    releaseYear: 2024,
+    overview: 'Studio Harcourt Paris portrait light engine integration with 66W wireless charging speed.',
+    pros: ['Studio Harcourt classic portrait modes', '50MP 2.5x telephoto lens', '66W wireless fast charge'],
+    cons: ['Pill-shaped front camera notch'],
+    recommendedFor: 'Studio portrait photo enthusiasts.'
+  },
+
+  // X Series
+  {
+    id: 'm-honor-x9b-5g',
+    brand: 'Honor',
+    modelName: 'Honor X9b 5G',
+    colorVariants: ['Sunrise Orange (Leather)', 'Midnight Black', 'Emerald Green'],
+    storageOptions: ['256GB'],
+    ramOptions: ['8GB', '12GB'],
+    displaySpecs: '6.78" AMOLED 120Hz Ultra-Bounce Anti-Drop Glass 1.5K',
+    chipset: 'Snapdragon 6 Gen 1 (4nm)',
+    cameraSpecs: '108MP Main + 5MP Ultrawide + 2MP Macro',
+    batterySpecs: '5800 mAh',
+    releaseYear: 2023,
+    overview: '360-degree Ultra-Bounce Anti-Drop screen glass protection with 5800 mAh battery endurance.',
+    pros: ['Anti-drop shock resistant glass screen', '5800 mAh massive battery capacity', 'Tactile orange leather back'],
+    cons: ['Mono speaker'],
+    recommendedFor: 'Outdoor workers needing durable drop-proof phone.'
+  }
+];

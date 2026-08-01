@@ -1,0 +1,128 @@
+import { PhoneModel } from '../../types';
+
+export const VIVO_MODELS: PhoneModel[] = [
+  // X Series Flagships
+  {
+    id: 'm-vivo-x90-pro-plus',
+    brand: 'vivo',
+    modelName: 'X90 Pro+',
+    colorVariants: ['Legend Black (Leather)', 'China Red (Leather)'],
+    storageOptions: ['256GB', '512GB'],
+    ramOptions: ['12GB'],
+    displaySpecs: '6.78" 2K E6 LTPO AMOLED 120Hz 1800 nits',
+    chipset: 'Snapdragon 8 Gen 2 + vivo V2 ISP Chip',
+    cameraSpecs: '50MP Sony IMX989 1" ZEISS T* + 50MP 2x Portrait + 64MP 3.5x Periscope + 48MP Ultrawide',
+    batterySpecs: '4700 mAh (80W Wired / 50W Wireless)',
+    releaseYear: 2022,
+    overview: 'Pioneered 1-inch Sony IMX989 main camera lens with ZEISS T* anti-reflective lens coating.',
+    pros: ['1-inch IMX989 camera sensor', 'ZEISS T* lens coating optical clarity', 'Dual telephoto optical lenses'],
+    cons: ['China regional focus'],
+    recommendedFor: 'Mobile photography purists.'
+  },
+  {
+    id: 'm-vivo-x100-pro',
+    brand: 'vivo',
+    modelName: 'X100 Pro',
+    colorVariants: ['Asteroid Black', 'Sunset Orange (Leather)', 'Stargaze Blue'],
+    storageOptions: ['256GB', '512GB', '1TB'],
+    ramOptions: ['12GB', '16GB'],
+    displaySpecs: '6.78" 8B LTPO AMOLED 120Hz 3000 nits',
+    chipset: 'MediaTek Dimensity 9300 (4nm TSMC) + vivo V3 Chip',
+    cameraSpecs: '50MP Sony IMX989 1" ZEISS APO + 50MP 4.3x ZEISS APO Telephoto + 50MP Ultrawide',
+    batterySpecs: '5400 mAh BlueOcean Battery (100W Wired / 50W Wireless)',
+    releaseYear: 2023,
+    overview: 'World\'s first mobile phone camera lens certified by ZEISS APOpochromatic color standards.',
+    pros: ['ZEISS APO certified telephoto lens', '5400 mAh BlueOcean battery', 'Dimensity 9300 all-big-core power'],
+    cons: ['Curved screen edge touches'],
+    recommendedFor: 'Mobile camera enthusiasts & sun/portrait shooters.'
+  },
+  {
+    id: 'm-vivo-x100-ultra',
+    brand: 'vivo',
+    modelName: 'X100 Ultra',
+    colorVariants: ['Titanium', 'Space Black', 'White Moonlight'],
+    storageOptions: ['256GB', '512GB', '1TB'],
+    ramOptions: ['12GB', '16GB'],
+    displaySpecs: '6.78" 2K Samsung E7 LTPO AMOLED 120Hz 3000 nits',
+    chipset: 'Snapdragon 8 Gen 3 + vivo V3+ ISP Chip',
+    cameraSpecs: '50MP Sony LYT-900 1" ZEISS T* + 200MP 3.7x ISOCELL HP9 ZEISS APO Periscope Telephoto + 50MP Ultrawide',
+    batterySpecs: '5500 mAh (80W Wired / 30W Wireless)',
+    releaseYear: 2024,
+    overview: 'Revolutionary 200MP 1/1.4" ISOCELL HP9 ZEISS APO periscope telephoto camera lens nickname "Thanos".',
+    pros: ['200MP 1/1.4" massive periscope sensor', 'Sony LYT-900 1-inch main camera', '3D Ultrasonic fingerprint scanner'],
+    cons: ['Large rear camera camera ring'],
+    recommendedFor: 'Professional mobile photographers & concert camera seekers.'
+  },
+  {
+    id: 'm-vivo-x200-pro',
+    brand: 'vivo',
+    modelName: 'X200 Pro',
+    colorVariants: ['Titanium Gray', 'Sapphire Blue', 'Midnight Black', 'White Moonlight'],
+    storageOptions: ['256GB', '512GB', '1TB'],
+    ramOptions: ['12GB', '16GB'],
+    displaySpecs: '6.78" 1.5K ZEISS Master Color LTPO AMOLED 120Hz 4500 nits',
+    chipset: 'MediaTek Dimensity 9400 (3nm TSMC) + vivo V2 Chip',
+    cameraSpecs: '50MP Sony LYT-818 1/1.28" ZEISS Main + 200MP 3.7x ISOCELL HP9 ZEISS APO Periscope + 50MP Ultrawide',
+    batterySpecs: '6000 mAh BlueOcean Silicon-Carbon (90W Wired / 30W Wireless)',
+    releaseYear: 2024,
+    overview: '6000 mAh BlueOcean battery, 200MP ZEISS APO periscope telephoto lens, 4K 120fps Cinematic Portrait Video.',
+    pros: ['6000 mAh Silicon-Carbon battery', '200MP ZEISS APO periscope telephoto camera', '4K 120fps slow-mo video', 'Dimensity 9400 speed'],
+    cons: ['Curved glass edge accents'],
+    recommendedFor: 'Ultimate mobile videographers & photographers.'
+  },
+
+  // Foldables
+  {
+    id: 'm-vivo-x-fold-3-pro',
+    brand: 'vivo',
+    modelName: 'X Fold3 Pro',
+    colorVariants: ['Celestial Black', 'Solar White'],
+    storageOptions: ['512GB', '1TB'],
+    ramOptions: ['16GB'],
+    displaySpecs: '8.03" 2K E7 AMOLED 120Hz 4500 nits + 6.53" Outer Screen IPX8',
+    chipset: 'Snapdragon 8 Gen 3 + vivo V3 Chip',
+    cameraSpecs: '50MP VCS Bionic Main + 64MP 3x ZEISS Telephoto Periscope + 50MP Ultrawide',
+    batterySpecs: '5700 mAh BlueOcean Battery (100W Wired / 50W Wireless)',
+    releaseYear: 2024,
+    overview: 'Thinnest flagship foldable featuring IPX8 water resistance, 5700 mAh battery capacity, and 3D Dual Ultrasonic Fingerprint.',
+    pros: ['5700 mAh largest foldable battery', 'Dual 3D Ultrasonic fingerprint sensors under screen', 'Lightweight 236g foldable body', 'IPX8 water rating'],
+    cons: ['High cost investment'],
+    recommendedFor: 'Executive power users.'
+  },
+
+  // V Series
+  {
+    id: 'm-vivo-v30-pro-5g',
+    brand: 'vivo',
+    modelName: 'V30 Pro 5G',
+    colorVariants: ['Bloom White', 'Waving Aqua', 'Lush Green', 'Noble Black'],
+    storageOptions: ['256GB', '512GB'],
+    ramOptions: ['8GB', '12GB'],
+    displaySpecs: '6.78" AMOLED 120Hz 3D Curved 2800 nits',
+    chipset: 'MediaTek Dimensity 8200 (4nm)',
+    cameraSpecs: 'Triple 50MP ZEISS Camera System (Main VCS + 2x Telephoto Portrait + Ultrawide) + Smart Aura Light Ring',
+    batterySpecs: '5000 mAh (80W FlashCharge)',
+    releaseYear: 2024,
+    overview: 'First V-series model bringing ZEISS portrait color tuning and Smart Aura Light Ring flash.',
+    pros: ['Triple 50MP ZEISS portrait cameras', 'Smart Aura Light Ring fill flash', 'Slim 7.45mm body'],
+    cons: ['Single mono speaker'],
+    recommendedFor: 'Portrait selfie lovers & social media creators.'
+  },
+  {
+    id: 'm-vivo-v40-pro-5g',
+    brand: 'vivo',
+    modelName: 'V40 Pro 5G',
+    colorVariants: ['Ganges Blue', 'Titanium Gray'],
+    storageOptions: ['256GB', '512GB'],
+    ramOptions: ['8GB', '12GB'],
+    displaySpecs: '6.78" AMOLED 120Hz 4500 nits IP68/IP69',
+    chipset: 'MediaTek Dimensity 9200+ (4nm)',
+    cameraSpecs: 'Triple 50MP ZEISS Camera System (Main Sony IMX921 + 50MP 2x Telephoto + 50MP Ultrawide + 50MP Front Selfie)',
+    batterySpecs: '5500 mAh BlueOcean Battery (80W FlashCharge)',
+    releaseYear: 2024,
+    overview: 'IP68 & IP69 water jet resistance rating with 5500 mAh battery capacity in a 7.58mm body.',
+    pros: ['IP68 / IP69 dual water resistance rating', '5500 mAh battery capacity', 'Four 50MP ZEISS lenses'],
+    cons: ['No wireless charging'],
+    recommendedFor: 'Portrait & outdoor adventures.'
+  }
+];

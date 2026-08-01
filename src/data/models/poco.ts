@@ -1,0 +1,111 @@
+import { PhoneModel } from '../../types';
+
+export const POCO_MODELS: PhoneModel[] = [
+  // POCO F Series Flagships
+  {
+    id: 'm-poco-f1',
+    brand: 'POCO',
+    modelName: 'POCO F1',
+    colorVariants: ['Graphite Black', 'Steel Blue', 'Rosso Red', 'Armored Edition (Kevlar)'],
+    storageOptions: ['64GB', '128GB', '256GB'],
+    ramOptions: ['6GB', '8GB'],
+    displaySpecs: '6.18" IPS LCD 1080p IR Face Unlock',
+    chipset: 'Snapdragon 845 + LiquidCool',
+    cameraSpecs: '12MP Sony IMX363 + 5MP Depth + 20MP Front',
+    batterySpecs: '4000 mAh (18W Quick Charge 3.0)',
+    releaseYear: 2018,
+    overview: 'The original master of speed that launched the POCO brand with Snapdragon 845 and LiquidCool technology.',
+    pros: ['Iconic budget performance pioneer', 'Kevlar Armored Edition', 'IR Face Unlock'],
+    cons: ['Polycarbonate frame plastic'],
+    recommendedFor: 'Gaming history fans.'
+  },
+  {
+    id: 'm-poco-f5-pro',
+    brand: 'POCO',
+    modelName: 'POCO F5 Pro',
+    colorVariants: ['Black', 'White'],
+    storageOptions: ['256GB', '512GB'],
+    ramOptions: ['8GB', '12GB'],
+    displaySpecs: '6.67" WQHD+ Flow AMOLED 120Hz 1400 nits',
+    chipset: 'Snapdragon 8+ Gen 1 (4nm)',
+    cameraSpecs: '64MP Main (OIS) + 8MP Ultrawide + 2MP Macro',
+    batterySpecs: '5160 mAh (67W Wired / 30W Wireless)',
+    releaseYear: 2023,
+    overview: 'First POCO phone with 1440p WQHD+ resolution screen display and 30W wireless charging.',
+    pros: ['WQHD+ 1440p screen resolution', '30W Wireless charging added', 'Snapdragon 8+ Gen 1 speed'],
+    cons: ['Plastic side rails'],
+    recommendedFor: 'Media consumers & mobile gamers.'
+  },
+  {
+    id: 'm-poco-f6-pro',
+    brand: 'POCO',
+    modelName: 'POCO F6 Pro',
+    colorVariants: ['Black', 'White (Marble Texture)'],
+    storageOptions: ['256GB', '512GB', '1TB'],
+    ramOptions: ['12GB', '16GB'],
+    displaySpecs: '6.67" WQHD+ Flow AMOLED 120Hz 4000 nits 3840Hz PWM',
+    chipset: 'Snapdragon 8 Gen 2 (4nm)',
+    cameraSpecs: '50MP Light Fusion 800 (OIS) + 8MP Ultrawide + 2MP Macro',
+    batterySpecs: '5000 mAh (120W HyperCharge)',
+    releaseYear: 2024,
+    overview: 'Premium aluminum metal frame, 4000 nits WQHD+ display screen, 120W HyperCharge, and 1TB storage option.',
+    pros: ['Metal aluminum side frame', 'WQHD+ 4000 nits display screen', '120W HyperCharge fast speed', '1TB storage capacity option'],
+    cons: ['No wireless charging'],
+    recommendedFor: 'Esports gamers & speed seekers.'
+  },
+
+  // POCO X Series Midrange Champions
+  {
+    id: 'm-poco-x6-pro-5g',
+    brand: 'POCO',
+    modelName: 'POCO X6 Pro 5G',
+    colorVariants: ['POCO Yellow (Vegan Leather)', 'Black', 'Gray'],
+    storageOptions: ['256GB', '512GB'],
+    ramOptions: ['8GB', '12GB'],
+    displaySpecs: '6.67" 1.5K Flow AMOLED 120Hz 1800 nits',
+    chipset: 'MediaTek Dimensity 8300-Ultra (4nm)',
+    cameraSpecs: '64MP Main (OIS) + 8MP Ultrawide + 2MP Macro',
+    batterySpecs: '5000 mAh (67W Turbo Charge)',
+    releaseYear: 2024,
+    overview: 'Wildly popular gaming champion with Dimensity 8300-Ultra benchmark performance and HyperOS.',
+    pros: ['Dimensity 8300-Ultra unbeatable performance score', '1.5K Flow AMOLED screen', 'Iconic POCO Yellow leather'],
+    cons: ['Plastic side borders'],
+    recommendedFor: 'Midrange mobile gaming champion.'
+  },
+  {
+    id: 'm-poco-x7-pro-5g',
+    brand: 'POCO',
+    modelName: 'POCO X7 Pro 5G',
+    colorVariants: ['POCO Yellow', 'Midnight Black', 'Frost White'],
+    storageOptions: ['256GB', '512GB'],
+    ramOptions: ['8GB', '12GB'],
+    displaySpecs: '6.67" 1.5K 144Hz Flow AMOLED 3200 nits IP68',
+    chipset: 'MediaTek Dimensity 8400-Ultra (4nm)',
+    cameraSpecs: '50MP Sony LYT-600 (OIS) + 8MP Ultrawide',
+    batterySpecs: '6000 mAh (90W Fast Charge)',
+    releaseYear: 2025,
+    overview: 'IP68 water resistance rating, 6000 mAh battery capacity, 144Hz high refresh rate panel.',
+    pros: ['IP68 water resistance', '6000 mAh battery capacity', '144Hz display refresh rate'],
+    cons: ['No wireless charge'],
+    recommendedFor: 'Gaming & daily endurance.'
+  },
+
+  // POCO M Series
+  {
+    id: 'm-poco-m6-pro-5g',
+    brand: 'POCO',
+    modelName: 'POCO M6 Pro 5G',
+    colorVariants: ['Power Black', 'Forest Green'],
+    storageOptions: ['64GB', '128GB', '256GB'],
+    ramOptions: ['4GB', '6GB', '8GB'],
+    displaySpecs: '6.79" FHD+ 90Hz Glass Back',
+    chipset: 'Snapdragon 4 Gen 2 (4nm)',
+    cameraSpecs: '50MP Main + 2MP Depth',
+    batterySpecs: '5000 mAh (18W Fast Charge)',
+    releaseYear: 2023,
+    overview: 'Glass back panel budget 5G smartphone powered by Snapdragon 4 Gen 2.',
+    pros: ['Glass back panel build', 'Snapdragon 4 Gen 2 efficiency', 'Large 6.79" screen'],
+    cons: ['Mono speaker audio'],
+    recommendedFor: 'Budget 5G seekers.'
+  }
+];
