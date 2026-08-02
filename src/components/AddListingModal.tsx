@@ -15,6 +15,7 @@ import {
 import { PhoneListing, PhoneModel, PhysicalCondition, IMEIStatus } from '../types';
 import { downloadImageFile } from '../utils/fileDownloader';
 import { useLanguage } from '../context/LanguageContext';
+import { translateColor } from '../utils/translationsHelper';
 
 export interface UploadedImageFile {
   id: string;
@@ -36,7 +37,7 @@ export const AddListingModal: React.FC<AddListingModalProps> = ({
   onSaveListing,
   onClose,
 }) => {
-  const { t, formatPrice } = useLanguage();
+  const { t, formatPrice, language } = useLanguage();
   const [selectedModelId, setSelectedModelId] = useState<string>(
     preSelectedModelId || (models[0] ? models[0].id : '')
   );
@@ -436,7 +437,7 @@ export const AddListingModal: React.FC<AddListingModalProps> = ({
                     className="w-full bg-[#160B24] text-white text-sm font-semibold rounded-xl p-3 border border-white/10 cursor-pointer"
                   >
                     {selectedModel.colorVariants.map((c) => (
-                      <option key={c} value={c}>{c}</option>
+                      <option key={c} value={c}>{translateColor(c, language)}</option>
                     ))}
                   </select>
                 </div>

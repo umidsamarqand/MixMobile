@@ -299,6 +299,16 @@ export const translations = {
     choosePhoneModel: "Smartfon modelini tanlang",
     askingPriceUSD: "Sotish narxi (USD) *",
     colorVariant: "Rangi *",
+
+    // Admin Portal Keys
+    adminPortalTitle: "Boshqaruv Portali",
+    adminPortalDesc: "Telefon qo'shish, rasm yuklash, narxlarni va omborni boshqarish uchun maxfiy kalitni kiriting.",
+    securityAccessKey: "Xavfsizlik kaliti",
+    enterAdminKeyPlaceholder: "Maxfiy kalitni kiriting...",
+    accessDeniedError: "Ruxsat rad etildi: Kalit noto'g'ri",
+    verifyUnlockBtn: "Tasdiqlash va Ochish",
+    protectedSystemFooter: "🔒 Himoyalangan Tizim • Mix Mobile Boshqaruvi",
+    logoutAdminBtn: "Chiqish (Admin)",
   },
   ru: {
     // Header & Nav
@@ -595,6 +605,16 @@ export const translations = {
     choosePhoneModel: "Выберите модель смартфона",
     askingPriceUSD: "Цена продажи (USD) *",
     colorVariant: "Цвет *",
+
+    // Admin Portal Keys
+    adminPortalTitle: "Панель Администратора",
+    adminPortalDesc: "Введите секретный ключ для доступа к добавлению телефонов, загрузке фото, ценам и складу.",
+    securityAccessKey: "Ключ безопасности",
+    enterAdminKeyPlaceholder: "Введите админ-ключ...",
+    accessDeniedError: "Отказ в доступе: Неверный ключ",
+    verifyUnlockBtn: "Проверить и Открыть",
+    protectedSystemFooter: "🔒 Защищенная система • Mix Mobile Управление",
+    logoutAdminBtn: "Выйти (Админ)",
   },
   en: {
     // Header & Nav
@@ -891,5 +911,15 @@ export const translations = {
     choosePhoneModel: "Select phone model",
     askingPriceUSD: "Asking Price (USD) *",
     colorVariant: "Color Variant *",
+
+    // Admin Portal Keys
+    adminPortalTitle: "Admin Portal",
+    adminPortalDesc: "Enter the secret master key to unlock phone creation, photo uploads, pricing controls, and stock management.",
+    securityAccessKey: "Security Access Key",
+    enterAdminKeyPlaceholder: "Enter admin key...",
+    accessDeniedError: "Access Denied: Invalid Security Key",
+    verifyUnlockBtn: "Verify & Unlock Portal",
+    protectedSystemFooter: "🔒 Protected System • Mix Mobile Master Control",
+    logoutAdminBtn: "Logout (Admin)",
   },
 };

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { PlusCircle, Layers, ShoppingBag, Info, Menu, X, Sparkles, Globe } from 'lucide-react';
+import { PlusCircle, Layers, ShoppingBag, Info, Menu, X, Sparkles, Globe, Lock, LogOut, ShieldCheck } from 'lucide-react';
 import { Currency, Language } from '../types';
 import { useLanguage } from '../context/LanguageContext';
 
@@ -10,6 +10,9 @@ interface HeaderProps {
   setCurrency: (c: Currency) => void;
   listingsCount: number;
   modelsCount: number;
+  isAdmin: boolean;
+  onOpenAdminModal: () => void;
+  onLogoutAdmin: () => void;
 }
 
 export const Header: React.FC<HeaderProps> = ({
@@ -19,6 +22,9 @@ export const Header: React.FC<HeaderProps> = ({
   setCurrency,
   listingsCount,
   modelsCount,
+  isAdmin,
+  onOpenAdminModal,
+  onLogoutAdmin,
 }) => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const { language, setLanguage, t } = useLanguage();
@@ -80,15 +86,23 @@ export const Header: React.FC<HeaderProps> = ({
               const Icon = item.icon;
               const isActive = activeTab === item.id;
 
+              const handleNavClick = () => {
+                if ((item.id === 'add-listing' || item.id === 'seller-manage') && !isAdmin) {
+                  onOpenAdminModal();
+                } else {
+                  setActiveTab(item.id as any);
+                }
+              };
+
               if (item.highlight) {
                 return (
                   <button
                     key={item.id}
-                    onClick={() => setActiveTab(item.id as any)}
+                    onClick={handleNavClick}
                     className="neon-btn-pink px-4 py-2 rounded-xl font-bold text-sm flex items-center gap-2 transition-all cursor-pointer ml-2"
                     id={`nav-btn-${item.id}`}
                   >
-                    <Icon className="w-4 h-4" />
+                    {!isAdmin ? <Lock className="w-4 h-4 text-white/80" /> : <Icon className="w-4 h-4" />}
                     <span>{item.label}</span>
                   </button>
                 );
@@ -97,7 +111,7 @@ export const Header: React.FC<HeaderProps> = ({
               return (
                 <button
                   key={item.id}
-                  onClick={() => setActiveTab(item.id as any)}
+                  onClick={handleNavClick}
                   className={`px-3.5 py-2 rounded-xl text-sm font-medium flex items-center gap-2 transition-all cursor-pointer ${
                     isActive
                       ? 'bg-[#FF2E93]/20 text-white border border-[#FF2E93]/50 shadow-[0_0_12px_rgba(255,46,147,0.3)]'
@@ -168,20 +182,44 @@ export const Header: React.FC<HeaderProps> = ({
               </button>
             </div>
 
-            {/* Manage Stock Button */}
-            <button
-              onClick={() => setActiveTab('seller-manage')}
-              className={`p-2 rounded-xl border transition-all text-xs font-semibold flex items-center gap-1.5 ${
-                activeTab === 'seller-manage'
-                  ? 'border-[#00F0FF] bg-[#00F0FF]/20 text-[#00F0FF]'
-                  : 'border-white/10 text-[#C3B2D9] hover:border-white/30 hover:text-white'
-              }`}
-              title={t('manageStock')}
-              id="nav-btn-seller-manage"
-            >
-              <Sparkles className="w-3.5 h-3.5 text-[#00F0FF]" />
-              <span className="hidden lg:inline">{t('manageStock')}</span>
-            </button>
+            {/* Manage Stock Button or Admin Status / Logout */}
+            {isAdmin ? (
+              <div className="flex items-center gap-2">
+                <button
+                  onClick={() => setActiveTab('seller-manage')}
+                  className={`p-2 rounded-xl border transition-all text-xs font-semibold flex items-center gap-1.5 ${
+                    activeTab === 'seller-manage'
+                      ? 'border-[#00F0FF] bg-[#00F0FF]/20 text-[#00F0FF]'
+                      : 'border-white/10 text-[#C3B2D9] hover:border-white/30 hover:text-white'
+                  }`}
+                  title={t('manageStock')}
+                  id="nav-btn-seller-manage"
+                >
+                  <Sparkles className="w-3.5 h-3.5 text-[#00F0FF]" />
+                  <span className="hidden lg:inline">{t('manageStock')}</span>
+                </button>
+
+                <button
+                  onClick={onLogoutAdmin}
+                  className="px-3 py-2 rounded-xl bg-red-500/20 text-red-300 border border-red-500/40 text-xs font-extrabold flex items-center gap-1.5 hover:bg-red-500/30 transition-all cursor-pointer shadow-[0_0_12px_rgba(239,68,68,0.3)]"
+                  title="Exit Admin Mode"
+                  id="admin-logout-btn"
+                >
+                  <LogOut className="w-3.5 h-3.5 text-red-400" />
+                  <span className="hidden lg:inline">Logout Admin</span>
+                </button>
+              </div>
+            ) : (
+              <button
+                onClick={onOpenAdminModal}
+                className="p-2 rounded-xl border border-white/10 text-[#C3B2D9] hover:text-white hover:border-[#FF2E93]/40 transition-all text-xs font-semibold flex items-center gap-1.5 cursor-pointer"
+                title="Admin Portal Login"
+                id="admin-login-btn"
+              >
+                <Lock className="w-3.5 h-3.5 text-[#FF2E93]" />
+                <span className="hidden xl:inline">Admin Portal</span>
+              </button>
+            )}
           </div>
 
           {/* Mobile Menu Button & Mobile Language Selector */}
@@ -229,8 +267,12 @@ export const Header: React.FC<HeaderProps> = ({
               <button
                 key={item.id}
                 onClick={() => {
-                  setActiveTab(item.id as any);
                   setMobileMenuOpen(false);
+                  if ((item.id === 'add-listing' || item.id === 'seller-manage') && !isAdmin) {
+                    onOpenAdminModal();
+                  } else {
+                    setActiveTab(item.id as any);
+                  }
                 }}
                 className={`w-full px-4 py-3 rounded-xl text-left font-semibold flex items-center justify-between transition-all ${
                   item.highlight
@@ -241,7 +283,11 @@ export const Header: React.FC<HeaderProps> = ({
                 }`}
               >
                 <div className="flex items-center gap-3">
-                  <Icon className="w-5 h-5 text-[#FF2E93]" />
+                  {!isAdmin && (item.id === 'add-listing' || item.id === 'seller-manage') ? (
+                    <Lock className="w-5 h-5 text-[#FF2E93]" />
+                  ) : (
+                    <Icon className="w-5 h-5 text-[#FF2E93]" />
+                  )}
                   <span>{item.label}</span>
                 </div>
                 {item.badge !== undefined && (
@@ -253,16 +299,42 @@ export const Header: React.FC<HeaderProps> = ({
             );
           })}
           
-          <button
-            onClick={() => {
-              setActiveTab('seller-manage');
-              setMobileMenuOpen(false);
-            }}
-            className="w-full px-4 py-3 rounded-xl text-left font-semibold flex items-center gap-3 text-[#00F0FF] bg-[#00F0FF]/10 border border-[#00F0FF]/30"
-          >
-            <Sparkles className="w-5 h-5 text-[#00F0FF]" />
-            <span>{t('manageListings')}</span>
-          </button>
+          {isAdmin ? (
+            <>
+              <button
+                onClick={() => {
+                  setActiveTab('seller-manage');
+                  setMobileMenuOpen(false);
+                }}
+                className="w-full px-4 py-3 rounded-xl text-left font-semibold flex items-center gap-3 text-[#00F0FF] bg-[#00F0FF]/10 border border-[#00F0FF]/30"
+              >
+                <Sparkles className="w-5 h-5 text-[#00F0FF]" />
+                <span>{t('manageListings')}</span>
+              </button>
+
+              <button
+                onClick={() => {
+                  setMobileMenuOpen(false);
+                  onLogoutAdmin();
+                }}
+                className="w-full px-4 py-3 rounded-xl text-left font-bold flex items-center gap-3 text-red-300 bg-red-500/15 border border-red-500/40"
+              >
+                <LogOut className="w-5 h-5 text-red-400" />
+                <span>Logout Admin Mode</span>
+              </button>
+            </>
+          ) : (
+            <button
+              onClick={() => {
+                setMobileMenuOpen(false);
+                onOpenAdminModal();
+              }}
+              className="w-full px-4 py-3 rounded-xl text-left font-semibold flex items-center gap-3 text-[#FF2E93] bg-[#FF2E93]/10 border border-[#FF2E93]/30"
+            >
+              <Lock className="w-5 h-5 text-[#FF2E93]" />
+              <span>Admin Portal Login</span>
+            </button>
+          )}
         </div>
       )}
     </header>

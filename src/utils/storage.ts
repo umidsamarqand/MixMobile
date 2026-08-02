@@ -3,6 +3,27 @@ import { INITIAL_MODELS, INITIAL_LISTINGS } from '../data/initialData';
 
 const MODELS_KEY = 'mix_mobile_models_v1';
 const LISTINGS_KEY = 'mix_mobile_listings_v1';
+const ADMIN_KEY = 'mix_mobile_admin_session_v1';
+
+export function getAdminSession(): boolean {
+  try {
+    return localStorage.getItem(ADMIN_KEY) === 'true';
+  } catch (e) {
+    return false;
+  }
+}
+
+export function saveAdminSession(isAdmin: boolean): void {
+  try {
+    if (isAdmin) {
+      localStorage.setItem(ADMIN_KEY, 'true');
+    } else {
+      localStorage.removeItem(ADMIN_KEY);
+    }
+  } catch (e) {
+    console.error('Failed to save admin session', e);
+  }
+}
 
 export function getStoredModels(): PhoneModel[] {
   try {

@@ -8,8 +8,10 @@ import { AddListingModal } from './components/AddListingModal';
 import { SellerManagementModal } from './components/SellerManagementModal';
 import { ContactFAQModal } from './components/ContactFAQModal';
 import { ReserveRequestModal } from './components/ReserveRequestModal';
+import { AdminPortalModal } from './components/AdminPortalModal';
+import { Lock } from 'lucide-react';
 import { PhoneModel, PhoneListing, FilterState, Currency, ListingStatus } from './types';
-import { getStoredModels, saveModels, getStoredListings, saveListings, resetToSeedData } from './utils/storage';
+import { getStoredModels, saveModels, getStoredListings, saveListings, resetToSeedData, getAdminSession, saveAdminSession } from './utils/storage';
 import { useLanguage } from './context/LanguageContext';
 
 export default function App() {
@@ -18,6 +20,11 @@ export default function App() {
   const [listings, setListings] = useState<PhoneListing[]>([]);
   const [currency, setCurrency] = useState<Currency>('USD');
   const [activeTab, setActiveTab] = useState<'shop' | 'models' | 'add-listing' | 'faq' | 'seller-manage'>('shop');
+
+  // Admin Auth state
+  const [isAdmin, setIsAdmin] = useState<boolean>(() => getAdminSession());
+  const [isAdminModalOpen, setIsAdminModalOpen] = useState<boolean>(false);
+  const [pendingAdminTab, setPendingAdminTab] = useState<'add-listing' | 'seller-manage' | undefined>(undefined);
 
   // Modals state
   const [selectedListing, setSelectedListing] = useState<PhoneListing | null>(null);
@@ -43,6 +50,32 @@ export default function App() {
     setModels(getStoredModels());
     setListings(getStoredListings());
   }, []);
+
+  const handleRequireAdmin = (targetTab: 'add-listing' | 'seller-manage') => {
+    if (isAdmin) {
+      setActiveTab(targetTab);
+    } else {
+      setPendingAdminTab(targetTab);
+      setIsAdminModalOpen(true);
+    }
+  };
+
+  const handleAdminUnlockSuccess = () => {
+    setIsAdmin(true);
+    saveAdminSession(true);
+    if (pendingAdminTab) {
+      setActiveTab(pendingAdminTab);
+      setPendingAdminTab(undefined);
+    }
+  };
+
+  const handleLogoutAdmin = () => {
+    setIsAdmin(false);
+    saveAdminSession(false);
+    if (activeTab === 'add-listing' || activeTab === 'seller-manage') {
+      setActiveTab('shop');
+    }
+  };
 
   // Save changes to storage
   const handleSaveModel = (newModel: PhoneModel) => {
@@ -94,7 +127,7 @@ export default function App() {
   const registeredCount = availableListings.filter((l) => l.imeiStatus === 'REGISTERED').length;
 
   return (
-    <div className="min-h-screen flex flex-col justify-between selection:bg-[#FF2E93] selection:text-white">
+    <div className="min-h-screen flex flex-col justify-between selection:bg-[#FF2E93] selection:text-white relative">
       
       <div>
         {/* Header Navbar */}
@@ -105,6 +138,12 @@ export default function App() {
           setCurrency={setCurrency}
           listingsCount={availableListings.length}
           modelsCount={models.length}
+          isAdmin={isAdmin}
+          onOpenAdminModal={() => {
+            setPendingAdminTab(undefined);
+            setIsAdminModalOpen(true);
+          }}
+          onLogoutAdmin={handleLogoutAdmin}
         />
 
         {/* Hero Section (Only shown on Shop tab or Home) */}
@@ -135,7 +174,7 @@ export default function App() {
               onSelectListing={handleSelectListing}
               onOpenAddListing={() => {
                 setPreSelectedModelForListing(undefined);
-                setActiveTab('add-listing');
+                handleRequireAdmin('add-listing');
               }}
             />
           )}
@@ -150,7 +189,7 @@ export default function App() {
               }}
               onAddListingForModel={(modelId) => {
                 setPreSelectedModelForListing(modelId);
-                setActiveTab('add-listing');
+                handleRequireAdmin('add-listing');
               }}
             />
           )}
@@ -158,6 +197,13 @@ export default function App() {
       </div>
 
       {/* MODALS */}
+      {/* Secret Admin Portal Security Modal */}
+      <AdminPortalModal
+        isOpen={isAdminModalOpen}
+        onClose={() => setIsAdminModalOpen(false)}
+        onSuccess={handleAdminUnlockSuccess}
+      />
+
       {/* Detailed Phone Listing View Modal */}
       {selectedListing && (
         <ListingDetailModal
@@ -172,8 +218,8 @@ export default function App() {
         />
       )}
 
-      {/* Add Physical Listing Modal */}
-      {activeTab === 'add-listing' && (
+      {/* Add Physical Listing Modal (Admin Only) */}
+      {activeTab === 'add-listing' && isAdmin && (
         <AddListingModal
           models={models}
           preSelectedModelId={preSelectedModelForListing}
@@ -182,8 +228,8 @@ export default function App() {
         />
       )}
 
-      {/* Seller Management Dashboard Modal */}
-      {activeTab === 'seller-manage' && (
+      {/* Seller Management Dashboard Modal (Admin Only) */}
+      {activeTab === 'seller-manage' && isAdmin && (
         <SellerManagementModal
           listings={listings}
           models={models}
@@ -209,6 +255,28 @@ export default function App() {
           onClose={() => setReserveListing(null)}
         />
       )}
+
+      {/* Floating Discrete Admin Portal Trigger Button */}
+      <button
+        onClick={() => {
+          if (isAdmin) {
+            setActiveTab('seller-manage');
+          } else {
+            setPendingAdminTab(undefined);
+            setIsAdminModalOpen(true);
+          }
+        }}
+        className={`fixed bottom-5 right-5 z-40 px-3.5 py-2.5 rounded-2xl border backdrop-blur-md shadow-2xl transition-all duration-300 cursor-pointer flex items-center gap-2 text-xs font-black ${
+          isAdmin
+            ? 'bg-[#00F0FF]/15 border-[#00F0FF]/50 text-[#00F0FF] hover:bg-[#00F0FF] hover:text-black shadow-[0_0_20px_rgba(0,240,255,0.4)]'
+            : 'bg-[#0D0714]/90 border-[#FF2E93]/40 text-[#FF2E93] hover:border-[#FF2E93] hover:shadow-[0_0_20px_rgba(255,46,147,0.5)]'
+        }`}
+        title="Admin Portal Security"
+        id="floating-admin-portal-trigger"
+      >
+        <Lock className="w-4 h-4 shrink-0" />
+        <span className="hidden sm:inline">{isAdmin ? 'Admin Active' : 'Admin Portal'}</span>
+      </button>
 
       {/* Footer */}
       <footer className="mt-16 border-t border-[#FF2E93]/20 glass-panel bg-[#0D0714]/90 py-10 px-4 sm:px-6 lg:px-8">
@@ -240,11 +308,26 @@ export default function App() {
             <button onClick={() => setActiveTab('models')} className="hover:text-white transition-colors cursor-pointer">
               {t('modelKnowledge')}
             </button>
-            <button onClick={() => setActiveTab('add-listing')} className="hover:text-white transition-colors cursor-pointer">
+            <button onClick={() => handleRequireAdmin('add-listing')} className="hover:text-white transition-colors cursor-pointer">
               {t('postPhoneFooter')}
             </button>
             <button onClick={() => setActiveTab('faq')} className="hover:text-white transition-colors cursor-pointer">
               {t('uzimeiFaqFooter')}
+            </button>
+            <button
+              onClick={() => {
+                if (isAdmin) {
+                  setActiveTab('seller-manage');
+                } else {
+                  setPendingAdminTab(undefined);
+                  setIsAdminModalOpen(true);
+                }
+              }}
+              className="hover:text-white transition-colors cursor-pointer flex items-center gap-1 text-[#FF2E93] font-bold"
+              id="footer-admin-portal-link"
+            >
+              <Lock className="w-3.5 h-3.5" />
+              <span>{isAdmin ? 'Admin Active' : 'Admin Portal'}</span>
             </button>
           </div>
 

@@ -11,6 +11,7 @@ import {
 import { PhoneModel, PhoneListing } from '../types';
 import { getGsmArenaUrl } from '../utils/gsmarena';
 import { useLanguage } from '../context/LanguageContext';
+import { translateColor } from '../utils/translationsHelper';
 
 interface ModelsCatalogProps {
   models: PhoneModel[];
@@ -27,7 +28,7 @@ export const ModelsCatalog: React.FC<ModelsCatalogProps> = ({
 }) => {
   const [selectedBrand, setSelectedBrand] = useState<string>('ALL');
   const [searchQuery, setSearchQuery] = useState<string>('');
-  const { t } = useLanguage();
+  const { t, language } = useLanguage();
 
   const brandList = Array.from(new Set(models.map((m) => m.brand))).sort();
 
@@ -185,7 +186,7 @@ export const ModelsCatalog: React.FC<ModelsCatalogProps> = ({
                     <div className="flex flex-wrap gap-1 mt-1">
                       {model.colorVariants.map((c, i) => (
                         <span key={i} className="text-[10px] px-2 py-0.5 rounded bg-white/5 text-[#C3B2D9] border border-white/10">
-                          {c}
+                          {translateColor(c, language)}
                         </span>
                       ))}
                     </div>

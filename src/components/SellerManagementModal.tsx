@@ -2,6 +2,7 @@ import React from 'react';
 import { X, Sparkles, RefreshCw, Trash2 } from 'lucide-react';
 import { PhoneListing, PhoneModel, ListingStatus, Currency } from '../types';
 import { useLanguage } from '../context/LanguageContext';
+import { translateColor } from '../utils/translationsHelper';
 
 interface SellerManagementModalProps {
   listings: PhoneListing[];
@@ -22,7 +23,7 @@ export const SellerManagementModal: React.FC<SellerManagementModalProps> = ({
   onResetSeedData,
   onClose,
 }) => {
-  const { t, formatPrice } = useLanguage();
+  const { t, formatPrice, language } = useLanguage();
   const modelMap = new Map<string, PhoneModel>();
   models.forEach((m) => modelMap.set(m.id, m));
 
@@ -82,7 +83,7 @@ export const SellerManagementModal: React.FC<SellerManagementModalProps> = ({
                     />
                     <div>
                       <div className="text-[10px] font-bold text-[#FF2E93] uppercase">
-                        {model?.brand} • {item.storage} ({item.color})
+                        {model?.brand} • {item.storage} ({translateColor(item.color, language)})
                       </div>
                       <h4 className="font-extrabold text-white text-sm">
                         {model?.modelName || item.title}

@@ -27,6 +27,7 @@ import { PhoneListing, PhoneModel, Currency } from '../types';
 import { downloadImageFile } from '../utils/fileDownloader';
 import { getGsmArenaUrl } from '../utils/gsmarena';
 import { useLanguage } from '../context/LanguageContext';
+import { translateColor, translateDefect, translateAccessory } from '../utils/translationsHelper';
 
 interface ListingDetailModalProps {
   listing: PhoneListing;
@@ -45,7 +46,7 @@ export const ListingDetailModal: React.FC<ListingDetailModalProps> = ({
 }) => {
   const [selectedPhotoIndex, setSelectedPhotoIndex] = useState(0);
   const [copied, setCopied] = useState(false);
-  const { t, formatPrice } = useLanguage();
+  const { t, formatPrice, language } = useLanguage();
 
   const photos = listing.photos.length > 0 
     ? listing.photos 
@@ -200,7 +201,7 @@ export const ListingDetailModal: React.FC<ListingDetailModalProps> = ({
                   <div className="flex items-center justify-between">
                     <span>{t('dateListed')}:</span>
                     <span className="font-medium text-white">
-                      {new Date(listing.dateListed).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' })}
+                      {new Date(listing.dateListed).toLocaleDateString(language === 'ru' ? 'ru-RU' : language === 'uz' ? 'uz-UZ' : 'en-US', { month: 'short', day: 'numeric', year: 'numeric' })}
                     </span>
                   </div>
                   <div className="flex items-center justify-between">
@@ -309,7 +310,7 @@ export const ListingDetailModal: React.FC<ListingDetailModalProps> = ({
                 <div className="text-xs font-semibold text-[#C3B2D9] mb-1">{t('physicalGrade')}</div>
                 <div className="font-extrabold text-sm text-white">{cond.text}</div>
                 <p className="text-[11px] text-[#C3B2D9] mt-1.5">
-                  Color: <span className="text-white font-semibold">{listing.color}</span> | Memory: <span className="text-white font-semibold">{listing.storage} ({listing.ram} RAM)</span>
+                  {t('color')}: <span className="text-white font-semibold">{translateColor(listing.color, language)}</span> | {t('storage')}: <span className="text-white font-semibold">{listing.storage} ({listing.ram} RAM)</span>
                 </p>
               </div>
 
@@ -318,7 +319,7 @@ export const ListingDetailModal: React.FC<ListingDetailModalProps> = ({
                 <div className="text-xs font-semibold text-[#C3B2D9] mb-1">{t('batteryHealth')}</div>
                 <div className="font-extrabold text-sm text-[#00F0FF] flex items-center gap-1">
                   <BatteryCharging className="w-4 h-4 text-[#00F0FF]" />
-                  <span>{listing.batteryHealth !== null ? `${listing.batteryHealth}% Max Capacity` : 'N/A (New)'}</span>
+                  <span>{listing.batteryHealth !== null ? `${listing.batteryHealth}%` : 'N/A'}</span>
                 </div>
                 <p className="text-[11px] text-[#C3B2D9] mt-1.5">
                   {listing.batteryHealth && listing.batteryHealth >= 90
@@ -336,11 +337,11 @@ export const ListingDetailModal: React.FC<ListingDetailModalProps> = ({
                   {listing.includedItems.length > 0 ? (
                     listing.includedItems.map((inc, i) => (
                       <span key={i} className="text-[10px] px-2 py-0.5 rounded bg-white/10 text-white font-medium">
-                        ✓ {inc}
+                        ✓ {translateAccessory(inc, language)}
                       </span>
                     ))
                   ) : (
-                    <span className="text-xs text-[#C3B2D9]">Standard contents</span>
+                    <span className="text-xs text-[#C3B2D9]">Standard</span>
                   )}
                 </div>
               </div>
@@ -364,7 +365,7 @@ export const ListingDetailModal: React.FC<ListingDetailModalProps> = ({
                     listing.defects.map((def, idx) => (
                       <li key={idx} className="text-xs text-amber-300 font-medium flex items-center gap-1.5">
                         <span className="w-1.5 h-1.5 rounded-full bg-amber-400" />
-                        <span>{def}</span>
+                        <span>{translateDefect(def, language)}</span>
                       </li>
                     ))
                   )}

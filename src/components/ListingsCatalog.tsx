@@ -18,6 +18,7 @@ import {
 import { PhoneListing, PhoneModel, FilterState, Currency } from '../types';
 import { getGsmArenaUrl } from '../utils/gsmarena';
 import { useLanguage } from '../context/LanguageContext';
+import { translateColor, translateDefect } from '../utils/translationsHelper';
 
 interface ListingsCatalogProps {
   listings: PhoneListing[];
@@ -40,7 +41,7 @@ export const ListingsCatalog: React.FC<ListingsCatalogProps> = ({
 }) => {
   const [viewMode, setViewMode] = useState<'grid' | 'list'>('grid');
   const [showFilterSidebar, setShowFilterSidebar] = useState(false);
-  const { t, formatPrice } = useLanguage();
+  const { t, formatPrice, language } = useLanguage();
 
   // Helper map for phone model specs
   const modelMap = new Map<string, PhoneModel>();
@@ -481,7 +482,7 @@ export const ListingsCatalog: React.FC<ListingsCatalogProps> = ({
                       <div>
                         {/* Brand & Storage Header */}
                         <div className="text-[11px] font-bold text-[#FF2E93] uppercase tracking-wider mb-0.5">
-                          {model?.brand || 'Smartphone'} • {item.storage} ({item.color})
+                          {model?.brand || 'Smartphone'} • {item.storage} ({translateColor(item.color, language)})
                         </div>
 
                         {/* Title */}
@@ -512,7 +513,7 @@ export const ListingsCatalog: React.FC<ListingsCatalogProps> = ({
                         ) : (
                           <div className="text-amber-300 font-medium flex items-center gap-1.5 text-[11px] line-clamp-1">
                             <AlertTriangle className="w-3.5 h-3.5 text-amber-400 shrink-0" />
-                            <span className="truncate">{item.defects.join(', ')}</span>
+                            <span className="truncate">{item.defects.map((d) => translateDefect(d, language)).join(', ')}</span>
                           </div>
                         )}
                       </div>
