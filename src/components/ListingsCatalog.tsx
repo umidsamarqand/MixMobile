@@ -350,8 +350,8 @@ export const ListingsCatalog: React.FC<ListingsCatalogProps> = ({
               <label className="block text-xs font-semibold text-[#C3B2D9] uppercase tracking-wider mb-2">
                 {t('storageCapacity')}
               </label>
-              <div className="grid grid-cols-3 gap-1.5">
-                {['ALL', '128GB', '256GB', '512GB', '1TB'].map((st) => (
+              <div className="grid grid-cols-4 gap-1.5">
+                {['ALL', '32GB', '64GB', '128GB', '256GB', '512GB', '1TB', '2TB'].map((st) => (
                   <button
                     key={st}
                     onClick={() => setFilters((prev) => ({ ...prev, storage: st }))}
@@ -376,29 +376,42 @@ export const ListingsCatalog: React.FC<ListingsCatalogProps> = ({
           {sortedListings.length === 0 ? (
             <div className="glass-panel p-12 rounded-2xl text-center border border-white/10 max-w-md mx-auto my-8">
               <Package className="w-12 h-12 text-[#FF2E93] mx-auto mb-3 opacity-60" />
-              <h3 className="text-xl font-bold text-white mb-1">{t('noSmartphonesFound')}</h3>
+              <h3 className="text-xl font-bold text-white mb-1">
+                {listings.length === 0 ? 'No Smartphone Listings Yet' : t('noSmartphonesFound')}
+              </h3>
               <p className="text-xs text-[#C3B2D9] mb-6">
-                {t('noSmartphonesSub')}
+                {listings.length === 0 
+                  ? 'The catalog is a blank paper! Be the first to post a smartphone for sale.' 
+                  : t('noSmartphonesSub')}
               </p>
-              <button
-                onClick={() =>
-                  setFilters({
-                    searchQuery: '',
-                    brand: 'ALL',
-                    modelId: 'ALL',
-                    condition: 'ALL',
-                    imeiStatus: 'ALL',
-                    minPrice: 0,
-                    maxPrice: 3000,
-                    minBatteryHealth: 0,
-                    storage: 'ALL',
-                    sortBy: 'NEWEST',
-                  })
-                }
-                className="neon-btn-pink px-5 py-2.5 rounded-xl font-bold text-xs cursor-pointer"
-              >
-                {t('clearFilters')}
-              </button>
+              {listings.length === 0 ? (
+                <button
+                  onClick={onOpenAddListing}
+                  className="neon-btn-pink px-6 py-3 rounded-xl font-extrabold text-sm cursor-pointer shadow-[0_0_15px_rgba(255,46,147,0.4)]"
+                >
+                  + {t('postPhone')}
+                </button>
+              ) : (
+                <button
+                  onClick={() =>
+                    setFilters({
+                      searchQuery: '',
+                      brand: 'ALL',
+                      modelId: 'ALL',
+                      condition: 'ALL',
+                      imeiStatus: 'ALL',
+                      minPrice: 0,
+                      maxPrice: 3000,
+                      minBatteryHealth: 0,
+                      storage: 'ALL',
+                      sortBy: 'NEWEST',
+                    })
+                  }
+                  className="neon-btn-pink px-5 py-2.5 rounded-xl font-bold text-xs cursor-pointer"
+                >
+                  {t('clearFilters')}
+                </button>
+              )}
             </div>
           ) : viewMode === 'grid' ? (
             

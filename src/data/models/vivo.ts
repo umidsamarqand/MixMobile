@@ -4,7 +4,7 @@ export const VIVO_MODELS: PhoneModel[] = [
   // X Series Flagships
   {
     id: 'm-vivo-x90-pro-plus',
-    brand: 'vivo',
+    brand: 'Vivo',
     modelName: 'X90 Pro+',
     colorVariants: ['Legend Black (Leather)', 'China Red (Leather)'],
     storageOptions: ['256GB', '512GB'],
@@ -110,7 +110,7 @@ export const VIVO_MODELS: PhoneModel[] = [
   },
   {
     id: 'm-vivo-v40-pro-5g',
-    brand: 'vivo',
+    brand: 'Vivo',
     modelName: 'V40 Pro 5G',
     colorVariants: ['Ganges Blue', 'Titanium Gray'],
     storageOptions: ['256GB', '512GB'],

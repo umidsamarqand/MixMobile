@@ -59,6 +59,39 @@ export const AddListingModal: React.FC<AddListingModalProps> = ({
 
   const [priceUSD, setPriceUSD] = useState<number>(850);
   const selectedModel = models.find((m) => m.id === selectedModelId) || filteredModels[0] || models[0];
+
+  const STANDARD_STORAGE_OPTIONS = ['32GB', '64GB', '128GB', '256GB', '512GB', '1TB', '2TB'];
+  const STANDARD_RAM_OPTIONS = ['3GB', '4GB', '6GB', '8GB', '10GB', '12GB', '16GB', '18GB', '20GB', '24GB'];
+
+  const parseStorageMB = (str: string) => {
+    const num = parseFloat(str);
+    if (isNaN(num)) return 0;
+    const s = str.toUpperCase();
+    if (s.includes('TB')) return num * 1024 * 1024;
+    if (s.includes('GB')) return num * 1024;
+    return num;
+  };
+
+  const parseRamGB = (str: string) => {
+    const num = parseFloat(str);
+    if (isNaN(num)) return 0;
+    return num;
+  };
+
+  const allStorageOptions = Array.from(
+    new Set([
+      ...(selectedModel?.storageOptions || []),
+      ...STANDARD_STORAGE_OPTIONS,
+    ])
+  ).sort((a, b) => parseStorageMB(a) - parseStorageMB(b));
+
+  const allRamOptions = Array.from(
+    new Set([
+      ...(selectedModel?.ramOptions || []),
+      ...STANDARD_RAM_OPTIONS,
+    ])
+  ).sort((a, b) => parseRamGB(a) - parseRamGB(b));
+
   const [color, setColor] = useState<string>(selectedModel?.colorVariants[0] || 'Black');
   const [storage, setStorage] = useState<string>(selectedModel?.storageOptions[0] || '128GB');
   const [ram, setRam] = useState<string>(selectedModel?.ramOptions[0] || '8GB');
@@ -281,7 +314,10 @@ export const AddListingModal: React.FC<AddListingModalProps> = ({
               <div className="flex flex-wrap gap-1.5 max-h-24 overflow-y-auto p-1 bg-[#160B24]/60 rounded-xl border border-white/5">
                 <button
                   type="button"
-                  onClick={() => setSelectedBrandFilter('ALL')}
+                  onClick={() => {
+                    setSelectedBrandFilter('ALL');
+                    if (models[0]) handleModelChange(models[0].id);
+                  }}
                   className={`px-3 py-1.5 rounded-lg text-xs font-bold transition-all cursor-pointer ${
                     selectedBrandFilter === 'ALL'
                       ? 'bg-[#FF2E93] text-white shadow-[0_0_10px_rgba(255,46,147,0.5)]'
@@ -294,7 +330,13 @@ export const AddListingModal: React.FC<AddListingModalProps> = ({
                   <button
                     key={b}
                     type="button"
-                    onClick={() => setSelectedBrandFilter(b)}
+                    onClick={() => {
+                      setSelectedBrandFilter(b);
+                      const brandModels = models.filter((m) => m.brand === b);
+                      if (brandModels[0]) {
+                        handleModelChange(brandModels[0].id);
+                      }
+                    }}
                     className={`px-3 py-1.5 rounded-lg text-xs font-bold transition-all cursor-pointer ${
                       selectedBrandFilter === b
                         ? 'bg-[#FF2E93] text-white shadow-[0_0_10px_rgba(255,46,147,0.5)]'
@@ -406,7 +448,7 @@ export const AddListingModal: React.FC<AddListingModalProps> = ({
                     onChange={(e) => setStorage(e.target.value)}
                     className="w-full bg-[#160B24] text-white text-sm font-semibold rounded-xl p-3 border border-white/10 cursor-pointer"
                   >
-                    {selectedModel.storageOptions.map((s) => (
+                    {allStorageOptions.map((s) => (
                       <option key={s} value={s}>{s}</option>
                     ))}
                   </select>
@@ -419,7 +461,7 @@ export const AddListingModal: React.FC<AddListingModalProps> = ({
                     onChange={(e) => setRam(e.target.value)}
                     className="w-full bg-[#160B24] text-white text-sm font-semibold rounded-xl p-3 border border-white/10 cursor-pointer"
                   >
-                    {selectedModel.ramOptions.map((r) => (
+                    {allRamOptions.map((r) => (
                       <option key={r} value={r}>{r}</option>
                     ))}
                   </select>

@@ -35,7 +35,15 @@ export function getStoredListings(): PhoneListing[] {
       return INITIAL_LISTINGS;
     }
     const parsed = JSON.parse(raw);
-    return Array.isArray(parsed) && parsed.length > 0 ? parsed : INITIAL_LISTINGS;
+    if (!Array.isArray(parsed)) return INITIAL_LISTINGS;
+    
+    // If stored listings contain the old seed data (like l-001), clear them so site starts at zero
+    if (parsed.some(item => item.id === 'l-001' || item.id === 'l-002')) {
+      localStorage.setItem(LISTINGS_KEY, JSON.stringify([]));
+      return [];
+    }
+
+    return parsed;
   } catch (e) {
     console.error('Failed to load listings from storage', e);
     return INITIAL_LISTINGS;

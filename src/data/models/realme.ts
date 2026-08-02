@@ -70,6 +70,40 @@ export const REALME_MODELS: PhoneModel[] = [
     cons: ['Top tier cost'],
     recommendedFor: 'Heavy gamers, endurance seekers, underwater photographers.'
   },
+  {
+    id: 'm-realme-neo-8',
+    brand: 'Realme',
+    modelName: 'Realme Neo 8',
+    colorVariants: ['Mecha Cyber Purple', 'Titanium Silver', 'Phantom Black'],
+    storageOptions: ['256GB', '512GB', '1TB'],
+    ramOptions: ['12GB', '16GB', '24GB'],
+    displaySpecs: '6.78" 1.5K 144Hz Eco2 AMOLED 6000 nits',
+    chipset: 'Snapdragon 8 Elite Gaming Edition',
+    cameraSpecs: '50MP Sony LYT-701 OIS + 50MP 3x Telephoto + 12MP Ultrawide',
+    batterySpecs: '7000 mAh Anode Titan Battery (120W SUPERVOOC)',
+    releaseYear: 2026,
+    overview: '7000 mAh high-density gaming battery with Snapdragon 8 Elite and custom gaming cooling vapor chamber.',
+    pros: ['7000 mAh battery capacity', '144Hz high refresh display', 'Snapdragon 8 Elite gaming speed'],
+    cons: ['Slightly thicker profile'],
+    recommendedFor: 'Extreme mobile gaming enthusiasts.'
+  },
+  {
+    id: 'm-realme-gt-neo-6',
+    brand: 'Realme',
+    modelName: 'Realme GT Neo 6',
+    colorVariants: ['Fluid Silver', 'Razor Green', 'Hacker Purple'],
+    storageOptions: ['256GB', '512GB', '1TB'],
+    ramOptions: ['12GB', '16GB'],
+    displaySpecs: '6.78" 1.5K 8T LTPO AMOLED 120Hz 6000 nits',
+    chipset: 'Snapdragon 8s Gen 3 (4nm)',
+    cameraSpecs: '50MP Sony LYT-600 OIS + 8MP Ultrawide',
+    batterySpecs: '5500 mAh (120W SUPERVOOC)',
+    releaseYear: 2024,
+    overview: 'World record 6000 nits peak display brightness and 120W super fast charging speed.',
+    pros: ['6000 nits screen brightness', '120W rapid charging', 'Snapdragon 8s Gen 3 value champion'],
+    cons: ['No dedicated optical telephoto camera lens'],
+    recommendedFor: 'Display purists & budget flagship gamers.'
+  },
 
   // Number Series
   {
