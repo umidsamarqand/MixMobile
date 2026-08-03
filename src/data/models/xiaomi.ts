@@ -282,6 +282,23 @@ export const XIAOMI_MODELS: PhoneModel[] = [
     cons: ['Flagship cost ceiling'],
     recommendedFor: 'Ultimate mobile camera pros.'
   },
+  {
+    id: 'm-xiaomi-17-ultra',
+    brand: 'Xiaomi',
+    modelName: 'Xiaomi 17 Ultra',
+    colorVariants: ['Black', 'White', 'Silver'],
+    storageOptions: ['512GB'],
+    ramOptions: ['12GB'],
+    displaySpecs: '6.9" AMOLED',
+    chipset: 'Snapdragon 8 Elite Gen 5',
+    cameraSpecs: 'Leica 200MP 75-100mm Periscope Telephoto (APO) + Leica 14mm Ultrawide + 50MP Selfie',
+    batterySpecs: '6000 mAh Xiaomi Surge Battery (90W Wired PPS / 50W Wireless)',
+    releaseYear: 2025,
+    overview: 'Leica-tuned periscope telephoto with an APO optical lens and massive 6000 mAh silicon battery.',
+    pros: ['Leica 200MP periscope telephoto', 'Large 6000 mAh battery', '4K 120fps Log video recording'],
+    cons: ['Premium flagship pricing'],
+    recommendedFor: 'Zoom photography & videography enthusiasts.'
+  },
 
   // Xiaomi MIX Fold & Flip Series
   {
