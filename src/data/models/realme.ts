@@ -303,4 +303,22 @@ export const REALME_MODELS: PhoneModel[] = [
     recommendedFor: 'Entry-level buyers.',
     gsmarena_url: 'https://www.gsmarena.com/res.php3?sSearch=Realme%20C65'
   },
+  {
+    id: 'm-realme-13-pro-plus',
+    brand: 'Realme',
+    modelName: 'Realme 13 Pro+ 5G',
+    colorVariants: ['Purple', 'Green', 'Silver'],
+    storageOptions: ['256GB', '512GB'],
+    ramOptions: ['8GB', '12GB'],
+    displaySpecs: '6.7" AMOLED 120Hz Curved',
+    chipset: 'Snapdragon 7s Gen 3',
+    cameraSpecs: '50MP Main (OIS) + 32MP Telephoto + 8MP Ultrawide',
+    batterySpecs: '5200 mAh (80W Wired)',
+    releaseYear: 2024,
+    overview: 'Portrait-focused midrange device with a genuine telephoto lens.',
+    pros: ['Telephoto portrait lens', 'Fast 80W charging'],
+    cons: ['MediaTek/Snapdragon mid-tier'],
+    recommendedFor: 'Portrait photography midrange buyers.',
+    gsmarena_url: 'https://www.gsmarena.com/res.php3?sSearch=Realme%2013%20Pro%2B%205G'
+  },
 ];
