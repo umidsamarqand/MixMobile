@@ -107,6 +107,44 @@ export const HONOR_MODELS: PhoneModel[] = [
     recommendedFor: 'Studio portrait photo enthusiasts.'
   },
 
+  // Magic7 Series
+  {
+    id: 'm-honor-magic7-pro',
+    brand: 'Honor',
+    modelName: 'Honor Magic7 Pro',
+    colorVariants: ['Lunar Shadow Grey', 'Black'],
+    storageOptions: ['256GB', '512GB', '1TB'],
+    ramOptions: ['12GB', '16GB'],
+    displaySpecs: '6.8" LTPO OLED 120Hz 4320Hz PWM 5000 nits (peak) Micro Quad-Curved',
+    chipset: 'Snapdragon 8 Elite (3nm)',
+    cameraSpecs: '50MP Main f/1.4-2.0 (OIS) + 200MP 3x Periscope Telephoto (OIS) + 50MP Ultrawide + 50MP 3D Selfie',
+    batterySpecs: '5270 mAh Global / 5850 mAh China (100W Wired / 80W Wireless)',
+    releaseYear: 2024,
+    overview: '200MP periscope telephoto camera with a large 1/1.4" sensor and 100W SuperCharge fast charging.',
+    pros: ['200MP periscope zoom sensor', 'Fast 100W wired charging', '4320Hz eye-safe PWM dimming', 'IP68/IP69 water resistance'],
+    cons: ['Smaller battery than Magic6 Pro on global units'],
+    recommendedFor: 'Zoom photographers & flagship buyers.'
+  },
+
+  // 400 Series
+  {
+    id: 'm-honor-400-pro',
+    brand: 'Honor',
+    modelName: 'Honor 400 Pro',
+    colorVariants: ['Midnight Black', 'Lunar Grey', 'Tidal Blue'],
+    storageOptions: ['256GB', '512GB'],
+    ramOptions: ['12GB'],
+    displaySpecs: '6.7" AMOLED 120Hz 3840Hz PWM 5000 nits (peak)',
+    chipset: 'Snapdragon 8 Gen 3 (4nm)',
+    cameraSpecs: '200MP Main f/1.9 (OIS) + 50MP 3x Telephoto (OIS, Sony IMX856) + 12MP Ultrawide + 50MP Selfie',
+    batterySpecs: '5300 mAh Si/C (100W Wired / 50W Wireless)',
+    releaseYear: 2025,
+    overview: '200MP main sensor with a dedicated 3x optical zoom telephoto lens and IP68/IP69 durability rating.',
+    pros: ['200MP main camera resolution', 'Dedicated 3x OIS telephoto lens', 'IP68/IP69 water & dust resistance', '100W fast wired charging'],
+    cons: ['No 1TB storage option'],
+    recommendedFor: 'Camera-focused upper-midrange buyers.'
+  },
+
   // X Series
   {
     id: 'm-honor-x9b-5g',
