@@ -107,6 +107,41 @@ export const HUAWEI_MODELS: PhoneModel[] = [
     recommendedFor: 'Foldable business power users.'
   },
 
+  {
+    id: 'm-huawei-pura80-ultra',
+    brand: 'Huawei',
+    modelName: 'Huawei Pura 80 Ultra',
+    colorVariants: ['Black', 'White', 'Gold'],
+    storageOptions: ['512GB', '1TB'],
+    ramOptions: ['16GB'],
+    displaySpecs: '6.8" LTPO OLED 120Hz 1440Hz PWM, Kunlun Glass 2 Quad-Curved',
+    chipset: 'Kirin 9020 (7nm)',
+    cameraSpecs: '50MP 1" Main (RYYB, Variable Aperture) + Switchable Dual Telephoto (3.7x & 9.4x) + Ultrawide',
+    batterySpecs: '5170 mAh Global / 5700 mAh China (100W Wired / 80W Wireless)',
+    releaseYear: 2025,
+    overview: 'Switchable dual-lens telephoto system with a 1-inch main sensor, IP68/IP69 rated, aimed squarely at mobile photography.',
+    pros: ['Dual switchable telephoto lenses (3.7x/9.4x)', '1-inch main camera sensor', 'IP68/IP69 durability', '100W wired + 80W wireless charging'],
+    cons: ['No Google Mobile Services (HarmonyOS/AppGallery ecosystem)'],
+    recommendedFor: 'Mobile photography enthusiasts.'
+  },
+  {
+    id: 'm-huawei-mate70-pro-plus',
+    brand: 'Huawei',
+    modelName: 'Huawei Mate 70 Pro+',
+    colorVariants: ['Black', 'Purple', 'White', 'Green'],
+    storageOptions: ['512GB', '1TB'],
+    ramOptions: ['16GB'],
+    displaySpecs: '6.9" OLED 120Hz 2500 nits Quad-Curved',
+    chipset: 'Kirin 9020 (7nm)',
+    cameraSpecs: '50MP Main (OIS) + Periscope Telephoto + Ultrawide',
+    batterySpecs: '5700 mAh (100W Wired / 80W Wireless)',
+    releaseYear: 2024,
+    overview: 'Flagship HarmonyOS device with IP69 rating and satellite connectivity for extreme durability.',
+    pros: ['IP69 high-pressure water resistance', 'Satellite connectivity', 'Fast 100W/80W charging'],
+    cons: ['HarmonyOS lacks Google Mobile Services'],
+    recommendedFor: 'Huawei ecosystem loyalists wanting maximum durability.'
+  },
+
   // nova Series
   {
     id: 'm-huawei-nova-12-pro',

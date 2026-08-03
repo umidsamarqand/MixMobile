@@ -145,6 +145,41 @@ export const HONOR_MODELS: PhoneModel[] = [
     recommendedFor: 'Camera-focused upper-midrange buyers.'
   },
 
+  {
+    id: 'm-honor-200',
+    brand: 'Honor',
+    modelName: 'Honor 200',
+    colorVariants: ['Black', 'Silver', 'Green', 'Pink'],
+    storageOptions: ['256GB', '512GB'],
+    ramOptions: ['12GB'],
+    displaySpecs: '6.7" OLED 120Hz Curved',
+    chipset: 'Snapdragon 7 Gen 3 (4nm)',
+    cameraSpecs: '50MP Main + 12MP 2.5x Telephoto + 12MP Ultrawide + 50MP Selfie (Sony IMX906)',
+    batterySpecs: '5200 mAh (100W SuperCharge / 5W Reverse)',
+    releaseYear: 2024,
+    overview: 'Studio Harcourt portrait camera system in a lighter, more affordable body than the 200 Pro.',
+    pros: ['Fast 100W charging', 'Studio portrait camera modes', 'Lightweight design'],
+    cons: ['No official water resistance rating'],
+    recommendedFor: 'Portrait photography on a budget.'
+  },
+  {
+    id: 'm-honor-magic-v5',
+    brand: 'Honor',
+    modelName: 'Honor Magic V5',
+    colorVariants: ['Black', 'Ivory White', 'Dawn Gold', 'Reddish Brown'],
+    storageOptions: ['256GB', '512GB', '1TB'],
+    ramOptions: ['12GB', '16GB'],
+    displaySpecs: '7.95" Inner AMOLED 120Hz 5000 nits + 6.4" Outer OLED 120Hz',
+    chipset: 'Snapdragon 8 Elite (3nm)',
+    cameraSpecs: '50MP Main + 64MP Periscope Telephoto + 50MP Ultrawide',
+    batterySpecs: '5820 mAh Silicon-Carbon (66W Wired)',
+    releaseYear: 2025,
+    overview: "World's thinnest foldable at 8.8mm folded and 217g, with IP58/IP59 water resistance and a periscope telephoto camera.",
+    pros: ['Ultra-thin 8.8mm folded profile', '64MP periscope telephoto zoom', 'IP58/IP59 water resistance', 'Large 5820 mAh battery'],
+    cons: ['Premium price point'],
+    recommendedFor: 'Foldable enthusiasts wanting slim design without sacrificing durability.'
+  },
+
   // X Series
   {
     id: 'm-honor-x9b-5g',
