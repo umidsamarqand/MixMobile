@@ -1,5 +1,5 @@
 import React from 'react';
-import { X, Sparkles, RefreshCw, Trash2 } from 'lucide-react';
+import { X, Sparkles, RefreshCw, Trash2, PlusCircle } from 'lucide-react';
 import { PhoneListing, PhoneModel, ListingStatus, Currency } from '../types';
 import { useLanguage } from '../context/LanguageContext';
 import { translateColor } from '../utils/translationsHelper';
@@ -11,6 +11,7 @@ interface SellerManagementModalProps {
   onUpdateStatus: (listingId: string, status: ListingStatus) => void;
   onDeleteListing: (listingId: string) => void;
   onResetSeedData: () => void;
+  onOpenAddListing?: () => void;
   onClose: () => void;
 }
 
@@ -21,6 +22,7 @@ export const SellerManagementModal: React.FC<SellerManagementModalProps> = ({
   onUpdateStatus,
   onDeleteListing,
   onResetSeedData,
+  onOpenAddListing,
   onClose,
 }) => {
   const { t, formatPrice, language } = useLanguage();
@@ -32,7 +34,7 @@ export const SellerManagementModal: React.FC<SellerManagementModalProps> = ({
       <div className="relative w-full max-w-4xl glass-panel rounded-3xl border border-[#00F0FF]/40 shadow-[0_0_50px_rgba(0,240,255,0.2)] my-auto max-h-[90vh] overflow-y-auto">
         
         {/* Header */}
-        <div className="sticky top-0 z-10 bg-[#0D0714]/90 backdrop-blur-md px-6 py-4 border-b border-white/10 flex items-center justify-between">
+        <div className="sticky top-0 z-10 bg-[#0D0714]/90 backdrop-blur-md px-6 py-4 border-b border-white/10 flex items-center justify-between gap-2 flex-wrap sm:flex-nowrap">
           <div className="flex items-center gap-2">
             <Sparkles className="w-5 h-5 text-[#00F0FF]" />
             <h3 className="text-xl font-black text-white">
@@ -41,6 +43,16 @@ export const SellerManagementModal: React.FC<SellerManagementModalProps> = ({
           </div>
 
           <div className="flex items-center gap-2">
+            {onOpenAddListing && (
+              <button
+                onClick={onOpenAddListing}
+                className="px-3 py-1.5 rounded-xl bg-[#FF2E93] hover:bg-[#FF2E93]/80 text-xs font-bold text-white shadow-[0_0_12px_rgba(255,46,147,0.4)] flex items-center gap-1.5 transition-all cursor-pointer"
+              >
+                <PlusCircle className="w-3.5 h-3.5" />
+                <span>{t('loadPhone')}</span>
+              </button>
+            )}
+
             <button
               onClick={onResetSeedData}
               className="px-3 py-1.5 rounded-xl bg-white/5 hover:bg-white/10 text-xs font-bold text-[#FF2E93] border border-[#FF2E93]/40 flex items-center gap-1.5 transition-all cursor-pointer"

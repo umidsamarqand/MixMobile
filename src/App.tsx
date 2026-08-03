@@ -237,6 +237,7 @@ export default function App() {
           onUpdateStatus={handleUpdateStatus}
           onDeleteListing={handleDeleteListing}
           onResetSeedData={handleResetData}
+          onOpenAddListing={() => setActiveTab('add-listing')}
           onClose={() => setActiveTab('shop')}
         />
       )}
