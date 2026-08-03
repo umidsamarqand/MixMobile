@@ -158,5 +158,41 @@ export const REALME_MODELS: PhoneModel[] = [
     pros: ['Mini Capsule notification dynamic bar', '120Hz 1080p display screen', '5000 mAh battery'],
     cons: ['Water resistance IP54 only'],
     recommendedFor: 'Budget 5G users.'
-  }
+  },
+  {
+    id: 'm-realme-gt7-pro',
+    brand: 'Realme',
+    modelName: 'Realme GT 7 Pro',
+    colorVariants: ['Black', 'Blue', 'White'],
+    storageOptions: ['256GB', '512GB'],
+    ramOptions: ['12GB', '16GB'],
+    displaySpecs: '6.78" LTPO AMOLED 144Hz',
+    chipset: 'Snapdragon 8 Elite (3nm)',
+    cameraSpecs: '50MP Main (OIS) + 50MP Periscope Telephoto + 8MP Ultrawide',
+    batterySpecs: '6500 mAh Silicon-Carbon (120W Wired / 50W Wireless)',
+    releaseYear: 2024,
+    overview: 'Flagship killer with huge battery and periscope zoom camera.',
+    pros: ['Huge 6500mAh battery', 'Periscope telephoto lens', 'Fast 120W charging'],
+    cons: ['Large & heavy body'],
+    recommendedFor: 'Performance & battery focused buyers.',
+    gsmarena_url: 'https://www.gsmarena.com/res.php3?sSearch=Realme%20GT%207%20Pro'
+  },
+  {
+    id: 'm-realme-14-pro-plus',
+    brand: 'Realme',
+    modelName: 'Realme 14 Pro+ 5G',
+    colorVariants: ['Black', 'White', 'Purple (color-changing)'],
+    storageOptions: ['256GB', '512GB'],
+    ramOptions: ['8GB', '12GB'],
+    displaySpecs: '6.83" AMOLED 120Hz Curved',
+    chipset: 'Snapdragon 7s Gen 3',
+    cameraSpecs: '50MP Main (OIS) + 8MP Telephoto + 8MP Ultrawide',
+    batterySpecs: '6000 mAh (80W Wired)',
+    releaseYear: 2025,
+    overview: 'Midrange device with a color-changing back panel and large battery.',
+    pros: ['Color-changing back design', 'Big 6000mAh battery', 'OIS main camera'],
+    cons: ['No wireless charging'],
+    recommendedFor: 'Style-conscious midrange buyers.',
+    gsmarena_url: 'https://www.gsmarena.com/res.php3?sSearch=Realme%2014%20Pro%2B%205G'
+  },
 ];

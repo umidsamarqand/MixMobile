@@ -211,5 +211,41 @@ export const OPPO_MODELS: PhoneModel[] = [
     pros: ['Dual stereo speakers', '5000 mAh battery', '33W SuperVOOC charging'],
     cons: ['720p HD+ display screen resolution'],
     recommendedFor: 'Budget 5G media users.'
-  }
+  },
+  {
+    id: 'm-oppo-find-x8-ultra',
+    brand: 'OPPO',
+    modelName: 'OPPO Find X8 Ultra',
+    colorVariants: ['Black', 'White'],
+    storageOptions: ['256GB', '512GB', '1TB'],
+    ramOptions: ['16GB'],
+    displaySpecs: '6.82" LTPO AMOLED 120Hz',
+    chipset: 'Snapdragon 8 Elite (3nm)',
+    cameraSpecs: 'Quad camera: 50MP Main + 50MP Periscope + 50MP Telephoto + 50MP Ultrawide',
+    batterySpecs: '6100 mAh Silicon-Carbon (100W Wired / 80W Wireless)',
+    releaseYear: 2025,
+    overview: 'Camera flagship with a quad-lens Hasselblad-tuned system.',
+    pros: ['Quad 50MP camera array', 'Hasselblad color tuning', 'Large battery'],
+    cons: ['Very high price'],
+    recommendedFor: 'Ultimate mobile photography buyers.',
+    gsmarena_url: 'https://www.gsmarena.com/res.php3?sSearch=OPPO%20Find%20X8%20Ultra'
+  },
+  {
+    id: 'm-oppo-reno13-pro',
+    brand: 'OPPO',
+    modelName: 'OPPO Reno13 Pro 5G',
+    colorVariants: ['Black', 'Green', 'Purple'],
+    storageOptions: ['256GB', '512GB'],
+    ramOptions: ['12GB'],
+    displaySpecs: '6.83" AMOLED 120Hz Curved',
+    chipset: 'Snapdragon 8s Gen 3',
+    cameraSpecs: '50MP Main (OIS) + 50MP Telephoto + 8MP Ultrawide',
+    batterySpecs: '5800 mAh (80W Wired)',
+    releaseYear: 2025,
+    overview: 'Upper-midrange Reno device with a telephoto lens and IP69 rating.',
+    pros: ['Telephoto lens at this tier', 'IP69 water resistance', 'Large battery'],
+    cons: ['No wireless charging'],
+    recommendedFor: 'Upper-midrange all-round buyers.',
+    gsmarena_url: 'https://www.gsmarena.com/res.php3?sSearch=OPPO%20Reno13%20Pro%205G'
+  },
 ];

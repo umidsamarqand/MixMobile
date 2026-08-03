@@ -124,5 +124,41 @@ export const VIVO_MODELS: PhoneModel[] = [
     pros: ['IP68 / IP69 dual water resistance rating', '5500 mAh battery capacity', 'Four 50MP ZEISS lenses'],
     cons: ['No wireless charging'],
     recommendedFor: 'Portrait & outdoor adventures.'
-  }
+  },
+  {
+    id: 'm-vivo-x300-pro',
+    brand: 'vivo',
+    modelName: 'vivo X300 Pro',
+    colorVariants: ['Black', 'Blue', 'Titanium'],
+    storageOptions: ['256GB', '512GB', '1TB'],
+    ramOptions: ['16GB'],
+    displaySpecs: '6.78" LTPO AMOLED 120Hz',
+    chipset: 'MediaTek Dimensity 9500',
+    cameraSpecs: 'Zeiss-tuned 50MP Main (OIS) + 200MP Periscope Telephoto + 50MP Ultrawide',
+    batterySpecs: '6100 mAh Silicon-Carbon (90W Wired / 40W Wireless)',
+    releaseYear: 2025,
+    overview: 'Camera flagship with Zeiss optics and a 200MP periscope zoom lens.',
+    pros: ['Zeiss camera tuning', '200MP periscope telephoto', 'Large battery capacity'],
+    cons: ['Premium flagship price'],
+    recommendedFor: 'Zoom photography enthusiasts.',
+    gsmarena_url: 'https://www.gsmarena.com/res.php3?sSearch=vivo%20X300%20Pro'
+  },
+  {
+    id: 'm-vivo-y300-5g',
+    brand: 'vivo',
+    modelName: 'vivo Y300 5G',
+    colorVariants: ['Black', 'Blue', 'Green'],
+    storageOptions: ['128GB', '256GB'],
+    ramOptions: ['8GB'],
+    displaySpecs: '6.77" AMOLED 120Hz Curved',
+    chipset: 'Snapdragon 6 Gen 1',
+    cameraSpecs: '50MP Main + 2MP Depth',
+    batterySpecs: '6500 mAh (90W Wired)',
+    releaseYear: 2025,
+    overview: 'Budget device with an unusually large battery for its price tier.',
+    pros: ['Huge 6500mAh battery', 'Curved AMOLED display'],
+    cons: ['Basic single main camera'],
+    recommendedFor: 'Budget buyers prioritizing battery life.',
+    gsmarena_url: 'https://www.gsmarena.com/res.php3?sSearch=vivo%20Y300%205G'
+  },
 ];

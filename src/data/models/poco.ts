@@ -107,5 +107,41 @@ export const POCO_MODELS: PhoneModel[] = [
     pros: ['Glass back panel build', 'Snapdragon 4 Gen 2 efficiency', 'Large 6.79" screen'],
     cons: ['Mono speaker audio'],
     recommendedFor: 'Budget 5G seekers.'
-  }
+  },
+  {
+    id: 'm-poco-f7-ultra',
+    brand: 'POCO',
+    modelName: 'POCO F7 Ultra',
+    colorVariants: ['Black', 'Silver'],
+    storageOptions: ['256GB', '512GB', '1TB'],
+    ramOptions: ['12GB', '16GB'],
+    displaySpecs: '6.67" LTPO AMOLED 120Hz',
+    chipset: 'Snapdragon 8 Elite (3nm)',
+    cameraSpecs: '50MP Main (OIS) + 50MP Telephoto + 8MP Ultrawide',
+    batterySpecs: '6000 mAh Silicon-Carbon (120W Wired / 30W Wireless)',
+    releaseYear: 2025,
+    overview: 'Top-tier POCO flagship killer with flagship Snapdragon silicon.',
+    pros: ['Flagship-tier chipset for the price', 'Huge battery', 'Fast 120W charging'],
+    cons: ['Camera software less refined than Xiaomi flagship line'],
+    recommendedFor: 'Performance-per-dollar buyers.',
+    gsmarena_url: 'https://www.gsmarena.com/res.php3?sSearch=POCO%20F7%20Ultra'
+  },
+  {
+    id: 'm-poco-x7-pro',
+    brand: 'POCO',
+    modelName: 'POCO X7 Pro',
+    colorVariants: ['Black', 'Yellow', 'Blue'],
+    storageOptions: ['256GB', '512GB'],
+    ramOptions: ['8GB', '12GB'],
+    displaySpecs: '6.67" AMOLED 120Hz Curved',
+    chipset: 'MediaTek Dimensity 8400 Ultra',
+    cameraSpecs: '50MP Main (OIS) + 8MP Ultrawide + 2MP Macro',
+    batterySpecs: '6000 mAh (90W Wired)',
+    releaseYear: 2025,
+    overview: 'Midrange performance phone with a flagship-adjacent chipset.',
+    pros: ['Strong benchmark performance for price', 'Huge 6000mAh battery'],
+    cons: ['No telephoto lens'],
+    recommendedFor: 'Budget performance & gaming buyers.',
+    gsmarena_url: 'https://www.gsmarena.com/res.php3?sSearch=POCO%20X7%20Pro'
+  },
 ];
