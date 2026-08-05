@@ -5,7 +5,7 @@ export const POCO_MODELS: PhoneModel[] = [
   {
     id: 'm-poco-f1',
     brand: 'POCO',
-    modelName: 'POCO F1',
+    modelName: 'F1',
     colorVariants: ['Graphite Black', 'Steel Blue', 'Rosso Red', 'Armored Edition (Kevlar)'],
     storageOptions: ['64GB', '128GB', '256GB'],
     ramOptions: ['6GB', '8GB'],
@@ -22,7 +22,7 @@ export const POCO_MODELS: PhoneModel[] = [
   {
     id: 'm-poco-f5-pro',
     brand: 'POCO',
-    modelName: 'POCO F5 Pro',
+    modelName: 'F5 Pro',
     colorVariants: ['Black', 'White'],
     storageOptions: ['256GB', '512GB'],
     ramOptions: ['8GB', '12GB'],
@@ -39,7 +39,7 @@ export const POCO_MODELS: PhoneModel[] = [
   {
     id: 'm-poco-f6-pro',
     brand: 'POCO',
-    modelName: 'POCO F6 Pro',
+    modelName: 'F6 Pro',
     colorVariants: ['Black', 'White (Marble Texture)'],
     storageOptions: ['256GB', '512GB', '1TB'],
     ramOptions: ['12GB', '16GB'],
@@ -58,7 +58,7 @@ export const POCO_MODELS: PhoneModel[] = [
   {
     id: 'm-poco-x6-pro-5g',
     brand: 'POCO',
-    modelName: 'POCO X6 Pro 5G',
+    modelName: 'X6 Pro 5G',
     colorVariants: ['POCO Yellow (Vegan Leather)', 'Black', 'Gray'],
     storageOptions: ['256GB', '512GB'],
     ramOptions: ['8GB', '12GB'],
@@ -75,7 +75,7 @@ export const POCO_MODELS: PhoneModel[] = [
   {
     id: 'm-poco-x7-pro-5g',
     brand: 'POCO',
-    modelName: 'POCO X7 Pro 5G',
+    modelName: 'X7 Pro 5G',
     colorVariants: ['POCO Yellow', 'Midnight Black', 'Frost White'],
     storageOptions: ['256GB', '512GB'],
     ramOptions: ['8GB', '12GB'],
@@ -94,7 +94,7 @@ export const POCO_MODELS: PhoneModel[] = [
   {
     id: 'm-poco-m6-pro-5g',
     brand: 'POCO',
-    modelName: 'POCO M6 Pro 5G',
+    modelName: 'M6 Pro 5G',
     colorVariants: ['Power Black', 'Forest Green'],
     storageOptions: ['64GB', '128GB', '256GB'],
     ramOptions: ['4GB', '6GB', '8GB'],
@@ -111,7 +111,7 @@ export const POCO_MODELS: PhoneModel[] = [
   {
     id: 'm-poco-f7-ultra',
     brand: 'POCO',
-    modelName: 'POCO F7 Ultra',
+    modelName: 'F7 Ultra',
     colorVariants: ['Black', 'Silver'],
     storageOptions: ['256GB', '512GB', '1TB'],
     ramOptions: ['12GB', '16GB'],
@@ -129,7 +129,7 @@ export const POCO_MODELS: PhoneModel[] = [
   {
     id: 'm-poco-x7-pro',
     brand: 'POCO',
-    modelName: 'POCO X7 Pro',
+    modelName: 'X7 Pro',
     colorVariants: ['Black', 'Yellow', 'Blue'],
     storageOptions: ['256GB', '512GB'],
     ramOptions: ['8GB', '12GB'],
@@ -147,7 +147,7 @@ export const POCO_MODELS: PhoneModel[] = [
   {
     id: 'm-poco-m7-pro',
     brand: 'POCO',
-    modelName: 'POCO M7 Pro 5G',
+    modelName: 'M7 Pro 5G',
     colorVariants: ['Black', 'Green', 'Purple'],
     storageOptions: ['128GB', '256GB'],
     ramOptions: ['6GB', '8GB'],
@@ -165,7 +165,7 @@ export const POCO_MODELS: PhoneModel[] = [
   {
     id: 'm-poco-c75',
     brand: 'POCO',
-    modelName: 'POCO C75',
+    modelName: 'C75',
     colorVariants: ['Black', 'Yellow', 'Blue'],
     storageOptions: ['128GB', '256GB'],
     ramOptions: ['4GB', '6GB', '8GB'],
@@ -183,7 +183,7 @@ export const POCO_MODELS: PhoneModel[] = [
   {
     id: 'm-poco-x8-pro',
     brand: 'POCO',
-    modelName: 'POCO X8 Pro',
+    modelName: 'X8 Pro',
     colorVariants: ['Black', 'Blue', 'White'],
     storageOptions: ['256GB', '512GB'],
     ramOptions: ['8GB', '12GB'],
@@ -201,7 +201,7 @@ export const POCO_MODELS: PhoneModel[] = [
   {
     id: 'm-poco-m6-pro',
     brand: 'POCO',
-    modelName: 'POCO M6 Pro',
+    modelName: 'M6 Pro',
     colorVariants: ['Black', 'Blue', 'Purple'],
     storageOptions: ['128GB', '256GB'],
     ramOptions: ['6GB', '8GB'],
@@ -219,7 +219,7 @@ export const POCO_MODELS: PhoneModel[] = [
   {
     id: 'm-poco-x6',
     brand: 'POCO',
-    modelName: 'POCO X6 5G',
+    modelName: 'X6 5G',
     colorVariants: ['Black', 'Blue', 'Yellow'],
     storageOptions: ['256GB', '512GB'],
     ramOptions: ['8GB', '12GB'],
@@ -237,7 +237,7 @@ export const POCO_MODELS: PhoneModel[] = [
   {
     id: 'm-poco-f5',
     brand: 'POCO',
-    modelName: 'POCO F5',
+    modelName: 'F5',
     colorVariants: ['Black', 'White', 'Blue'],
     storageOptions: ['256GB'],
     ramOptions: ['8GB', '12GB'],
@@ -255,7 +255,7 @@ export const POCO_MODELS: PhoneModel[] = [
   {
     id: 'm-poco-m5',
     brand: 'POCO',
-    modelName: 'POCO M5',
+    modelName: 'M5',
     colorVariants: ['Black', 'Yellow', 'Blue'],
     storageOptions: ['64GB', '128GB'],
     ramOptions: ['4GB', '6GB'],
@@ -273,7 +273,7 @@ export const POCO_MODELS: PhoneModel[] = [
   {
     id: 'm-poco-x5',
     brand: 'POCO',
-    modelName: 'POCO X5 5G',
+    modelName: 'X5 5G',
     colorVariants: ['Jade Black', 'Ivory Cream', 'Wind Blue'],
     storageOptions: ['128GB', '256GB'],
     ramOptions: ['6GB', '8GB'],

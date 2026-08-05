@@ -5,7 +5,7 @@ export const HUAWEI_MODELS: PhoneModel[] = [
   {
     id: 'm-huawei-p60-pro',
     brand: 'Huawei',
-    modelName: 'Huawei P60 Pro',
+    modelName: 'P60 Pro',
     colorVariants: ['Rococo Pearl', 'Black', 'Emerald Green'],
     storageOptions: ['256GB', '512GB'],
     ramOptions: ['8GB', '12GB'],
@@ -22,7 +22,7 @@ export const HUAWEI_MODELS: PhoneModel[] = [
   {
     id: 'm-huawei-pura-70-ultra',
     brand: 'Huawei',
-    modelName: 'Huawei Pura 70 Ultra',
+    modelName: 'Pura 70 Ultra',
     colorVariants: ['Starry Black', 'Chanson Green', 'Mocha Brown', 'Bursting White'],
     storageOptions: ['512GB', '1TB'],
     ramOptions: ['16GB'],
@@ -41,7 +41,7 @@ export const HUAWEI_MODELS: PhoneModel[] = [
   {
     id: 'm-huawei-mate-60-pro',
     brand: 'Huawei',
-    modelName: 'Huawei Mate 60 Pro',
+    modelName: 'Mate 60 Pro',
     colorVariants: ['Yachuan Green', 'Baisha Silver', 'Nanyang Black', 'Yadan Purple'],
     storageOptions: ['256GB', '512GB', '1TB'],
     ramOptions: ['12GB'],
@@ -58,7 +58,7 @@ export const HUAWEI_MODELS: PhoneModel[] = [
   {
     id: 'm-huawei-mate-70-pro',
     brand: 'Huawei',
-    modelName: 'Huawei Mate 70 Pro',
+    modelName: 'Mate 70 Pro',
     colorVariants: ['Spruce Green', 'Hyacinth Purple', 'Obsidian Black', 'Snow White'],
     storageOptions: ['256GB', '512GB', '1TB'],
     ramOptions: ['12GB', '16GB'],
@@ -75,7 +75,7 @@ export const HUAWEI_MODELS: PhoneModel[] = [
   {
     id: 'm-huawei-mate-xt-ultimate',
     brand: 'Huawei',
-    modelName: 'Huawei Mate XT Ultimate Design',
+    modelName: 'Mate XT Ultimate Design',
     colorVariants: ['Ruihong Red (Leather)', 'Dark Black (Leather)'],
     storageOptions: ['512GB', '1TB'],
     ramOptions: ['16GB'],
@@ -92,7 +92,7 @@ export const HUAWEI_MODELS: PhoneModel[] = [
   {
     id: 'm-huawei-mate-x5',
     brand: 'Huawei',
-    modelName: 'Huawei Mate X5',
+    modelName: 'Mate X5',
     colorVariants: ['Feather White', 'Feather Black', 'Phantom Purple (Leather)', 'Aoyama Green (Leather)'],
     storageOptions: ['256GB', '512GB', '1TB'],
     ramOptions: ['12GB', '16GB'],
@@ -110,7 +110,7 @@ export const HUAWEI_MODELS: PhoneModel[] = [
   {
     id: 'm-huawei-pura80-ultra',
     brand: 'Huawei',
-    modelName: 'Huawei Pura 80 Ultra',
+    modelName: 'Pura 80 Ultra',
     colorVariants: ['Black', 'White', 'Gold'],
     storageOptions: ['512GB', '1TB'],
     ramOptions: ['16GB'],
@@ -127,7 +127,7 @@ export const HUAWEI_MODELS: PhoneModel[] = [
   {
     id: 'm-huawei-mate70-pro-plus',
     brand: 'Huawei',
-    modelName: 'Huawei Mate 70 Pro+',
+    modelName: 'Mate 70 Pro+',
     colorVariants: ['Black', 'Purple', 'White', 'Green'],
     storageOptions: ['512GB', '1TB'],
     ramOptions: ['16GB'],
@@ -146,7 +146,7 @@ export const HUAWEI_MODELS: PhoneModel[] = [
   {
     id: 'm-huawei-nova-12-pro',
     brand: 'Huawei',
-    modelName: 'Huawei nova 12 Pro',
+    modelName: 'nova 12 Pro',
     colorVariants: ['Color 12 (Cobalt Blue)', 'Obsidian Black', 'Cherry White'],
     storageOptions: ['256GB', '512GB'],
     ramOptions: ['12GB'],
@@ -163,7 +163,7 @@ export const HUAWEI_MODELS: PhoneModel[] = [
   {
     id: 'm-huawei-mate80-pro',
     brand: 'Huawei',
-    modelName: 'Huawei Mate 80 Pro',
+    modelName: 'Mate 80 Pro',
     colorVariants: ['Black', 'White', 'Purple'],
     storageOptions: ['512GB', '1TB'],
     ramOptions: ['16GB'],
@@ -181,7 +181,7 @@ export const HUAWEI_MODELS: PhoneModel[] = [
   {
     id: 'm-huawei-pura80-pro',
     brand: 'Huawei',
-    modelName: 'Huawei Pura 80 Pro',
+    modelName: 'Pura 80 Pro',
     colorVariants: ['Black', 'White', 'Gold'],
     storageOptions: ['256GB', '512GB'],
     ramOptions: ['12GB', '16GB'],
@@ -199,7 +199,7 @@ export const HUAWEI_MODELS: PhoneModel[] = [
   {
     id: 'm-huawei-nova-13-pro',
     brand: 'Huawei',
-    modelName: 'Huawei nova 13 Pro',
+    modelName: 'nova 13 Pro',
     colorVariants: ['Black', 'Green', 'White'],
     storageOptions: ['256GB', '512GB'],
     ramOptions: ['12GB'],
@@ -217,7 +217,7 @@ export const HUAWEI_MODELS: PhoneModel[] = [
   {
     id: 'm-huawei-enjoy-70-pro',
     brand: 'Huawei',
-    modelName: 'Huawei Enjoy 70 Pro',
+    modelName: 'Enjoy 70 Pro',
     colorVariants: ['Black', 'Blue', 'Green'],
     storageOptions: ['128GB', '256GB'],
     ramOptions: ['8GB'],
@@ -235,7 +235,7 @@ export const HUAWEI_MODELS: PhoneModel[] = [
   {
     id: 'm-huawei-mate80',
     brand: 'Huawei',
-    modelName: 'Huawei Mate 80',
+    modelName: 'Mate 80',
     colorVariants: ['Black', 'White', 'Blue'],
     storageOptions: ['256GB', '512GB'],
     ramOptions: ['12GB'],
@@ -253,7 +253,7 @@ export const HUAWEI_MODELS: PhoneModel[] = [
   {
     id: 'm-huawei-pura80',
     brand: 'Huawei',
-    modelName: 'Huawei Pura 80',
+    modelName: 'Pura 80',
     colorVariants: ['Black', 'White', 'Green'],
     storageOptions: ['256GB', '512GB'],
     ramOptions: ['12GB'],
@@ -271,7 +271,7 @@ export const HUAWEI_MODELS: PhoneModel[] = [
   {
     id: 'm-huawei-mate-x6',
     brand: 'Huawei',
-    modelName: 'Huawei Mate X6',
+    modelName: 'Mate X6',
     colorVariants: ['Black', 'Gold'],
     storageOptions: ['512GB', '1TB'],
     ramOptions: ['16GB'],
@@ -289,7 +289,7 @@ export const HUAWEI_MODELS: PhoneModel[] = [
   {
     id: 'm-huawei-nova-14-pro',
     brand: 'Huawei',
-    modelName: 'Huawei nova 14 Pro',
+    modelName: 'nova 14 Pro',
     colorVariants: ['Black', 'Pink', 'White'],
     storageOptions: ['256GB', '512GB'],
     ramOptions: ['12GB'],
@@ -307,7 +307,7 @@ export const HUAWEI_MODELS: PhoneModel[] = [
   {
     id: 'm-huawei-mate60-pro-plus',
     brand: 'Huawei',
-    modelName: 'Huawei Mate 60 Pro+',
+    modelName: 'Mate 60 Pro+',
     colorVariants: ['Black', 'Purple', 'White'],
     storageOptions: ['512GB', '1TB'],
     ramOptions: ['12GB', '16GB'],
@@ -325,7 +325,7 @@ export const HUAWEI_MODELS: PhoneModel[] = [
   {
     id: 'm-huawei-p60',
     brand: 'Huawei',
-    modelName: 'Huawei P60',
+    modelName: 'P60',
     colorVariants: ['Black', 'White', 'Green'],
     storageOptions: ['256GB', '512GB'],
     ramOptions: ['8GB'],
@@ -343,7 +343,7 @@ export const HUAWEI_MODELS: PhoneModel[] = [
   {
     id: 'm-huawei-nova-12s',
     brand: 'Huawei',
-    modelName: 'Huawei nova 12s',
+    modelName: 'nova 12s',
     colorVariants: ['Black', 'Green', 'Purple'],
     storageOptions: ['256GB', '512GB'],
     ramOptions: ['8GB', '12GB'],
@@ -361,7 +361,7 @@ export const HUAWEI_MODELS: PhoneModel[] = [
   {
     id: 'm-huawei-enjoy-60',
     brand: 'Huawei',
-    modelName: 'Huawei Enjoy 60',
+    modelName: 'Enjoy 60',
     colorVariants: ['Black', 'Blue', 'Green'],
     storageOptions: ['128GB', '256GB'],
     ramOptions: ['8GB'],
@@ -379,7 +379,7 @@ export const HUAWEI_MODELS: PhoneModel[] = [
   {
     id: 'm-huawei-mate60',
     brand: 'Huawei',
-    modelName: 'Huawei Mate 60',
+    modelName: 'Mate 60',
     colorVariants: ['Black', 'Green', 'Purple'],
     storageOptions: ['256GB', '512GB'],
     ramOptions: ['12GB'],
@@ -397,7 +397,7 @@ export const HUAWEI_MODELS: PhoneModel[] = [
   {
     id: 'm-huawei-nova-13',
     brand: 'Huawei',
-    modelName: 'Huawei nova 13',
+    modelName: 'nova 13',
     colorVariants: ['Black', 'Pink', 'Green'],
     storageOptions: ['256GB'],
     ramOptions: ['8GB'],
@@ -415,7 +415,7 @@ export const HUAWEI_MODELS: PhoneModel[] = [
   {
     id: 'm-huawei-p50-pro',
     brand: 'Huawei',
-    modelName: 'Huawei P50 Pro',
+    modelName: 'P50 Pro',
     colorVariants: ['Golden Black', 'Pearl White', 'Cocoa Gold'],
     storageOptions: ['256GB'],
     ramOptions: ['8GB'],

@@ -56,7 +56,7 @@ export const AddListingModal: React.FC<AddListingModalProps> = ({
       (m.chipset && m.chipset.toLowerCase().includes(q)) ||
       (m.releaseYear && m.releaseYear.toString().includes(q));
     return matchesBrand && matchesSearch;
-  });
+  }).sort((a, b) => a.brand.localeCompare(b.brand) || a.modelName.localeCompare(b.modelName, undefined, { numeric: true }));
 
   const [priceUSD, setPriceUSD] = useState<number>(850);
   const selectedModel = models.find((m) => m.id === selectedModelId) || filteredModels[0] || models[0];

@@ -109,7 +109,7 @@ export const OTHER_BRANDS_MODELS: PhoneModel[] = [
   {
     id: 'm-moto-razr-50-ultra',
     brand: 'Motorola',
-    modelName: 'Motorola Razr 50 Ultra / Razr+ 2024',
+    modelName: 'Razr 50 Ultra / Razr+ 2024',
     colorVariants: ['Midnight Blue (Vegan Leather)', 'Spring Green (Leather)', 'Peach Fuzz (PANTONE)', 'Hot Pink'],
     storageOptions: ['256GB', '512GB'],
     ramOptions: ['12GB'],
@@ -126,7 +126,7 @@ export const OTHER_BRANDS_MODELS: PhoneModel[] = [
   {
     id: 'm-moto-edge-50-ultra',
     brand: 'Motorola',
-    modelName: 'Motorola Edge 50 Ultra',
+    modelName: 'Edge 50 Ultra',
     colorVariants: ['Real Wood (Natural Wood)', 'Peach Fuzz (PANTONE Leather)', 'Forest Grey (Leather)'],
     storageOptions: ['512GB', '1TB'],
     ramOptions: ['16GB'],
@@ -145,7 +145,7 @@ export const OTHER_BRANDS_MODELS: PhoneModel[] = [
   {
     id: 'm-iqoo-12-5g',
     brand: 'iQOO',
-    modelName: 'iQOO 12 5G',
+    modelName: '12 5G',
     colorVariants: ['Legend (BMW M Motorsport White)', 'Alpha (Black)', 'Desert (Red Leather)'],
     storageOptions: ['256GB', '512GB'],
     ramOptions: ['12GB', '16GB'],
@@ -162,7 +162,7 @@ export const OTHER_BRANDS_MODELS: PhoneModel[] = [
   {
     id: 'm-iqoo-13',
     brand: 'iQOO',
-    modelName: 'iQOO 13',
+    modelName: '13',
     colorVariants: ['Legend (BMW Motorsport White)', 'Alpha Black', 'Track Gray', 'Isle of Man Green'],
     storageOptions: ['256GB', '512GB', '1TB'],
     ramOptions: ['12GB', '16GB'],
@@ -181,7 +181,7 @@ export const OTHER_BRANDS_MODELS: PhoneModel[] = [
   {
     id: 'm-sony-xperia-1-vi',
     brand: 'Sony',
-    modelName: 'Sony Xperia 1 VI',
+    modelName: 'Xperia 1 VI',
     colorVariants: ['Black', 'Platinum Silver', 'Khaki Green'],
     storageOptions: ['256GB', '512GB'],
     ramOptions: ['12GB'],
@@ -199,7 +199,7 @@ export const OTHER_BRANDS_MODELS: PhoneModel[] = [
   // ZTE / RedMagic / Nubia
   {
     id: 'm-redmagic-9-pro',
-    brand: 'RedMagic',
+    brand: 'ZTE',
     modelName: 'RedMagic 9 Pro',
     colorVariants: ['Sleet (Black)', 'Snowfall (Silver Transparent)', 'Cyclone (Black Transparent)'],
     storageOptions: ['256GB', '512GB'],
@@ -216,7 +216,7 @@ export const OTHER_BRANDS_MODELS: PhoneModel[] = [
   },
   {
     id: 'm-redmagic-10-pro-plus',
-    brand: 'RedMagic',
+    brand: 'ZTE',
     modelName: 'RedMagic 10 Pro+',
     colorVariants: ['Dark Knight', 'Deuterium Transparent Dark', 'Deuterium Transparent Silver'],
     storageOptions: ['512GB', '1TB'],
@@ -236,7 +236,7 @@ export const OTHER_BRANDS_MODELS: PhoneModel[] = [
   {
     id: 'm-infinix-gt-20-pro',
     brand: 'Infinix',
-    modelName: 'Infinix GT 20 Pro',
+    modelName: 'GT 20 Pro',
     colorVariants: ['Mecha Blue', 'Mecha Orange', 'Mecha Silver'],
     storageOptions: ['256GB'],
     ramOptions: ['8GB', '12GB'],
@@ -253,7 +253,7 @@ export const OTHER_BRANDS_MODELS: PhoneModel[] = [
   {
     id: 'm-tecno-phantom-v-fold2-5g',
     brand: 'Tecno',
-    modelName: 'Tecno Phantom V Fold2 5G',
+    modelName: 'Phantom V Fold2 5G',
     colorVariants: ['Karst Green (Leather)', 'Rippling Blue (Leather)'],
     storageOptions: ['512GB'],
     ramOptions: ['12GB'],
@@ -270,7 +270,7 @@ export const OTHER_BRANDS_MODELS: PhoneModel[] = [
   {
     id: 'm-tecno-camon-30-pro-5g',
     brand: 'Tecno',
-    modelName: 'Tecno Camon 30 Pro 5G',
+    modelName: 'Camon 30 Pro 5G',
     colorVariants: ['Alps Snowy Silver', 'Iceland Basalt Dark', 'Sahara Sand Gold'],
     storageOptions: ['256GB', '512GB'],
     ramOptions: ['12GB'],
@@ -287,7 +287,7 @@ export const OTHER_BRANDS_MODELS: PhoneModel[] = [
   {
     id: 'm-tecno-pova-6-pro-5g',
     brand: 'Tecno',
-    modelName: 'Tecno Pova 6 Pro 5G',
+    modelName: 'Pova 6 Pro 5G',
     colorVariants: ['Comet Green', 'Meteorite Grey'],
     storageOptions: ['256GB'],
     ramOptions: ['8GB', '12GB'],
@@ -304,7 +304,7 @@ export const OTHER_BRANDS_MODELS: PhoneModel[] = [
   {
     id: 'm-infinix-zero-40-5g',
     brand: 'Infinix',
-    modelName: 'Infinix Zero 40 5G',
+    modelName: 'Zero 40 5G',
     colorVariants: ['Violet Garden', 'Moving Titanium', 'Rock Black'],
     storageOptions: ['256GB', '512GB'],
     ramOptions: ['12GB'],
@@ -321,7 +321,7 @@ export const OTHER_BRANDS_MODELS: PhoneModel[] = [
   {
     id: 'm-infinix-zero-flip',
     brand: 'Infinix',
-    modelName: 'Infinix Zero Flip',
+    modelName: 'Zero Flip',
     colorVariants: ['Rock Black', 'Blossom Glow'],
     storageOptions: ['512GB'],
     ramOptions: ['8GB'],
@@ -338,7 +338,7 @@ export const OTHER_BRANDS_MODELS: PhoneModel[] = [
   {
     id: 'm-infinix-note-40-pro-plus-5g',
     brand: 'Infinix',
-    modelName: 'Infinix Note 40 Pro+ 5G',
+    modelName: 'Note 40 Pro+ 5G',
     colorVariants: ['Vintage Green (Leather)', 'Obsidian Black'],
     storageOptions: ['256GB'],
     ramOptions: ['12GB'],
@@ -354,7 +354,7 @@ export const OTHER_BRANDS_MODELS: PhoneModel[] = [
   },
   {
     id: 'm-nubia-z60-ultra',
-    brand: 'Nubia',
+    brand: 'ZTE',
     modelName: 'Nubia Z60 Ultra',
     colorVariants: ['Black', 'Silver', 'Starry Night Edition'],
     storageOptions: ['256GB', '512GB', '1TB'],
@@ -372,7 +372,7 @@ export const OTHER_BRANDS_MODELS: PhoneModel[] = [
   {
     id: 'm-motorola-razr-2025',
     brand: 'Motorola',
-    modelName: 'Motorola Razr 2025',
+    modelName: 'Razr 2025',
     colorVariants: ['Black', 'Beach Sand', 'Blue'],
     storageOptions: ['256GB'],
     ramOptions: ['8GB', '12GB'],
@@ -390,7 +390,7 @@ export const OTHER_BRANDS_MODELS: PhoneModel[] = [
   {
     id: 'm-motorola-edge-60-pro',
     brand: 'Motorola',
-    modelName: 'Motorola Edge 60 Pro',
+    modelName: 'Edge 60 Pro',
     colorVariants: ['Black', 'Blue', 'Green'],
     storageOptions: ['256GB', '512GB'],
     ramOptions: ['12GB'],
@@ -408,7 +408,7 @@ export const OTHER_BRANDS_MODELS: PhoneModel[] = [
   {
     id: 'm-iqoo-13-5g',
     brand: 'iQOO',
-    modelName: 'iQOO 13 5G',
+    modelName: '13 5G',
     colorVariants: ['Black', 'White', 'Orange'],
     storageOptions: ['256GB', '512GB', '1TB'],
     ramOptions: ['12GB', '16GB'],
@@ -426,7 +426,7 @@ export const OTHER_BRANDS_MODELS: PhoneModel[] = [
   {
     id: 'm-sony-xperia-1-vii',
     brand: 'Sony',
-    modelName: 'Sony Xperia 1 VII',
+    modelName: 'Xperia 1 VII',
     colorVariants: ['Black', 'Khaki Green'],
     storageOptions: ['256GB'],
     ramOptions: ['12GB'],
@@ -443,7 +443,7 @@ export const OTHER_BRANDS_MODELS: PhoneModel[] = [
   },
   {
     id: 'm-redmagic-11-pro',
-    brand: 'RedMagic',
+    brand: 'ZTE',
     modelName: 'RedMagic 11 Pro',
     colorVariants: ['Black', 'Silver'],
     storageOptions: ['256GB', '512GB', '1TB'],
@@ -462,7 +462,7 @@ export const OTHER_BRANDS_MODELS: PhoneModel[] = [
   {
     id: 'm-infinix-zero-50',
     brand: 'Infinix',
-    modelName: 'Infinix Zero 50',
+    modelName: 'Zero 50',
     colorVariants: ['Black', 'Blue', 'Titanium'],
     storageOptions: ['256GB', '512GB'],
     ramOptions: ['8GB', '12GB'],
@@ -480,7 +480,7 @@ export const OTHER_BRANDS_MODELS: PhoneModel[] = [
   {
     id: 'm-tecno-camon-40-pro',
     brand: 'Tecno',
-    modelName: 'Tecno Camon 40 Pro',
+    modelName: 'Camon 40 Pro',
     colorVariants: ['Black', 'Green', 'Silver'],
     storageOptions: ['256GB'],
     ramOptions: ['8GB', '12GB'],
@@ -498,7 +498,7 @@ export const OTHER_BRANDS_MODELS: PhoneModel[] = [
   {
     id: 'm-motorola-razr-50',
     brand: 'Motorola',
-    modelName: 'Motorola Razr 50',
+    modelName: 'Razr 50',
     colorVariants: ['Peach Fuzz', 'Koala Grey', 'Spring Bud'],
     storageOptions: ['256GB'],
     ramOptions: ['8GB', '12GB'],
@@ -516,7 +516,7 @@ export const OTHER_BRANDS_MODELS: PhoneModel[] = [
   {
     id: 'm-motorola-edge-60',
     brand: 'Motorola',
-    modelName: 'Motorola Edge 60',
+    modelName: 'Edge 60',
     colorVariants: ['Black', 'Blue', 'Pink'],
     storageOptions: ['256GB'],
     ramOptions: ['8GB', '12GB'],
@@ -570,7 +570,7 @@ export const OTHER_BRANDS_MODELS: PhoneModel[] = [
   {
     id: 'm-iqoo-neo-10',
     brand: 'iQOO',
-    modelName: 'iQOO Neo 10',
+    modelName: 'Neo 10',
     colorVariants: ['Black', 'White', 'Green'],
     storageOptions: ['256GB', '512GB'],
     ramOptions: ['12GB', '16GB'],
@@ -588,7 +588,7 @@ export const OTHER_BRANDS_MODELS: PhoneModel[] = [
   {
     id: 'm-iqoo-z9-turbo',
     brand: 'iQOO',
-    modelName: 'iQOO Z9 Turbo',
+    modelName: 'Z9 Turbo',
     colorVariants: ['Black', 'Blue', 'White'],
     storageOptions: ['256GB'],
     ramOptions: ['8GB', '12GB'],
@@ -606,7 +606,7 @@ export const OTHER_BRANDS_MODELS: PhoneModel[] = [
   {
     id: 'm-sony-xperia-10-vii',
     brand: 'Sony',
-    modelName: 'Sony Xperia 10 VII',
+    modelName: 'Xperia 10 VII',
     colorVariants: ['Black', 'White', 'Lavender'],
     storageOptions: ['128GB'],
     ramOptions: ['8GB'],
@@ -624,7 +624,7 @@ export const OTHER_BRANDS_MODELS: PhoneModel[] = [
   {
     id: 'm-infinix-hot-50-pro',
     brand: 'Infinix',
-    modelName: 'Infinix Hot 50 Pro+',
+    modelName: 'Hot 50 Pro+',
     colorVariants: ['Black', 'Blue', 'Titanium'],
     storageOptions: ['128GB', '256GB'],
     ramOptions: ['8GB'],
@@ -642,7 +642,7 @@ export const OTHER_BRANDS_MODELS: PhoneModel[] = [
   {
     id: 'm-tecno-pova-7-pro',
     brand: 'Tecno',
-    modelName: 'Tecno Pova 7 Pro',
+    modelName: 'Pova 7 Pro',
     colorVariants: ['Black', 'Green', 'Silver'],
     storageOptions: ['256GB'],
     ramOptions: ['8GB', '12GB'],
@@ -659,8 +659,8 @@ export const OTHER_BRANDS_MODELS: PhoneModel[] = [
   },
   {
     id: 'm-nubia-z70-ultra',
-    brand: 'Nubia',
-    modelName: 'nubia Z70 Ultra',
+    brand: 'ZTE',
+    modelName: 'Nubia Z70 Ultra',
     colorVariants: ['Black', 'White'],
     storageOptions: ['256GB', '512GB'],
     ramOptions: ['12GB', '16GB'],
@@ -696,7 +696,7 @@ export const OTHER_BRANDS_MODELS: PhoneModel[] = [
   {
     id: 'm-sony-xperia-5-vi',
     brand: 'Sony',
-    modelName: 'Sony Xperia 5 VI',
+    modelName: 'Xperia 5 VI',
     colorVariants: ['Black', 'Platinum Silver'],
     storageOptions: ['256GB'],
     ramOptions: ['12GB'],
@@ -714,7 +714,7 @@ export const OTHER_BRANDS_MODELS: PhoneModel[] = [
   {
     id: 'm-infinix-zero-40',
     brand: 'Infinix',
-    modelName: 'Infinix Zero 40',
+    modelName: 'Zero 40',
     colorVariants: ['Black', 'Titanium Gold'],
     storageOptions: ['256GB', '512GB'],
     ramOptions: ['8GB', '12GB'],
@@ -732,7 +732,7 @@ export const OTHER_BRANDS_MODELS: PhoneModel[] = [
   {
     id: 'm-tecno-phantom-x2-pro',
     brand: 'Tecno',
-    modelName: 'Tecno Phantom X2 Pro',
+    modelName: 'Phantom X2 Pro',
     colorVariants: ['Stardust Grey', 'Mars Orange'],
     storageOptions: ['256GB'],
     ramOptions: ['12GB'],
@@ -750,7 +750,7 @@ export const OTHER_BRANDS_MODELS: PhoneModel[] = [
   {
     id: 'm-tecno-camon-30-premier',
     brand: 'Tecno',
-    modelName: 'Tecno Camon 30 Premier 5G',
+    modelName: 'Camon 30 Premier 5G',
     colorVariants: ['Black', 'Serene Blue'],
     storageOptions: ['256GB', '512GB'],
     ramOptions: ['12GB'],
@@ -767,7 +767,7 @@ export const OTHER_BRANDS_MODELS: PhoneModel[] = [
   },
   {
     id: 'm-redmagic-astra',
-    brand: 'RedMagic',
+    brand: 'ZTE',
     modelName: 'RedMagic Astra',
     colorVariants: ['Black', 'Titanium'],
     storageOptions: ['256GB', '512GB'],
@@ -785,8 +785,8 @@ export const OTHER_BRANDS_MODELS: PhoneModel[] = [
   },
   {
     id: 'm-nubia-flip2',
-    brand: 'Nubia',
-    modelName: 'nubia Flip2',
+    brand: 'ZTE',
+    modelName: 'Nubia Flip2',
     colorVariants: ['Black', 'Purple'],
     storageOptions: ['256GB'],
     ramOptions: ['12GB'],
@@ -804,7 +804,7 @@ export const OTHER_BRANDS_MODELS: PhoneModel[] = [
   {
     id: 'm-motorola-edge-50-fusion',
     brand: 'Motorola',
-    modelName: 'Motorola Edge 50 Fusion',
+    modelName: 'Edge 50 Fusion',
     colorVariants: ['Forest Blue', 'Hot Pink', 'Marshmallow Blue'],
     storageOptions: ['256GB'],
     ramOptions: ['8GB', '12GB'],
@@ -858,7 +858,7 @@ export const OTHER_BRANDS_MODELS: PhoneModel[] = [
   {
     id: 'm-iqoo-12',
     brand: 'iQOO',
-    modelName: 'iQOO 12',
+    modelName: '12',
     colorVariants: ['Black', 'White', 'Legend'],
     storageOptions: ['256GB', '512GB'],
     ramOptions: ['12GB', '16GB'],
@@ -876,7 +876,7 @@ export const OTHER_BRANDS_MODELS: PhoneModel[] = [
   {
     id: 'm-sony-xperia-10-vi',
     brand: 'Sony',
-    modelName: 'Sony Xperia 10 VI',
+    modelName: 'Xperia 10 VI',
     colorVariants: ['Black', 'White', 'Lavender', 'Sage Green'],
     storageOptions: ['128GB'],
     ramOptions: ['8GB'],
@@ -894,7 +894,7 @@ export const OTHER_BRANDS_MODELS: PhoneModel[] = [
   {
     id: 'm-infinix-note-40',
     brand: 'Infinix',
-    modelName: 'Infinix Note 40',
+    modelName: 'Note 40',
     colorVariants: ['Black', 'Titanium Gold', 'Vintage Green'],
     storageOptions: ['128GB', '256GB'],
     ramOptions: ['8GB'],
@@ -912,7 +912,7 @@ export const OTHER_BRANDS_MODELS: PhoneModel[] = [
   {
     id: 'm-infinix-smart-9',
     brand: 'Infinix',
-    modelName: 'Infinix Smart 9',
+    modelName: 'Smart 9',
     colorVariants: ['Black', 'Blue', 'Green'],
     storageOptions: ['64GB', '128GB'],
     ramOptions: ['3GB', '4GB'],
@@ -930,7 +930,7 @@ export const OTHER_BRANDS_MODELS: PhoneModel[] = [
   {
     id: 'm-tecno-spark-30-pro',
     brand: 'Tecno',
-    modelName: 'Tecno Spark 30 Pro',
+    modelName: 'Spark 30 Pro',
     colorVariants: ['Black', 'Blue', 'Silver'],
     storageOptions: ['256GB'],
     ramOptions: ['8GB'],
@@ -948,7 +948,7 @@ export const OTHER_BRANDS_MODELS: PhoneModel[] = [
   {
     id: 'm-tecno-pova-6',
     brand: 'Tecno',
-    modelName: 'Tecno Pova 6',
+    modelName: 'Pova 6',
     colorVariants: ['Black', 'Blue'],
     storageOptions: ['128GB', '256GB'],
     ramOptions: ['8GB'],
@@ -965,7 +965,7 @@ export const OTHER_BRANDS_MODELS: PhoneModel[] = [
   },
   {
     id: 'm-redmagic-10-pro',
-    brand: 'RedMagic',
+    brand: 'ZTE',
     modelName: 'RedMagic 10 Pro',
     colorVariants: ['Black', 'Titanium'],
     storageOptions: ['256GB', '512GB', '1TB'],
@@ -984,7 +984,7 @@ export const OTHER_BRANDS_MODELS: PhoneModel[] = [
   {
     id: 'm-zte-axon-60-ultra',
     brand: 'ZTE',
-    modelName: 'ZTE Axon 60 Ultra',
+    modelName: 'Axon 60 Ultra',
     colorVariants: ['Black', 'White'],
     storageOptions: ['256GB', '512GB'],
     ramOptions: ['12GB', '16GB'],
@@ -1056,7 +1056,7 @@ export const OTHER_BRANDS_MODELS: PhoneModel[] = [
   {
     id: 'm-iqoo-z9-turbo-plus',
     brand: 'iQOO',
-    modelName: 'iQOO Z9 Turbo+',
+    modelName: 'Z9 Turbo+',
     colorVariants: ['Black', 'Blue'],
     storageOptions: ['256GB', '512GB'],
     ramOptions: ['12GB', '16GB'],
@@ -1074,7 +1074,7 @@ export const OTHER_BRANDS_MODELS: PhoneModel[] = [
   {
     id: 'm-sony-xperia-pro-i',
     brand: 'Sony',
-    modelName: 'Sony Xperia PRO-I',
+    modelName: 'Xperia PRO-I',
     colorVariants: ['Black'],
     storageOptions: ['512GB'],
     ramOptions: ['12GB'],
@@ -1092,7 +1092,7 @@ export const OTHER_BRANDS_MODELS: PhoneModel[] = [
   {
     id: 'm-infinix-note-30-pro',
     brand: 'Infinix',
-    modelName: 'Infinix Note 30 Pro',
+    modelName: 'Note 30 Pro',
     colorVariants: ['Black', 'Silver', 'Green'],
     storageOptions: ['256GB'],
     ramOptions: ['8GB'],
@@ -1110,7 +1110,7 @@ export const OTHER_BRANDS_MODELS: PhoneModel[] = [
   {
     id: 'm-tecno-camon-20-pro',
     brand: 'Tecno',
-    modelName: 'Tecno Camon 20 Pro',
+    modelName: 'Camon 20 Pro',
     colorVariants: ['Black', 'Green'],
     storageOptions: ['256GB'],
     ramOptions: ['8GB'],
@@ -1128,7 +1128,7 @@ export const OTHER_BRANDS_MODELS: PhoneModel[] = [
   {
     id: 'm-zte-blade-v50',
     brand: 'ZTE',
-    modelName: 'ZTE Blade V50 Design',
+    modelName: 'Blade V50 Design',
     colorVariants: ['Black', 'Blue'],
     storageOptions: ['128GB', '256GB'],
     ramOptions: ['8GB'],
@@ -1145,8 +1145,8 @@ export const OTHER_BRANDS_MODELS: PhoneModel[] = [
   },
   {
     id: 'm-nubia-neo-5-gt',
-    brand: 'Nubia',
-    modelName: 'nubia Neo 5 GT',
+    brand: 'ZTE',
+    modelName: 'Nubia Neo 5 GT',
     colorVariants: ['Black', 'White'],
     storageOptions: ['128GB', '256GB'],
     ramOptions: ['8GB', '12GB'],
@@ -1163,7 +1163,7 @@ export const OTHER_BRANDS_MODELS: PhoneModel[] = [
   },
   {
     id: 'm-redmagic-9-pro-plus',
-    brand: 'RedMagic',
+    brand: 'ZTE',
     modelName: 'RedMagic 9 Pro+',
     colorVariants: ['Black', 'Silver'],
     storageOptions: ['256GB', '512GB', '1TB'],

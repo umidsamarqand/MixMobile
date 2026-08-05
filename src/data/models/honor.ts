@@ -5,7 +5,7 @@ export const HONOR_MODELS: PhoneModel[] = [
   {
     id: 'm-honor-magic5-pro',
     brand: 'Honor',
-    modelName: 'Honor Magic5 Pro',
+    modelName: 'Magic5 Pro',
     colorVariants: ['Meadow Green', 'Black', 'Coral Purple'],
     storageOptions: ['256GB', '512GB'],
     ramOptions: ['12GB'],
@@ -22,7 +22,7 @@ export const HONOR_MODELS: PhoneModel[] = [
   {
     id: 'm-honor-magic6-pro',
     brand: 'Honor',
-    modelName: 'Honor Magic6 Pro',
+    modelName: 'Magic6 Pro',
     colorVariants: ['Epi Green (Leather)', 'Black', 'Cloud Purple'],
     storageOptions: ['256GB', '512GB', '1TB'],
     ramOptions: ['12GB', '16GB'],
@@ -39,7 +39,7 @@ export const HONOR_MODELS: PhoneModel[] = [
   {
     id: 'm-honor-magic-v2',
     brand: 'Honor',
-    modelName: 'Honor Magic V2',
+    modelName: 'Magic V2',
     colorVariants: ['Purple', 'Black (Leather)', 'Black (Glass)', 'Gold'],
     storageOptions: ['256GB', '512GB', '1TB'],
     ramOptions: ['16GB'],
@@ -56,7 +56,7 @@ export const HONOR_MODELS: PhoneModel[] = [
   {
     id: 'm-honor-magic-v3',
     brand: 'Honor',
-    modelName: 'Honor Magic V3',
+    modelName: 'Magic V3',
     colorVariants: ['Reddish Brown (Leather)', 'Green', 'Black', 'Silk Brown'],
     storageOptions: ['256GB', '512GB', '1TB'],
     ramOptions: ['12GB', '16GB'],
@@ -75,7 +75,7 @@ export const HONOR_MODELS: PhoneModel[] = [
   {
     id: 'm-honor-90-5g',
     brand: 'Honor',
-    modelName: 'Honor 90 5G',
+    modelName: '90 5G',
     colorVariants: ['Diamond Silver', 'Peacock Blue', 'Midnight Black', 'Emerald Green'],
     storageOptions: ['256GB', '512GB'],
     ramOptions: ['8GB', '12GB', '16GB'],
@@ -92,7 +92,7 @@ export const HONOR_MODELS: PhoneModel[] = [
   {
     id: 'm-honor-200-pro',
     brand: 'Honor',
-    modelName: 'Honor 200 Pro',
+    modelName: '200 Pro',
     colorVariants: ['Ocean Cyan', 'Moonlight White', 'Black'],
     storageOptions: ['256GB', '512GB', '1TB'],
     ramOptions: ['12GB', '16GB'],
@@ -111,7 +111,7 @@ export const HONOR_MODELS: PhoneModel[] = [
   {
     id: 'm-honor-magic7-pro',
     brand: 'Honor',
-    modelName: 'Honor Magic7 Pro',
+    modelName: 'Magic7 Pro',
     colorVariants: ['Lunar Shadow Grey', 'Black'],
     storageOptions: ['256GB', '512GB', '1TB'],
     ramOptions: ['12GB', '16GB'],
@@ -130,7 +130,7 @@ export const HONOR_MODELS: PhoneModel[] = [
   {
     id: 'm-honor-400-pro',
     brand: 'Honor',
-    modelName: 'Honor 400 Pro',
+    modelName: '400 Pro',
     colorVariants: ['Midnight Black', 'Lunar Grey', 'Tidal Blue'],
     storageOptions: ['256GB', '512GB'],
     ramOptions: ['12GB'],
@@ -148,7 +148,7 @@ export const HONOR_MODELS: PhoneModel[] = [
   {
     id: 'm-honor-200',
     brand: 'Honor',
-    modelName: 'Honor 200',
+    modelName: '200',
     colorVariants: ['Black', 'Silver', 'Green', 'Pink'],
     storageOptions: ['256GB', '512GB'],
     ramOptions: ['12GB'],
@@ -165,7 +165,7 @@ export const HONOR_MODELS: PhoneModel[] = [
   {
     id: 'm-honor-magic-v5',
     brand: 'Honor',
-    modelName: 'Honor Magic V5',
+    modelName: 'Magic V5',
     colorVariants: ['Black', 'Ivory White', 'Dawn Gold', 'Reddish Brown'],
     storageOptions: ['256GB', '512GB', '1TB'],
     ramOptions: ['12GB', '16GB'],
@@ -184,7 +184,7 @@ export const HONOR_MODELS: PhoneModel[] = [
   {
     id: 'm-honor-x9b-5g',
     brand: 'Honor',
-    modelName: 'Honor X9b 5G',
+    modelName: 'X9b 5G',
     colorVariants: ['Sunrise Orange (Leather)', 'Midnight Black', 'Emerald Green'],
     storageOptions: ['256GB'],
     ramOptions: ['8GB', '12GB'],
@@ -201,7 +201,7 @@ export const HONOR_MODELS: PhoneModel[] = [
   {
     id: 'm-honor-magic8-pro',
     brand: 'Honor',
-    modelName: 'Honor Magic8 Pro',
+    modelName: 'Magic8 Pro',
     colorVariants: ['Black', 'White', 'Green'],
     storageOptions: ['256GB', '512GB', '1TB'],
     ramOptions: ['12GB', '16GB'],
@@ -219,7 +219,7 @@ export const HONOR_MODELS: PhoneModel[] = [
   {
     id: 'm-honor-magic6',
     brand: 'Honor',
-    modelName: 'Honor Magic6',
+    modelName: 'Magic6',
     colorVariants: ['Black', 'Green', 'Purple'],
     storageOptions: ['256GB', '512GB'],
     ramOptions: ['12GB', '16GB'],
@@ -237,7 +237,7 @@ export const HONOR_MODELS: PhoneModel[] = [
   {
     id: 'm-honor-300',
     brand: 'Honor',
-    modelName: 'Honor 300',
+    modelName: '300',
     colorVariants: ['Black', 'Silver', 'Blue'],
     storageOptions: ['256GB', '512GB'],
     ramOptions: ['8GB', '12GB'],
@@ -255,7 +255,7 @@ export const HONOR_MODELS: PhoneModel[] = [
   {
     id: 'm-honor-300-pro',
     brand: 'Honor',
-    modelName: 'Honor 300 Pro',
+    modelName: '300 Pro',
     colorVariants: ['Black', 'Silver', 'Green'],
     storageOptions: ['256GB', '512GB'],
     ramOptions: ['12GB'],
@@ -273,7 +273,7 @@ export const HONOR_MODELS: PhoneModel[] = [
   {
     id: 'm-honor-x70',
     brand: 'Honor',
-    modelName: 'Honor X70',
+    modelName: 'X70',
     colorVariants: ['Black', 'Blue', 'Silver'],
     storageOptions: ['128GB', '256GB'],
     ramOptions: ['8GB', '12GB'],
@@ -291,7 +291,7 @@ export const HONOR_MODELS: PhoneModel[] = [
   {
     id: 'm-honor-x80',
     brand: 'Honor',
-    modelName: 'Honor X80',
+    modelName: 'X80',
     colorVariants: ['Black', 'Silver', 'Green'],
     storageOptions: ['256GB'],
     ramOptions: ['8GB', '12GB'],
@@ -309,7 +309,7 @@ export const HONOR_MODELS: PhoneModel[] = [
   {
     id: 'm-honor-play-9a',
     brand: 'Honor',
-    modelName: 'Honor Play 9A',
+    modelName: 'Play 9A',
     colorVariants: ['Black', 'Blue'],
     storageOptions: ['64GB', '128GB'],
     ramOptions: ['4GB', '6GB'],
@@ -327,7 +327,7 @@ export const HONOR_MODELS: PhoneModel[] = [
   {
     id: 'm-honor-magic7',
     brand: 'Honor',
-    modelName: 'Honor Magic7',
+    modelName: 'Magic7',
     colorVariants: ['Black', 'White', 'Green'],
     storageOptions: ['256GB', '512GB'],
     ramOptions: ['12GB', '16GB'],
@@ -345,7 +345,7 @@ export const HONOR_MODELS: PhoneModel[] = [
   {
     id: 'm-honor-magic7-lite',
     brand: 'Honor',
-    modelName: 'Honor Magic7 Lite',
+    modelName: 'Magic7 Lite',
     colorVariants: ['Titanium Purple', 'Titanium Black'],
     storageOptions: ['256GB', '512GB'],
     ramOptions: ['8GB'],
@@ -363,7 +363,7 @@ export const HONOR_MODELS: PhoneModel[] = [
   {
     id: 'm-honor-x9c',
     brand: 'Honor',
-    modelName: 'Honor X9c',
+    modelName: 'X9c',
     colorVariants: ['Black', 'Green', 'Silver'],
     storageOptions: ['256GB'],
     ramOptions: ['8GB', '12GB'],
@@ -381,7 +381,7 @@ export const HONOR_MODELS: PhoneModel[] = [
   {
     id: 'm-honor-x60',
     brand: 'Honor',
-    modelName: 'Honor X60',
+    modelName: 'X60',
     colorVariants: ['Black', 'Blue'],
     storageOptions: ['128GB', '256GB'],
     ramOptions: ['6GB', '8GB'],
@@ -399,7 +399,7 @@ export const HONOR_MODELS: PhoneModel[] = [
   {
     id: 'm-honor-play-9c',
     brand: 'Honor',
-    modelName: 'Honor Play 9C',
+    modelName: 'Play 9C',
     colorVariants: ['Black', 'Blue', 'Green'],
     storageOptions: ['128GB'],
     ramOptions: ['6GB'],
@@ -417,7 +417,7 @@ export const HONOR_MODELS: PhoneModel[] = [
   {
     id: 'm-honor-90-smart',
     brand: 'Honor',
-    modelName: 'Honor 90 Smart',
+    modelName: '90 Smart',
     colorVariants: ['Black', 'Green', 'Cyan'],
     storageOptions: ['128GB', '256GB'],
     ramOptions: ['8GB'],
@@ -435,7 +435,7 @@ export const HONOR_MODELS: PhoneModel[] = [
   {
     id: 'm-honor-200-lite',
     brand: 'Honor',
-    modelName: 'Honor 200 Lite',
+    modelName: '200 Lite',
     colorVariants: ['Black', 'Cyan', 'Titanium Silver'],
     storageOptions: ['256GB'],
     ramOptions: ['8GB'],
@@ -453,7 +453,7 @@ export const HONOR_MODELS: PhoneModel[] = [
   {
     id: 'm-honor-x9b',
     brand: 'Honor',
-    modelName: 'Honor X9b',
+    modelName: 'X9b',
     colorVariants: ['Sunrise Orange', 'Midnight Black'],
     storageOptions: ['256GB'],
     ramOptions: ['8GB', '12GB'],
@@ -471,7 +471,7 @@ export const HONOR_MODELS: PhoneModel[] = [
   {
     id: 'm-honor-magic6-lite',
     brand: 'Honor',
-    modelName: 'Honor Magic6 Lite',
+    modelName: 'Magic6 Lite',
     colorVariants: ['Black', 'Green'],
     storageOptions: ['256GB'],
     ramOptions: ['8GB'],
@@ -489,7 +489,7 @@ export const HONOR_MODELS: PhoneModel[] = [
   {
     id: 'm-honor-500-pro',
     brand: 'Honor',
-    modelName: 'Honor 500 Pro',
+    modelName: '500 Pro',
     colorVariants: ['Black', 'White', 'Blue'],
     storageOptions: ['256GB', '512GB'],
     ramOptions: ['12GB'],
@@ -507,7 +507,7 @@ export const HONOR_MODELS: PhoneModel[] = [
   {
     id: 'm-honor-x50',
     brand: 'Honor',
-    modelName: 'Honor X50',
+    modelName: 'X50',
     colorVariants: ['Black', 'Titanium Silver', 'Emerald Green'],
     storageOptions: ['256GB'],
     ramOptions: ['8GB', '12GB'],
@@ -525,7 +525,7 @@ export const HONOR_MODELS: PhoneModel[] = [
   {
     id: 'm-honor-magic-vs3',
     brand: 'Honor',
-    modelName: 'Honor Magic Vs3',
+    modelName: 'Magic Vs3',
     colorVariants: ['Black', 'Green'],
     storageOptions: ['512GB', '1TB'],
     ramOptions: ['16GB'],
@@ -543,7 +543,7 @@ export const HONOR_MODELS: PhoneModel[] = [
   {
     id: 'm-honor-70',
     brand: 'Honor',
-    modelName: 'Honor 70',
+    modelName: '70',
     colorVariants: ['Emerald Green', 'Midnight Black', 'Silver'],
     storageOptions: ['128GB', '256GB'],
     ramOptions: ['8GB', '12GB'],
@@ -561,7 +561,7 @@ export const HONOR_MODELS: PhoneModel[] = [
   {
     id: 'm-honor-magic4-pro',
     brand: 'Honor',
-    modelName: 'Honor Magic4 Pro',
+    modelName: 'Magic4 Pro',
     colorVariants: ['Black', 'Cyan', 'Gold'],
     storageOptions: ['256GB', '512GB'],
     ramOptions: ['8GB', '12GB'],
@@ -579,7 +579,7 @@ export const HONOR_MODELS: PhoneModel[] = [
   {
     id: 'm-honor-90-pro',
     brand: 'Honor',
-    modelName: 'Honor 90 Pro',
+    modelName: '90 Pro',
     colorVariants: ['Black', 'Emerald Green', 'Peony Purple'],
     storageOptions: ['256GB', '512GB'],
     ramOptions: ['12GB', '16GB'],
@@ -597,7 +597,7 @@ export const HONOR_MODELS: PhoneModel[] = [
   {
     id: 'm-honor-x9a',
     brand: 'Honor',
-    modelName: 'Honor X9a',
+    modelName: 'X9a',
     colorVariants: ['Titanium Silver', 'Emerald Green', 'Midnight Black'],
     storageOptions: ['256GB'],
     ramOptions: ['8GB'],
@@ -615,7 +615,7 @@ export const HONOR_MODELS: PhoneModel[] = [
   {
     id: 'm-honor-magic6-ultimate',
     brand: 'Honor',
-    modelName: 'Honor Magic6 Ultimate',
+    modelName: 'Magic6 Ultimate',
     colorVariants: ['Black', 'Titanium Silver'],
     storageOptions: ['512GB', '1TB'],
     ramOptions: ['16GB'],
@@ -633,7 +633,7 @@ export const HONOR_MODELS: PhoneModel[] = [
   {
     id: 'm-honor-x7c',
     brand: 'Honor',
-    modelName: 'Honor X7c',
+    modelName: 'X7c',
     colorVariants: ['Black', 'Cyan'],
     storageOptions: ['128GB', '256GB'],
     ramOptions: ['6GB', '8GB'],
@@ -651,7 +651,7 @@ export const HONOR_MODELS: PhoneModel[] = [
   {
     id: 'm-honor-70-pro',
     brand: 'Honor',
-    modelName: 'Honor 70 Pro',
+    modelName: '70 Pro',
     colorVariants: ['Midnight Black', 'Icelandic White'],
     storageOptions: ['256GB', '512GB'],
     ramOptions: ['8GB', '12GB'],
@@ -669,7 +669,7 @@ export const HONOR_MODELS: PhoneModel[] = [
   {
     id: 'm-honor-magic5',
     brand: 'Honor',
-    modelName: 'Honor Magic5',
+    modelName: 'Magic5',
     colorVariants: ['Black', 'Green', 'Gold'],
     storageOptions: ['256GB', '512GB'],
     ramOptions: ['8GB', '12GB'],
@@ -687,7 +687,7 @@ export const HONOR_MODELS: PhoneModel[] = [
   {
     id: 'm-honor-x8b',
     brand: 'Honor',
-    modelName: 'Honor X8b',
+    modelName: 'X8b',
     colorVariants: ['Titanium Silver', 'Emerald Green'],
     storageOptions: ['256GB'],
     ramOptions: ['8GB'],
@@ -705,7 +705,7 @@ export const HONOR_MODELS: PhoneModel[] = [
   {
     id: 'm-honor-play-40',
     brand: 'Honor',
-    modelName: 'Honor Play 40',
+    modelName: 'Play 40',
     colorVariants: ['Black', 'Blue'],
     storageOptions: ['128GB'],
     ramOptions: ['4GB', '6GB'],
@@ -723,7 +723,7 @@ export const HONOR_MODELS: PhoneModel[] = [
   {
     id: 'm-honor-magic4',
     brand: 'Honor',
-    modelName: 'Honor Magic4',
+    modelName: 'Magic4',
     colorVariants: ['Black', 'Cyan', 'White'],
     storageOptions: ['128GB', '256GB'],
     ramOptions: ['8GB', '12GB'],
@@ -741,7 +741,7 @@ export const HONOR_MODELS: PhoneModel[] = [
   {
     id: 'm-honor-magic3-pro',
     brand: 'Honor',
-    modelName: 'Honor Magic3 Pro',
+    modelName: 'Magic3 Pro',
     colorVariants: ['Black', 'Green'],
     storageOptions: ['256GB', '512GB'],
     ramOptions: ['8GB', '12GB'],
@@ -759,7 +759,7 @@ export const HONOR_MODELS: PhoneModel[] = [
   {
     id: 'm-honor-x8a',
     brand: 'Honor',
-    modelName: 'Honor X8a',
+    modelName: 'X8a',
     colorVariants: ['Titanium Silver', 'Midnight Black'],
     storageOptions: ['128GB', '256GB'],
     ramOptions: ['6GB', '8GB'],
@@ -777,7 +777,7 @@ export const HONOR_MODELS: PhoneModel[] = [
   {
     id: 'm-honor-90-lite',
     brand: 'Honor',
-    modelName: 'Honor 90 Lite',
+    modelName: '90 Lite',
     colorVariants: ['Cyan Lake', 'Midnight Black'],
     storageOptions: ['256GB'],
     ramOptions: ['8GB'],

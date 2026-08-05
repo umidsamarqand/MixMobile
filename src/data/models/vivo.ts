@@ -4,7 +4,7 @@ export const VIVO_MODELS: PhoneModel[] = [
   // X Series Flagships
   {
     id: 'm-vivo-x90-pro-plus',
-    brand: 'Vivo',
+    brand: 'vivo',
     modelName: 'X90 Pro+',
     colorVariants: ['Legend Black (Leather)', 'China Red (Leather)'],
     storageOptions: ['256GB', '512GB'],
@@ -110,7 +110,7 @@ export const VIVO_MODELS: PhoneModel[] = [
   },
   {
     id: 'm-vivo-v40-pro-5g',
-    brand: 'Vivo',
+    brand: 'vivo',
     modelName: 'V40 Pro 5G',
     colorVariants: ['Ganges Blue', 'Titanium Gray'],
     storageOptions: ['256GB', '512GB'],
@@ -128,7 +128,7 @@ export const VIVO_MODELS: PhoneModel[] = [
   {
     id: 'm-vivo-x300-pro',
     brand: 'vivo',
-    modelName: 'vivo X300 Pro',
+    modelName: 'X300 Pro',
     colorVariants: ['Black', 'Blue', 'Titanium'],
     storageOptions: ['256GB', '512GB', '1TB'],
     ramOptions: ['16GB'],
@@ -146,7 +146,7 @@ export const VIVO_MODELS: PhoneModel[] = [
   {
     id: 'm-vivo-y300-5g',
     brand: 'vivo',
-    modelName: 'vivo Y300 5G',
+    modelName: 'Y300 5G',
     colorVariants: ['Black', 'Blue', 'Green'],
     storageOptions: ['128GB', '256GB'],
     ramOptions: ['8GB'],
@@ -164,7 +164,7 @@ export const VIVO_MODELS: PhoneModel[] = [
   {
     id: 'm-vivo-x300',
     brand: 'vivo',
-    modelName: 'vivo X300',
+    modelName: 'X300',
     colorVariants: ['Black', 'Blue', 'Titanium'],
     storageOptions: ['256GB', '512GB'],
     ramOptions: ['12GB'],
@@ -182,7 +182,7 @@ export const VIVO_MODELS: PhoneModel[] = [
   {
     id: 'm-vivo-v50-pro',
     brand: 'vivo',
-    modelName: 'vivo V50 Pro 5G',
+    modelName: 'V50 Pro 5G',
     colorVariants: ['Black', 'Blue', 'Titanium'],
     storageOptions: ['256GB', '512GB'],
     ramOptions: ['12GB'],
@@ -200,7 +200,7 @@ export const VIVO_MODELS: PhoneModel[] = [
   {
     id: 'm-vivo-y28',
     brand: 'vivo',
-    modelName: 'vivo Y28 5G',
+    modelName: 'Y28 5G',
     colorVariants: ['Black', 'Blue', 'Green'],
     storageOptions: ['128GB', '256GB'],
     ramOptions: ['6GB', '8GB'],
@@ -218,7 +218,7 @@ export const VIVO_MODELS: PhoneModel[] = [
   {
     id: 'm-vivo-y36',
     brand: 'vivo',
-    modelName: 'vivo Y36',
+    modelName: 'Y36',
     colorVariants: ['Black', 'Blue', 'Orange'],
     storageOptions: ['128GB', '256GB'],
     ramOptions: ['8GB'],
@@ -236,7 +236,7 @@ export const VIVO_MODELS: PhoneModel[] = [
   {
     id: 'm-vivo-s19-pro',
     brand: 'vivo',
-    modelName: 'vivo S19 Pro',
+    modelName: 'S19 Pro',
     colorVariants: ['Black', 'Pink', 'White'],
     storageOptions: ['256GB', '512GB'],
     ramOptions: ['12GB'],
@@ -252,27 +252,9 @@ export const VIVO_MODELS: PhoneModel[] = [
     gsmarena_url: 'https://www.gsmarena.com/res.php3?sSearch=vivo%20S19%20Pro'
   },
   {
-    id: 'm-vivo-v40-pro',
-    brand: 'vivo',
-    modelName: 'vivo V40 Pro 5G',
-    colorVariants: ['Black', 'Titanium Silver'],
-    storageOptions: ['256GB', '512GB'],
-    ramOptions: ['12GB'],
-    displaySpecs: '6.78" AMOLED 120Hz Curved',
-    chipset: 'MediaTek Dimensity 8350',
-    cameraSpecs: 'Zeiss 50MP Main (OIS) + 50MP Telephoto + 50MP Ultrawide',
-    batterySpecs: '5500 mAh (80W Wired)',
-    releaseYear: 2024,
-    overview: 'Portrait-focused V series with Zeiss branding and triple 50MP cameras.',
-    pros: ['Zeiss camera tuning', 'Triple 50MP camera setup'],
-    cons: ['MediaTek mid-tier chipset'],
-    recommendedFor: 'Portrait photography enthusiasts.',
-    gsmarena_url: 'https://www.gsmarena.com/res.php3?sSearch=vivo%20V40%20Pro%205G'
-  },
-  {
     id: 'm-vivo-y200-pro',
     brand: 'vivo',
-    modelName: 'vivo Y200 Pro 5G',
+    modelName: 'Y200 Pro 5G',
     colorVariants: ['Black', 'Blue'],
     storageOptions: ['256GB'],
     ramOptions: ['8GB'],
@@ -290,7 +272,7 @@ export const VIVO_MODELS: PhoneModel[] = [
   {
     id: 'm-vivo-v29',
     brand: 'vivo',
-    modelName: 'vivo V29 5G',
+    modelName: 'V29 5G',
     colorVariants: ['Himalayan Blue', 'Peacock Green'],
     storageOptions: ['128GB', '256GB'],
     ramOptions: ['8GB', '12GB'],
@@ -308,7 +290,7 @@ export const VIVO_MODELS: PhoneModel[] = [
   {
     id: 'm-vivo-y53s',
     brand: 'vivo',
-    modelName: 'vivo Y53s',
+    modelName: 'Y53s',
     colorVariants: ['Diamond Black', 'Nirvana White'],
     storageOptions: ['128GB'],
     ramOptions: ['8GB'],
@@ -326,7 +308,7 @@ export const VIVO_MODELS: PhoneModel[] = [
   {
     id: 'm-vivo-x90',
     brand: 'vivo',
-    modelName: 'vivo X90',
+    modelName: 'X90',
     colorVariants: ['Black', 'Blue', 'Orange'],
     storageOptions: ['256GB'],
     ramOptions: ['8GB', '12GB'],
@@ -344,7 +326,7 @@ export const VIVO_MODELS: PhoneModel[] = [
   {
     id: 'm-vivo-y17s',
     brand: 'vivo',
-    modelName: 'vivo Y17s',
+    modelName: 'Y17s',
     colorVariants: ['Forest Black', 'Ice Blue'],
     storageOptions: ['128GB'],
     ramOptions: ['4GB', '6GB'],

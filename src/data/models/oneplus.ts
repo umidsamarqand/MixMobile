@@ -5,7 +5,7 @@ export const ONEPLUS_MODELS: PhoneModel[] = [
   {
     id: 'm-oneplus-one',
     brand: 'OnePlus',
-    modelName: 'OnePlus One',
+    modelName: 'One',
     colorVariants: ['Sandstone Black', 'Silk White'],
     storageOptions: ['16GB', '64GB'],
     ramOptions: ['3GB'],
@@ -22,7 +22,7 @@ export const ONEPLUS_MODELS: PhoneModel[] = [
   {
     id: 'm-oneplus-7-pro',
     brand: 'OnePlus',
-    modelName: 'OnePlus 7 Pro',
+    modelName: '7 Pro',
     colorVariants: ['Nebula Blue', 'Mirror Gray', 'Almond'],
     storageOptions: ['128GB', '256GB'],
     ramOptions: ['6GB', '8GB', '12GB'],
@@ -39,7 +39,7 @@ export const ONEPLUS_MODELS: PhoneModel[] = [
   {
     id: 'm-oneplus-8-pro',
     brand: 'OnePlus',
-    modelName: 'OnePlus 8 Pro',
+    modelName: '8 Pro',
     colorVariants: ['Glacial Green', 'Onyx Black', 'Ultramarine Blue'],
     storageOptions: ['128GB', '256GB'],
     ramOptions: ['8GB', '12GB'],
@@ -56,7 +56,7 @@ export const ONEPLUS_MODELS: PhoneModel[] = [
   {
     id: 'm-oneplus-9-pro',
     brand: 'OnePlus',
-    modelName: 'OnePlus 9 Pro',
+    modelName: '9 Pro',
     colorVariants: ['Morning Mist', 'Pine Green', 'Stellar Black'],
     storageOptions: ['128GB', '256GB'],
     ramOptions: ['8GB', '12GB'],
@@ -73,7 +73,7 @@ export const ONEPLUS_MODELS: PhoneModel[] = [
   {
     id: 'm-oneplus-10-pro',
     brand: 'OnePlus',
-    modelName: 'OnePlus 10 Pro',
+    modelName: '10 Pro',
     colorVariants: ['Volcanic Black', 'Emerald Forest', 'Panda White'],
     storageOptions: ['128GB', '256GB', '512GB'],
     ramOptions: ['8GB', '12GB'],
@@ -90,7 +90,7 @@ export const ONEPLUS_MODELS: PhoneModel[] = [
   {
     id: 'm-oneplus-11-5g',
     brand: 'OnePlus',
-    modelName: 'OnePlus 11 5G',
+    modelName: '11 5G',
     colorVariants: ['Titan Black', 'Eternal Green', 'Jupiter Brown'],
     storageOptions: ['128GB', '256GB', '512GB'],
     ramOptions: ['8GB', '12GB', '16GB'],
@@ -107,7 +107,7 @@ export const ONEPLUS_MODELS: PhoneModel[] = [
   {
     id: 'm-oneplus-12',
     brand: 'OnePlus',
-    modelName: 'OnePlus 12',
+    modelName: '12',
     colorVariants: ['Silky Black', 'Flowy Emerald', 'Glacial White'],
     storageOptions: ['256GB', '512GB', '1TB'],
     ramOptions: ['12GB', '16GB', '24GB'],
@@ -124,7 +124,7 @@ export const ONEPLUS_MODELS: PhoneModel[] = [
   {
     id: 'm-oneplus-12r',
     brand: 'OnePlus',
-    modelName: 'OnePlus 12R',
+    modelName: '12R',
     colorVariants: ['Iron Gray', 'Cool Blue', 'Genshin Impact Keqing Edition'],
     storageOptions: ['128GB', '256GB'],
     ramOptions: ['8GB', '16GB'],
@@ -141,7 +141,7 @@ export const ONEPLUS_MODELS: PhoneModel[] = [
   {
     id: 'm-oneplus-13',
     brand: 'OnePlus',
-    modelName: 'OnePlus 13',
+    modelName: '13',
     colorVariants: ['Midnight Black', 'Blue Hour (Vegan Leather)', 'White Dawn'],
     storageOptions: ['256GB', '512GB', '1TB'],
     ramOptions: ['12GB', '16GB', '24GB'],
@@ -158,7 +158,7 @@ export const ONEPLUS_MODELS: PhoneModel[] = [
   {
     id: 'm-oneplus-13r',
     brand: 'OnePlus',
-    modelName: 'OnePlus 13R',
+    modelName: '13R',
     colorVariants: ['Nebula Noir', 'Astral Trail'],
     storageOptions: ['256GB', '512GB'],
     ramOptions: ['12GB', '16GB'],
@@ -175,7 +175,7 @@ export const ONEPLUS_MODELS: PhoneModel[] = [
   {
     id: 'm-oneplus-14',
     brand: 'OnePlus',
-    modelName: 'OnePlus 14',
+    modelName: '14',
     colorVariants: ['Shadow Black', 'Emerald Aurora', 'Porcelain White'],
     storageOptions: ['256GB', '512GB', '1TB'],
     ramOptions: ['16GB', '24GB'],
@@ -192,7 +192,7 @@ export const ONEPLUS_MODELS: PhoneModel[] = [
   {
     id: 'm-oneplus-15',
     brand: 'OnePlus',
-    modelName: 'OnePlus 15',
+    modelName: '15',
     colorVariants: ['Titanium Eclipse', 'Glacier Mint', 'Midnight Obsidian'],
     storageOptions: ['256GB', '512GB', '1TB'],
     ramOptions: ['16GB', '24GB'],
@@ -209,7 +209,7 @@ export const ONEPLUS_MODELS: PhoneModel[] = [
   {
     id: 'm-oneplus-15-pro',
     brand: 'OnePlus',
-    modelName: 'OnePlus 15 Pro',
+    modelName: '15 Pro',
     colorVariants: ['Apex Gold', 'Titanium Black', 'Emerald Satin'],
     storageOptions: ['512GB', '1TB'],
     ramOptions: ['24GB'],
@@ -226,7 +226,7 @@ export const ONEPLUS_MODELS: PhoneModel[] = [
   {
     id: 'm-oneplus-15r',
     brand: 'OnePlus',
-    modelName: 'OnePlus 15R',
+    modelName: '15R',
     colorVariants: ['Cyber Blue', 'Stealth Black'],
     storageOptions: ['256GB', '512GB'],
     ramOptions: ['12GB', '16GB'],
@@ -245,7 +245,7 @@ export const ONEPLUS_MODELS: PhoneModel[] = [
   {
     id: 'm-oneplus-open',
     brand: 'OnePlus',
-    modelName: 'OnePlus Open',
+    modelName: 'Open',
     colorVariants: ['Emerald Dusk (Matte Glass)', 'Voyager Black (Faux Leather)'],
     storageOptions: ['512GB'],
     ramOptions: ['16GB'],
@@ -262,7 +262,7 @@ export const ONEPLUS_MODELS: PhoneModel[] = [
   {
     id: 'm-oneplus-open-2',
     brand: 'OnePlus',
-    modelName: 'OnePlus Open 2',
+    modelName: 'Open 2',
     colorVariants: ['Titanium Shadow', 'Emerald Wave'],
     storageOptions: ['512GB', '1TB'],
     ramOptions: ['16GB'],
@@ -281,7 +281,7 @@ export const ONEPLUS_MODELS: PhoneModel[] = [
   {
     id: 'm-oneplus-nord-3-5g',
     brand: 'OnePlus',
-    modelName: 'OnePlus Nord 3 5G',
+    modelName: 'Nord 3 5G',
     colorVariants: ['Misty Green', 'Tempest Gray'],
     storageOptions: ['128GB', '256GB'],
     ramOptions: ['8GB', '16GB'],
@@ -298,7 +298,7 @@ export const ONEPLUS_MODELS: PhoneModel[] = [
   {
     id: 'm-oneplus-nord-4',
     brand: 'OnePlus',
-    modelName: 'OnePlus Nord 4',
+    modelName: 'Nord 4',
     colorVariants: ['Mercurial Silver', 'Oasis Green', 'Obsidian Midnight'],
     storageOptions: ['128GB', '256GB', '512GB'],
     ramOptions: ['8GB', '12GB', '16GB'],
@@ -315,7 +315,7 @@ export const ONEPLUS_MODELS: PhoneModel[] = [
   {
     id: 'm-oneplus-nord-ce-4',
     brand: 'OnePlus',
-    modelName: 'OnePlus Nord CE 4',
+    modelName: 'Nord CE 4',
     colorVariants: ['Celadon Marble', 'Dark Chrome'],
     storageOptions: ['128GB', '256GB'],
     ramOptions: ['8GB'],
@@ -332,7 +332,7 @@ export const ONEPLUS_MODELS: PhoneModel[] = [
   {
     id: 'm-oneplus-13t',
     brand: 'OnePlus',
-    modelName: 'OnePlus 13T',
+    modelName: '13T',
     colorVariants: ['Black', 'White'],
     storageOptions: ['256GB', '512GB'],
     ramOptions: ['12GB', '16GB'],
@@ -350,7 +350,7 @@ export const ONEPLUS_MODELS: PhoneModel[] = [
   {
     id: 'm-oneplus-ace-6',
     brand: 'OnePlus',
-    modelName: 'OnePlus Ace 6',
+    modelName: 'Ace 6',
     colorVariants: ['Black', 'Silver'],
     storageOptions: ['256GB', '512GB'],
     ramOptions: ['12GB', '16GB'],
@@ -368,7 +368,7 @@ export const ONEPLUS_MODELS: PhoneModel[] = [
   {
     id: 'm-oneplus-nord-5',
     brand: 'OnePlus',
-    modelName: 'OnePlus Nord 5',
+    modelName: 'Nord 5',
     colorVariants: ['Black', 'Blue'],
     storageOptions: ['256GB', '512GB'],
     ramOptions: ['8GB', '12GB'],
@@ -386,7 +386,7 @@ export const ONEPLUS_MODELS: PhoneModel[] = [
   {
     id: 'm-oneplus-nord-ce4',
     brand: 'OnePlus',
-    modelName: 'OnePlus Nord CE4',
+    modelName: 'Nord CE4',
     colorVariants: ['Dark Chrome', 'Celadon Marble'],
     storageOptions: ['128GB', '256GB'],
     ramOptions: ['8GB', '12GB'],
@@ -404,7 +404,7 @@ export const ONEPLUS_MODELS: PhoneModel[] = [
   {
     id: 'm-oneplus-11',
     brand: 'OnePlus',
-    modelName: 'OnePlus 11',
+    modelName: '11',
     colorVariants: ['Titan Black', 'Eternal Green'],
     storageOptions: ['128GB', '256GB'],
     ramOptions: ['8GB', '16GB'],
@@ -422,7 +422,7 @@ export const ONEPLUS_MODELS: PhoneModel[] = [
   {
     id: 'm-oneplus-nord-3',
     brand: 'OnePlus',
-    modelName: 'OnePlus Nord 3',
+    modelName: 'Nord 3',
     colorVariants: ['Misty Green', 'Tempest Grey'],
     storageOptions: ['128GB', '256GB'],
     ramOptions: ['8GB', '16GB'],

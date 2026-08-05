@@ -5,7 +5,7 @@ export const REALME_MODELS: PhoneModel[] = [
   {
     id: 'm-realme-gt-neo-5',
     brand: 'Realme',
-    modelName: 'Realme GT Neo 5 (240W)',
+    modelName: 'GT Neo 5 (240W)',
     colorVariants: ['Pulse White', 'Uncharted Black', 'Purple (RGB Light Window)'],
     storageOptions: ['256GB', '512GB', '1TB'],
     ramOptions: ['16GB'],
@@ -22,7 +22,7 @@ export const REALME_MODELS: PhoneModel[] = [
   {
     id: 'm-realme-gt-5-pro',
     brand: 'Realme',
-    modelName: 'Realme GT 5 Pro',
+    modelName: 'GT 5 Pro',
     colorVariants: ['Red Rock (Vegan Leather)', 'Starry Night (Glass)', 'Bright Moon (Leather)'],
     storageOptions: ['256GB', '512GB', '1TB'],
     ramOptions: ['12GB', '16GB'],
@@ -39,7 +39,7 @@ export const REALME_MODELS: PhoneModel[] = [
   {
     id: 'm-realme-gt-6',
     brand: 'Realme',
-    modelName: 'Realme GT 6',
+    modelName: 'GT 6',
     colorVariants: ['Fluid Silver', 'Razor Green'],
     storageOptions: ['256GB', '512GB'],
     ramOptions: ['8GB', '12GB', '16GB'],
@@ -56,7 +56,7 @@ export const REALME_MODELS: PhoneModel[] = [
   {
     id: 'm-realme-gt-7-pro',
     brand: 'Realme',
-    modelName: 'Realme GT 7 Pro',
+    modelName: 'GT 7 Pro',
     colorVariants: ['Mars Orange', 'Galaxy Gray', 'White Light'],
     storageOptions: ['256GB', '512GB', '1TB'],
     ramOptions: ['12GB', '16GB'],
@@ -73,7 +73,7 @@ export const REALME_MODELS: PhoneModel[] = [
   {
     id: 'm-realme-neo-8',
     brand: 'Realme',
-    modelName: 'Realme Neo 8',
+    modelName: 'Neo 8',
     colorVariants: ['Mecha Cyber Purple', 'Titanium Silver', 'Phantom Black'],
     storageOptions: ['256GB', '512GB', '1TB'],
     ramOptions: ['12GB', '16GB', '24GB'],
@@ -90,7 +90,7 @@ export const REALME_MODELS: PhoneModel[] = [
   {
     id: 'm-realme-gt-neo-6',
     brand: 'Realme',
-    modelName: 'Realme GT Neo 6',
+    modelName: 'GT Neo 6',
     colorVariants: ['Fluid Silver', 'Razor Green', 'Hacker Purple'],
     storageOptions: ['256GB', '512GB', '1TB'],
     ramOptions: ['12GB', '16GB'],
@@ -109,7 +109,7 @@ export const REALME_MODELS: PhoneModel[] = [
   {
     id: 'm-realme-12-pro-plus-5g',
     brand: 'Realme',
-    modelName: 'Realme 12 Pro+ 5G',
+    modelName: '12 Pro+ 5G',
     colorVariants: ['Submarine Blue (Leather)', 'Navigator Beige (Leather)', 'Explorer Red'],
     storageOptions: ['128GB', '256GB', '512GB'],
     ramOptions: ['8GB', '12GB'],
@@ -126,7 +126,7 @@ export const REALME_MODELS: PhoneModel[] = [
   {
     id: 'm-realme-13-pro-plus-5g',
     brand: 'Realme',
-    modelName: 'Realme 13 Pro+ 5G',
+    modelName: '13 Pro+ 5G',
     colorVariants: ['Monet Gold', 'Emerald Green'],
     storageOptions: ['256GB', '512GB'],
     ramOptions: ['8GB', '12GB'],
@@ -145,7 +145,7 @@ export const REALME_MODELS: PhoneModel[] = [
   {
     id: 'm-realme-c67-5g',
     brand: 'Realme',
-    modelName: 'Realme C67 5G',
+    modelName: 'C67 5G',
     colorVariants: ['Sunny Oasis', 'Dark Purple'],
     storageOptions: ['128GB'],
     ramOptions: ['4GB', '6GB'],
@@ -162,7 +162,7 @@ export const REALME_MODELS: PhoneModel[] = [
   {
     id: 'm-realme-14-pro-plus',
     brand: 'Realme',
-    modelName: 'Realme 14 Pro+ 5G',
+    modelName: '14 Pro+ 5G',
     colorVariants: ['Black', 'White', 'Purple (color-changing)'],
     storageOptions: ['256GB', '512GB'],
     ramOptions: ['8GB', '12GB'],
@@ -180,7 +180,7 @@ export const REALME_MODELS: PhoneModel[] = [
   {
     id: 'm-realme-gt8-pro',
     brand: 'Realme',
-    modelName: 'Realme GT 8 Pro',
+    modelName: 'GT 8 Pro',
     colorVariants: ['Black', 'Orange', 'White'],
     storageOptions: ['256GB', '512GB'],
     ramOptions: ['12GB', '16GB'],
@@ -198,7 +198,7 @@ export const REALME_MODELS: PhoneModel[] = [
   {
     id: 'm-realme-15-pro',
     brand: 'Realme',
-    modelName: 'Realme 15 Pro 5G',
+    modelName: '15 Pro 5G',
     colorVariants: ['Black', 'Gold', 'Blue'],
     storageOptions: ['256GB', '512GB'],
     ramOptions: ['8GB', '12GB'],
@@ -216,7 +216,7 @@ export const REALME_MODELS: PhoneModel[] = [
   {
     id: 'm-realme-c75',
     brand: 'Realme',
-    modelName: 'Realme C75',
+    modelName: 'C75',
     colorVariants: ['Black', 'Gold'],
     storageOptions: ['128GB', '256GB'],
     ramOptions: ['6GB', '8GB'],
@@ -234,7 +234,7 @@ export const REALME_MODELS: PhoneModel[] = [
   {
     id: 'm-realme-11-pro-plus',
     brand: 'Realme',
-    modelName: 'Realme 11 Pro+ 5G',
+    modelName: '11 Pro+ 5G',
     colorVariants: ['Sunrise Beige', 'Astral Black'],
     storageOptions: ['256GB', '512GB'],
     ramOptions: ['8GB', '12GB'],
@@ -252,7 +252,7 @@ export const REALME_MODELS: PhoneModel[] = [
   {
     id: 'm-realme-narzo-70-pro',
     brand: 'Realme',
-    modelName: 'Realme Narzo 70 Pro 5G',
+    modelName: 'Narzo 70 Pro 5G',
     colorVariants: ['Black', 'Blue', 'Green'],
     storageOptions: ['128GB', '256GB'],
     ramOptions: ['8GB'],
@@ -270,7 +270,7 @@ export const REALME_MODELS: PhoneModel[] = [
   {
     id: 'm-realme-c65',
     brand: 'Realme',
-    modelName: 'Realme C65',
+    modelName: 'C65',
     colorVariants: ['Black', 'Gold', 'Green'],
     storageOptions: ['128GB', '256GB'],
     ramOptions: ['6GB', '8GB'],
@@ -288,7 +288,7 @@ export const REALME_MODELS: PhoneModel[] = [
   {
     id: 'm-realme-9-pro-plus',
     brand: 'Realme',
-    modelName: 'Realme 9 Pro+ 5G',
+    modelName: '9 Pro+ 5G',
     colorVariants: ['Aurora Green', 'Sunrise Blue', 'Midnight Black'],
     storageOptions: ['128GB', '256GB'],
     ramOptions: ['6GB', '8GB'],
@@ -306,7 +306,7 @@ export const REALME_MODELS: PhoneModel[] = [
   {
     id: 'm-realme-8',
     brand: 'Realme',
-    modelName: 'Realme 8',
+    modelName: '8',
     colorVariants: ['Cyber Black', 'Cyber Silver', 'Punk Black'],
     storageOptions: ['64GB', '128GB'],
     ramOptions: ['4GB', '6GB', '8GB'],
@@ -324,7 +324,7 @@ export const REALME_MODELS: PhoneModel[] = [
   {
     id: 'm-realme-narzo-60-pro',
     brand: 'Realme',
-    modelName: 'Realme Narzo 60 Pro 5G',
+    modelName: 'Narzo 60 Pro 5G',
     colorVariants: ['Black', 'Green'],
     storageOptions: ['128GB', '256GB'],
     ramOptions: ['8GB'],

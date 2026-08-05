@@ -198,7 +198,7 @@ export const OPPO_MODELS: PhoneModel[] = [
   {
     id: 'm-oppo-a78-5g',
     brand: 'OPPO',
-    modelName: 'OPPO A78 5G',
+    modelName: 'A78 5G',
     colorVariants: ['Glowing Black', 'Glowing Blue'],
     storageOptions: ['128GB'],
     ramOptions: ['8GB'],
@@ -215,7 +215,7 @@ export const OPPO_MODELS: PhoneModel[] = [
   {
     id: 'm-oppo-find-x8-ultra',
     brand: 'OPPO',
-    modelName: 'OPPO Find X8 Ultra',
+    modelName: 'Find X8 Ultra',
     colorVariants: ['Black', 'White'],
     storageOptions: ['256GB', '512GB', '1TB'],
     ramOptions: ['16GB'],
@@ -233,7 +233,7 @@ export const OPPO_MODELS: PhoneModel[] = [
   {
     id: 'm-oppo-reno13-pro',
     brand: 'OPPO',
-    modelName: 'OPPO Reno13 Pro 5G',
+    modelName: 'Reno13 Pro 5G',
     colorVariants: ['Black', 'Green', 'Purple'],
     storageOptions: ['256GB', '512GB'],
     ramOptions: ['12GB'],
@@ -251,7 +251,7 @@ export const OPPO_MODELS: PhoneModel[] = [
   {
     id: 'm-oppo-find-x9',
     brand: 'OPPO',
-    modelName: 'OPPO Find X9',
+    modelName: 'Find X9',
     colorVariants: ['Black', 'White', 'Blue'],
     storageOptions: ['256GB', '512GB'],
     ramOptions: ['12GB', '16GB'],
@@ -269,7 +269,7 @@ export const OPPO_MODELS: PhoneModel[] = [
   {
     id: 'm-oppo-reno14-pro',
     brand: 'OPPO',
-    modelName: 'OPPO Reno14 Pro 5G',
+    modelName: 'Reno14 Pro 5G',
     colorVariants: ['Black', 'Purple', 'White'],
     storageOptions: ['256GB', '512GB'],
     ramOptions: ['12GB'],
@@ -287,7 +287,7 @@ export const OPPO_MODELS: PhoneModel[] = [
   {
     id: 'm-oppo-a5-pro',
     brand: 'OPPO',
-    modelName: 'OPPO A5 Pro 5G',
+    modelName: 'A5 Pro 5G',
     colorVariants: ['Black', 'Blue', 'Green'],
     storageOptions: ['128GB', '256GB'],
     ramOptions: ['8GB'],
@@ -303,27 +303,9 @@ export const OPPO_MODELS: PhoneModel[] = [
     gsmarena_url: 'https://www.gsmarena.com/res.php3?sSearch=OPPO%20A5%20Pro%205G'
   },
   {
-    id: 'm-oppo-reno12-pro',
-    brand: 'OPPO',
-    modelName: 'OPPO Reno12 Pro 5G',
-    colorVariants: ['Black', 'Pearl White', 'Orange'],
-    storageOptions: ['256GB', '512GB'],
-    ramOptions: ['12GB'],
-    displaySpecs: '6.7" AMOLED 120Hz Curved',
-    chipset: 'MediaTek Dimensity 7300-Energy',
-    cameraSpecs: '50MP Main (OIS) + 8MP Telephoto + 8MP Ultrawide',
-    batterySpecs: '5000 mAh (80W Wired)',
-    releaseYear: 2024,
-    overview: 'Design-forward Reno device with a telephoto lens.',
-    pros: ['Telephoto lens included', 'Distinctive design'],
-    cons: ['MediaTek mid-tier chipset'],
-    recommendedFor: 'Design-focused upper-midrange buyers.',
-    gsmarena_url: 'https://www.gsmarena.com/res.php3?sSearch=OPPO%20Reno12%20Pro%205G'
-  },
-  {
     id: 'm-oppo-a3-pro',
     brand: 'OPPO',
-    modelName: 'OPPO A3 Pro 5G',
+    modelName: 'A3 Pro 5G',
     colorVariants: ['Black', 'Blue', 'Green'],
     storageOptions: ['128GB', '256GB'],
     ramOptions: ['8GB'],
@@ -341,7 +323,7 @@ export const OPPO_MODELS: PhoneModel[] = [
   {
     id: 'm-oppo-find-n5',
     brand: 'OPPO',
-    modelName: 'OPPO Find N5',
+    modelName: 'Find N5',
     colorVariants: ['Black', 'White'],
     storageOptions: ['512GB', '1TB'],
     ramOptions: ['16GB'],
@@ -357,27 +339,9 @@ export const OPPO_MODELS: PhoneModel[] = [
     gsmarena_url: 'https://www.gsmarena.com/res.php3?sSearch=OPPO%20Find%20N5'
   },
   {
-    id: 'm-oppo-reno11-pro',
-    brand: 'OPPO',
-    modelName: 'OPPO Reno11 Pro 5G',
-    colorVariants: ['Rabbit Moon White', 'Ember Purple'],
-    storageOptions: ['256GB', '512GB'],
-    ramOptions: ['12GB'],
-    displaySpecs: '6.7" AMOLED 120Hz Curved',
-    chipset: 'MediaTek Dimensity 8200',
-    cameraSpecs: '50MP Main (OIS) + 32MP Portrait Telephoto + 8MP Ultrawide',
-    batterySpecs: '4700 mAh (67W Wired)',
-    releaseYear: 2024,
-    overview: 'Portrait-focused Reno device with distinctive curved design.',
-    pros: ['Dedicated portrait telephoto lens', 'Distinctive curved design'],
-    cons: ['Smaller battery than rivals'],
-    recommendedFor: 'Portrait photography midrange buyers.',
-    gsmarena_url: 'https://www.gsmarena.com/res.php3?sSearch=OPPO%20Reno11%20Pro%205G'
-  },
-  {
     id: 'm-oppo-find-x7',
     brand: 'OPPO',
-    modelName: 'OPPO Find X7',
+    modelName: 'Find X7',
     colorVariants: ['Black', 'Blue', 'Sunset Orange'],
     storageOptions: ['256GB', '512GB'],
     ramOptions: ['12GB', '16GB'],
@@ -395,7 +359,7 @@ export const OPPO_MODELS: PhoneModel[] = [
   {
     id: 'm-oppo-reno8',
     brand: 'OPPO',
-    modelName: 'OPPO Reno8 5G',
+    modelName: 'Reno8 5G',
     colorVariants: ['Shimmer Gold', 'Sunset Orange'],
     storageOptions: ['128GB', '256GB'],
     ramOptions: ['8GB'],
@@ -413,7 +377,7 @@ export const OPPO_MODELS: PhoneModel[] = [
   {
     id: 'm-oppo-a58',
     brand: 'OPPO',
-    modelName: 'OPPO A58 5G',
+    modelName: 'A58 5G',
     colorVariants: ['Dazzling Purple', 'Startrail Black'],
     storageOptions: ['128GB', '256GB'],
     ramOptions: ['6GB', '8GB'],
@@ -431,7 +395,7 @@ export const OPPO_MODELS: PhoneModel[] = [
   {
     id: 'm-oppo-find-x6',
     brand: 'OPPO',
-    modelName: 'OPPO Find X6',
+    modelName: 'Find X6',
     colorVariants: ['Black', 'White', 'Blue'],
     storageOptions: ['256GB', '512GB'],
     ramOptions: ['12GB', '16GB'],

@@ -40,7 +40,7 @@ export const ModelsCatalog: React.FC<ModelsCatalogProps> = ({
       if (!matchText.includes(q)) return false;
     }
     return true;
-  });
+  }).sort((a, b) => a.brand.localeCompare(b.brand) || a.modelName.localeCompare(b.modelName, undefined, { numeric: true }));
 
   // Count active listings per model
   const listingCountMap = new Map<string, number>();

@@ -5,7 +5,7 @@ export const XIAOMI_MODELS: PhoneModel[] = [
   {
     id: 'm-xiaomi-11',
     brand: 'Xiaomi',
-    modelName: 'Xiaomi Mi 11',
+    modelName: 'Mi 11',
     colorVariants: ['Midnight Gray', 'Horizon Blue', 'Frost White'],
     storageOptions: ['128GB', '256GB'],
     ramOptions: ['8GB', '12GB'],
@@ -22,7 +22,7 @@ export const XIAOMI_MODELS: PhoneModel[] = [
   {
     id: 'm-xiaomi-11-ultra',
     brand: 'Xiaomi',
-    modelName: 'Xiaomi Mi 11 Ultra',
+    modelName: 'Mi 11 Ultra',
     colorVariants: ['Ceramic Black', 'Ceramic White'],
     storageOptions: ['256GB', '512GB'],
     ramOptions: ['8GB', '12GB'],
@@ -39,7 +39,7 @@ export const XIAOMI_MODELS: PhoneModel[] = [
   {
     id: 'm-xiaomi-11t-pro',
     brand: 'Xiaomi',
-    modelName: 'Xiaomi 11T Pro',
+    modelName: '11T Pro',
     colorVariants: ['Meteorite Gray', 'Moonlight White', 'Celestial Blue'],
     storageOptions: ['128GB', '256GB'],
     ramOptions: ['8GB', '12GB'],
@@ -58,7 +58,7 @@ export const XIAOMI_MODELS: PhoneModel[] = [
   {
     id: 'm-xiaomi-12',
     brand: 'Xiaomi',
-    modelName: 'Xiaomi 12',
+    modelName: '12',
     colorVariants: ['Gray', 'Blue', 'Purple', 'Green'],
     storageOptions: ['128GB', '256GB'],
     ramOptions: ['8GB', '12GB'],
@@ -75,7 +75,7 @@ export const XIAOMI_MODELS: PhoneModel[] = [
   {
     id: 'm-xiaomi-12-pro',
     brand: 'Xiaomi',
-    modelName: 'Xiaomi 12 Pro',
+    modelName: '12 Pro',
     colorVariants: ['Gray', 'Blue', 'Purple'],
     storageOptions: ['128GB', '256GB'],
     ramOptions: ['8GB', '12GB'],
@@ -92,7 +92,7 @@ export const XIAOMI_MODELS: PhoneModel[] = [
   {
     id: 'm-xiaomi-12s-ultra',
     brand: 'Xiaomi',
-    modelName: 'Xiaomi 12S Ultra',
+    modelName: '12S Ultra',
     colorVariants: ['Classic Black', 'Verdant Green'],
     storageOptions: ['256GB', '512GB'],
     ramOptions: ['8GB', '12GB'],
@@ -111,7 +111,7 @@ export const XIAOMI_MODELS: PhoneModel[] = [
   {
     id: 'm-xiaomi-13',
     brand: 'Xiaomi',
-    modelName: 'Xiaomi 13',
+    modelName: '13',
     colorVariants: ['Black', 'White', 'Flora Green', 'Cyber Yellow'],
     storageOptions: ['128GB', '256GB', '512GB'],
     ramOptions: ['8GB', '12GB'],
@@ -128,7 +128,7 @@ export const XIAOMI_MODELS: PhoneModel[] = [
   {
     id: 'm-xiaomi-13-pro',
     brand: 'Xiaomi',
-    modelName: 'Xiaomi 13 Pro',
+    modelName: '13 Pro',
     colorVariants: ['Ceramic Black', 'Ceramic White', 'Flora Green'],
     storageOptions: ['128GB', '256GB', '512GB'],
     ramOptions: ['8GB', '12GB'],
@@ -145,7 +145,7 @@ export const XIAOMI_MODELS: PhoneModel[] = [
   {
     id: 'm-xiaomi-13-ultra',
     brand: 'Xiaomi',
-    modelName: 'Xiaomi 13 Ultra',
+    modelName: '13 Ultra',
     colorVariants: ['Black', 'White', 'Olive Green'],
     storageOptions: ['256GB', '512GB', '1TB'],
     ramOptions: ['12GB', '16GB'],
@@ -164,7 +164,7 @@ export const XIAOMI_MODELS: PhoneModel[] = [
   {
     id: 'm-xiaomi-14',
     brand: 'Xiaomi',
-    modelName: 'Xiaomi 14',
+    modelName: '14',
     colorVariants: ['Black', 'White', 'Jade Green', 'Pink'],
     storageOptions: ['256GB', '512GB', '1TB'],
     ramOptions: ['8GB', '12GB', '16GB'],
@@ -181,7 +181,7 @@ export const XIAOMI_MODELS: PhoneModel[] = [
   {
     id: 'm-xiaomi-14-pro',
     brand: 'Xiaomi',
-    modelName: 'Xiaomi 14 Pro',
+    modelName: '14 Pro',
     colorVariants: ['Black', 'Silver', 'Jade Green', 'Titanium Edition'],
     storageOptions: ['256GB', '512GB', '1TB'],
     ramOptions: ['12GB', '16GB'],
@@ -198,7 +198,7 @@ export const XIAOMI_MODELS: PhoneModel[] = [
   {
     id: 'm-xiaomi-14-ultra',
     brand: 'Xiaomi',
-    modelName: 'Xiaomi 14 Ultra',
+    modelName: '14 Ultra',
     colorVariants: ['Black', 'White', 'Dragon Armor Blue', 'Titanium Special Edition'],
     storageOptions: ['256GB', '512GB', '1TB'],
     ramOptions: ['12GB', '16GB'],
@@ -215,7 +215,7 @@ export const XIAOMI_MODELS: PhoneModel[] = [
   {
     id: 'm-xiaomi-14t-pro',
     brand: 'Xiaomi',
-    modelName: 'Xiaomi 14T Pro',
+    modelName: '14T Pro',
     colorVariants: ['Titan Gray', 'Titan Blue', 'Titan Black'],
     storageOptions: ['256GB', '512GB', '1TB'],
     ramOptions: ['12GB'],
@@ -234,7 +234,7 @@ export const XIAOMI_MODELS: PhoneModel[] = [
   {
     id: 'm-xiaomi-15',
     brand: 'Xiaomi',
-    modelName: 'Xiaomi 15',
+    modelName: '15',
     colorVariants: ['Black', 'White', 'Asukaze Green', 'Liquid Silver', 'Bright Lilac'],
     storageOptions: ['256GB', '512GB', '1TB'],
     ramOptions: ['12GB', '16GB'],
@@ -251,7 +251,7 @@ export const XIAOMI_MODELS: PhoneModel[] = [
   {
     id: 'm-xiaomi-15-pro',
     brand: 'Xiaomi',
-    modelName: 'Xiaomi 15 Pro',
+    modelName: '15 Pro',
     colorVariants: ['Black', 'White', 'Spruce Green', 'Liquid Silver Edition'],
     storageOptions: ['256GB', '512GB', '1TB'],
     ramOptions: ['12GB', '16GB'],
@@ -268,7 +268,7 @@ export const XIAOMI_MODELS: PhoneModel[] = [
   {
     id: 'm-xiaomi-15-ultra',
     brand: 'Xiaomi',
-    modelName: 'Xiaomi 15 Ultra',
+    modelName: '15 Ultra',
     colorVariants: ['Black Leather', 'White Ceramic', 'Silver Titanium'],
     storageOptions: ['512GB', '1TB'],
     ramOptions: ['16GB'],
@@ -285,7 +285,7 @@ export const XIAOMI_MODELS: PhoneModel[] = [
   {
     id: 'm-xiaomi-17-ultra',
     brand: 'Xiaomi',
-    modelName: 'Xiaomi 17 Ultra',
+    modelName: '17 Ultra',
     colorVariants: ['Black', 'White', 'Silver'],
     storageOptions: ['512GB'],
     ramOptions: ['12GB'],
@@ -304,7 +304,7 @@ export const XIAOMI_MODELS: PhoneModel[] = [
   {
     id: 'm-xiaomi-mix-fold-3',
     brand: 'Xiaomi',
-    modelName: 'Xiaomi MIX Fold 3',
+    modelName: 'MIX Fold 3',
     colorVariants: ['Black Dragon Scale Fiber', 'Moon Gold'],
     storageOptions: ['256GB', '512GB', '1TB'],
     ramOptions: ['12GB', '16GB'],
@@ -321,7 +321,7 @@ export const XIAOMI_MODELS: PhoneModel[] = [
   {
     id: 'm-xiaomi-mix-fold-4',
     brand: 'Xiaomi',
-    modelName: 'Xiaomi MIX Fold 4',
+    modelName: 'MIX Fold 4',
     colorVariants: ['Black', 'White', 'Dragon Scale Fiber Blue'],
     storageOptions: ['256GB', '512GB', '1TB'],
     ramOptions: ['12GB', '16GB'],
@@ -338,7 +338,7 @@ export const XIAOMI_MODELS: PhoneModel[] = [
   {
     id: 'm-xiaomi-mix-flip',
     brand: 'Xiaomi',
-    modelName: 'Xiaomi MIX Flip',
+    modelName: 'MIX Flip',
     colorVariants: ['Black', 'White', 'Purple', 'Nylon Fiber Special Edition'],
     storageOptions: ['256GB', '512GB', '1TB'],
     ramOptions: ['12GB', '16GB'],
@@ -357,7 +357,7 @@ export const XIAOMI_MODELS: PhoneModel[] = [
   {
     id: 'm-xiaomi-civi-4-pro',
     brand: 'Xiaomi',
-    modelName: 'Xiaomi Civi 4 Pro',
+    modelName: 'Civi 4 Pro',
     colorVariants: ['Spring Field Green', 'Soft Mist Pink', 'Breeze Blue', 'Black'],
     storageOptions: ['256GB', '512GB'],
     ramOptions: ['12GB', '16GB'],
@@ -374,7 +374,7 @@ export const XIAOMI_MODELS: PhoneModel[] = [
   {
     id: 'm-xiaomi-17',
     brand: 'Xiaomi',
-    modelName: 'Xiaomi 17',
+    modelName: '17',
     colorVariants: ['Black', 'White', 'Blue'],
     storageOptions: ['256GB', '512GB'],
     ramOptions: ['12GB'],
@@ -392,7 +392,7 @@ export const XIAOMI_MODELS: PhoneModel[] = [
   {
     id: 'm-xiaomi-17-pro',
     brand: 'Xiaomi',
-    modelName: 'Xiaomi 17 Pro',
+    modelName: '17 Pro',
     colorVariants: ['Black', 'White', 'Green'],
     storageOptions: ['256GB', '512GB', '1TB'],
     ramOptions: ['12GB', '16GB'],
@@ -410,7 +410,7 @@ export const XIAOMI_MODELS: PhoneModel[] = [
   {
     id: 'm-xiaomi-mix-flip-2',
     brand: 'Xiaomi',
-    modelName: 'Xiaomi MIX Flip 2',
+    modelName: 'MIX Flip 2',
     colorVariants: ['Black', 'Pink'],
     storageOptions: ['256GB', '512GB'],
     ramOptions: ['12GB', '16GB'],
@@ -428,7 +428,7 @@ export const XIAOMI_MODELS: PhoneModel[] = [
   {
     id: 'm-xiaomi-13t-pro',
     brand: 'Xiaomi',
-    modelName: 'Xiaomi 13T Pro',
+    modelName: '13T Pro',
     colorVariants: ['Black', 'Meadow Green', 'Alpine Blue'],
     storageOptions: ['256GB', '512GB', '1TB'],
     ramOptions: ['12GB'],
@@ -446,7 +446,7 @@ export const XIAOMI_MODELS: PhoneModel[] = [
   {
     id: 'm-xiaomi-12t-pro',
     brand: 'Xiaomi',
-    modelName: 'Xiaomi 12T Pro',
+    modelName: '12T Pro',
     colorVariants: ['Black', 'Silver', 'Blue'],
     storageOptions: ['256GB'],
     ramOptions: ['8GB', '12GB'],
@@ -464,7 +464,7 @@ export const XIAOMI_MODELS: PhoneModel[] = [
   {
     id: 'm-xiaomi-13-lite',
     brand: 'Xiaomi',
-    modelName: 'Xiaomi 13 Lite',
+    modelName: '13 Lite',
     colorVariants: ['Black', 'Blue', 'Lite Pink'],
     storageOptions: ['128GB', '256GB'],
     ramOptions: ['8GB'],
@@ -482,7 +482,7 @@ export const XIAOMI_MODELS: PhoneModel[] = [
   {
     id: 'm-xiaomi-mi-11-lite',
     brand: 'Xiaomi',
-    modelName: 'Xiaomi Mi 11 Lite 5G',
+    modelName: 'Mi 11 Lite 5G',
     colorVariants: ['Black', 'Boba Blue', 'Peach Pink'],
     storageOptions: ['128GB', '256GB'],
     ramOptions: ['6GB', '8GB'],
@@ -500,7 +500,7 @@ export const XIAOMI_MODELS: PhoneModel[] = [
   {
     id: 'm-xiaomi-11t',
     brand: 'Xiaomi',
-    modelName: 'Xiaomi 11T',
+    modelName: '11T',
     colorVariants: ['Meteorite Grey', 'Moonlight White', 'Celestial Blue'],
     storageOptions: ['128GB', '256GB'],
     ramOptions: ['8GB'],
@@ -518,7 +518,7 @@ export const XIAOMI_MODELS: PhoneModel[] = [
   {
     id: 'm-xiaomi-mi-10',
     brand: 'Xiaomi',
-    modelName: 'Xiaomi Mi 10',
+    modelName: 'Mi 10',
     colorVariants: ['Twilight Grey', 'Coral Green', 'Peach Gold'],
     storageOptions: ['128GB', '256GB'],
     ramOptions: ['8GB'],
@@ -536,7 +536,7 @@ export const XIAOMI_MODELS: PhoneModel[] = [
   {
     id: 'm-xiaomi-redmi-note-8-pro',
     brand: 'Xiaomi',
-    modelName: 'Xiaomi Redmi Note 8 Pro',
+    modelName: 'Redmi Note 8 Pro',
     colorVariants: ['Mineral Grey', 'Pearl White', 'Gamma Green'],
     storageOptions: ['64GB', '128GB'],
     ramOptions: ['6GB'],

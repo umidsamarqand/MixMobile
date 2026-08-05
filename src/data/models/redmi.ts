@@ -5,7 +5,7 @@ export const REDMI_MODELS: PhoneModel[] = [
   {
     id: 'm-redmi-k70-pro',
     brand: 'Redmi',
-    modelName: 'Redmi K70 Pro',
+    modelName: 'K70 Pro',
     colorVariants: ['Black', 'Silver', 'Clear Snow White', 'Lamborghini Squadra Corse Edition'],
     storageOptions: ['256GB', '512GB', '1TB'],
     ramOptions: ['12GB', '16GB', '24GB'],
@@ -22,7 +22,7 @@ export const REDMI_MODELS: PhoneModel[] = [
   {
     id: 'm-redmi-k70-ultra',
     brand: 'Redmi',
-    modelName: 'Redmi K70 Ultra',
+    modelName: 'K70 Ultra',
     colorVariants: ['Ink Black', 'Snow White', 'Ice Blue', 'Lamborghini Edition'],
     storageOptions: ['256GB', '512GB', '1TB'],
     ramOptions: ['12GB', '16GB', '24GB'],
@@ -39,7 +39,7 @@ export const REDMI_MODELS: PhoneModel[] = [
   {
     id: 'm-redmi-k80-pro',
     brand: 'Redmi',
-    modelName: 'Redmi K80 Pro',
+    modelName: 'K80 Pro',
     colorVariants: ['Snow Rock White', 'Mountain Green', 'Night Black', 'Lamborghini Automobili Edition'],
     storageOptions: ['256GB', '512GB', '1TB'],
     ramOptions: ['12GB', '16GB'],
@@ -58,7 +58,7 @@ export const REDMI_MODELS: PhoneModel[] = [
   {
     id: 'm-redmi-note-12-pro-plus-5g',
     brand: 'Redmi',
-    modelName: 'Redmi Note 12 Pro+ 5G',
+    modelName: 'Note 12 Pro+ 5G',
     colorVariants: ['Obsidian Black', 'Iceberg Blue', 'Arctic White', 'Trend Edition'],
     storageOptions: ['256GB'],
     ramOptions: ['8GB', '12GB'],
@@ -75,7 +75,7 @@ export const REDMI_MODELS: PhoneModel[] = [
   {
     id: 'm-redmi-note-13-pro-plus-5g',
     brand: 'Redmi',
-    modelName: 'Redmi Note 13 Pro+ 5G',
+    modelName: 'Note 13 Pro+ 5G',
     colorVariants: ['Midnight Black', 'Moonlight White', 'Aurora Purple (Vegan Leather)', 'World Champions Edition'],
     storageOptions: ['256GB', '512GB'],
     ramOptions: ['8GB', '12GB', '16GB'],
@@ -92,7 +92,7 @@ export const REDMI_MODELS: PhoneModel[] = [
   {
     id: 'm-redmi-note-14-pro-plus-5g',
     brand: 'Redmi',
-    modelName: 'Redmi Note 14 Pro+ 5G',
+    modelName: 'Note 14 Pro+ 5G',
     colorVariants: ['Star Sand Blue', 'Phantom Green', 'Midnight Black'],
     storageOptions: ['256GB', '512GB'],
     ramOptions: ['12GB', '16GB'],
@@ -111,7 +111,7 @@ export const REDMI_MODELS: PhoneModel[] = [
   {
     id: 'm-redmi-turbo-3',
     brand: 'Redmi',
-    modelName: 'Redmi Turbo 3',
+    modelName: 'Turbo 3',
     colorVariants: ['Black', 'Green', 'Titanium', 'Harry Potter Limited Edition'],
     storageOptions: ['256GB', '512GB', '1TB'],
     ramOptions: ['12GB', '16GB'],
@@ -128,7 +128,7 @@ export const REDMI_MODELS: PhoneModel[] = [
   {
     id: 'm-redmi-turbo-4',
     brand: 'Redmi',
-    modelName: 'Redmi Turbo 4',
+    modelName: 'Turbo 4',
     colorVariants: ['Shadow Black', 'Cyber Cyan', 'Ghost White'],
     storageOptions: ['256GB', '512GB', '1TB'],
     ramOptions: ['12GB', '16GB'],
@@ -145,7 +145,7 @@ export const REDMI_MODELS: PhoneModel[] = [
   {
     id: 'm-redmi-k80-ultra',
     brand: 'Redmi',
-    modelName: 'Redmi K80 Ultra',
+    modelName: 'K80 Ultra',
     colorVariants: ['Black', 'Silver'],
     storageOptions: ['512GB', '1TB'],
     ramOptions: ['16GB', '24GB'],
@@ -163,7 +163,7 @@ export const REDMI_MODELS: PhoneModel[] = [
   {
     id: 'm-redmi-note-14',
     brand: 'Redmi',
-    modelName: 'Redmi Note 14',
+    modelName: 'Note 14',
     colorVariants: ['Black', 'Green', 'Silver'],
     storageOptions: ['128GB', '256GB'],
     ramOptions: ['6GB', '8GB'],
@@ -181,7 +181,7 @@ export const REDMI_MODELS: PhoneModel[] = [
   {
     id: 'm-redmi-note-14-pro',
     brand: 'Redmi',
-    modelName: 'Redmi Note 14 Pro 5G',
+    modelName: 'Note 14 Pro 5G',
     colorVariants: ['Black', 'White', 'Purple'],
     storageOptions: ['128GB', '256GB'],
     ramOptions: ['8GB', '12GB'],
@@ -199,7 +199,7 @@ export const REDMI_MODELS: PhoneModel[] = [
   {
     id: 'm-redmi-13c',
     brand: 'Redmi',
-    modelName: 'Redmi 13C',
+    modelName: '13C',
     colorVariants: ['Black', 'Blue', 'Green'],
     storageOptions: ['64GB', '128GB', '256GB'],
     ramOptions: ['4GB', '6GB', '8GB'],
@@ -217,7 +217,7 @@ export const REDMI_MODELS: PhoneModel[] = [
   {
     id: 'm-redmi-14c',
     brand: 'Redmi',
-    modelName: 'Redmi 14C',
+    modelName: '14C',
     colorVariants: ['Black', 'Blue', 'Starry Green'],
     storageOptions: ['128GB', '256GB'],
     ramOptions: ['4GB', '6GB', '8GB'],
@@ -235,7 +235,7 @@ export const REDMI_MODELS: PhoneModel[] = [
   {
     id: 'm-redmi-a5',
     brand: 'Redmi',
-    modelName: 'Redmi A5',
+    modelName: 'A5',
     colorVariants: ['Black', 'Blue', 'Lavender Purple'],
     storageOptions: ['64GB', '128GB'],
     ramOptions: ['3GB', '4GB'],
@@ -253,7 +253,7 @@ export const REDMI_MODELS: PhoneModel[] = [
   {
     id: 'm-redmi-turbo-5',
     brand: 'Redmi',
-    modelName: 'Redmi Turbo 5',
+    modelName: 'Turbo 5',
     colorVariants: ['Black', 'Blue', 'Silver'],
     storageOptions: ['256GB', '512GB'],
     ramOptions: ['12GB', '16GB'],
@@ -271,7 +271,7 @@ export const REDMI_MODELS: PhoneModel[] = [
   {
     id: 'm-redmi-note-13-pro',
     brand: 'Redmi',
-    modelName: 'Redmi Note 13 Pro 5G',
+    modelName: 'Note 13 Pro 5G',
     colorVariants: ['Black', 'Lavender', 'Ocean Teal'],
     storageOptions: ['128GB', '256GB'],
     ramOptions: ['8GB', '12GB'],
@@ -289,7 +289,7 @@ export const REDMI_MODELS: PhoneModel[] = [
   {
     id: 'm-redmi-note-13',
     brand: 'Redmi',
-    modelName: 'Redmi Note 13',
+    modelName: 'Note 13',
     colorVariants: ['Black', 'Green', 'Ice Blue'],
     storageOptions: ['128GB', '256GB'],
     ramOptions: ['6GB', '8GB'],
@@ -307,7 +307,7 @@ export const REDMI_MODELS: PhoneModel[] = [
   {
     id: 'm-redmi-12',
     brand: 'Redmi',
-    modelName: 'Redmi 12',
+    modelName: '12',
     colorVariants: ['Black', 'Sky Blue', 'Polar Silver'],
     storageOptions: ['128GB', '256GB'],
     ramOptions: ['4GB', '6GB', '8GB'],
@@ -325,7 +325,7 @@ export const REDMI_MODELS: PhoneModel[] = [
   {
     id: 'm-redmi-note-12',
     brand: 'Redmi',
-    modelName: 'Redmi Note 12',
+    modelName: 'Note 12',
     colorVariants: ['Onyx Grey', 'Ice Blue', 'Mint Green'],
     storageOptions: ['128GB', '256GB'],
     ramOptions: ['4GB', '6GB', '8GB'],
@@ -343,7 +343,7 @@ export const REDMI_MODELS: PhoneModel[] = [
   {
     id: 'm-redmi-10c',
     brand: 'Redmi',
-    modelName: 'Redmi 10C',
+    modelName: '10C',
     colorVariants: ['Graphite Grey', 'Ocean Blue', 'Mint Green'],
     storageOptions: ['64GB', '128GB'],
     ramOptions: ['3GB', '4GB'],
@@ -361,7 +361,7 @@ export const REDMI_MODELS: PhoneModel[] = [
   {
     id: 'm-redmi-note-11',
     brand: 'Redmi',
-    modelName: 'Redmi Note 11',
+    modelName: 'Note 11',
     colorVariants: ['Twilight Blue', 'Graphite Grey', 'Star Blue'],
     storageOptions: ['64GB', '128GB'],
     ramOptions: ['4GB', '6GB'],
@@ -379,7 +379,7 @@ export const REDMI_MODELS: PhoneModel[] = [
   {
     id: 'm-redmi-note-10-pro',
     brand: 'Redmi',
-    modelName: 'Redmi Note 10 Pro',
+    modelName: 'Note 10 Pro',
     colorVariants: ['Onyx Gray', 'Glacial Blue', 'Gradient Bronze'],
     storageOptions: ['64GB', '128GB'],
     ramOptions: ['6GB', '8GB'],
@@ -397,7 +397,7 @@ export const REDMI_MODELS: PhoneModel[] = [
   {
     id: 'm-redmi-9',
     brand: 'Redmi',
-    modelName: 'Redmi 9',
+    modelName: '9',
     colorVariants: ['Carbon Grey', 'Ocean Green', 'Sunset Purple'],
     storageOptions: ['32GB', '64GB'],
     ramOptions: ['3GB', '4GB'],
@@ -415,7 +415,7 @@ export const REDMI_MODELS: PhoneModel[] = [
   {
     id: 'm-redmi-note-9-pro',
     brand: 'Redmi',
-    modelName: 'Redmi Note 9 Pro',
+    modelName: 'Note 9 Pro',
     colorVariants: ['Interstellar Black', 'Glacier White', 'Aurora Blue'],
     storageOptions: ['64GB', '128GB'],
     ramOptions: ['4GB', '6GB'],
@@ -433,7 +433,7 @@ export const REDMI_MODELS: PhoneModel[] = [
   {
     id: 'm-redmi-12c',
     brand: 'Redmi',
-    modelName: 'Redmi 12C',
+    modelName: '12C',
     colorVariants: ['Graphite Grey', 'Ocean Blue', 'Royal Blue'],
     storageOptions: ['64GB', '128GB'],
     ramOptions: ['3GB', '4GB'],
@@ -451,7 +451,7 @@ export const REDMI_MODELS: PhoneModel[] = [
   {
     id: 'm-redmi-k70',
     brand: 'Redmi',
-    modelName: 'Redmi K70',
+    modelName: 'K70',
     colorVariants: ['Black', 'White', 'Blue'],
     storageOptions: ['256GB', '512GB'],
     ramOptions: ['12GB', '16GB'],
