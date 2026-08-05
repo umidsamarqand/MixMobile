@@ -443,7 +443,7 @@ export const OTHER_BRANDS_MODELS: PhoneModel[] = [
   },
   {
     id: 'm-redmagic-11-pro',
-    brand: 'ZTE / Nubia / RedMagic',
+    brand: 'RedMagic',
     modelName: 'RedMagic 11 Pro',
     colorVariants: ['Black', 'Silver'],
     storageOptions: ['256GB', '512GB', '1TB'],
@@ -785,7 +785,7 @@ export const OTHER_BRANDS_MODELS: PhoneModel[] = [
   },
   {
     id: 'm-redmagic-astra',
-    brand: 'ZTE / Nubia / RedMagic',
+    brand: 'RedMagic',
     modelName: 'RedMagic Astra',
     colorVariants: ['Black', 'Titanium'],
     storageOptions: ['256GB', '512GB'],
