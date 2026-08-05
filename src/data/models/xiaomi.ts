@@ -533,22 +533,4 @@ export const XIAOMI_MODELS: PhoneModel[] = [
     recommendedFor: 'Resale market flagship buyers.',
     gsmarena_url: 'https://www.gsmarena.com/res.php3?sSearch=Xiaomi%20Mi%2010'
   },
-  {
-    id: 'm-xiaomi-redmi-note-8-pro',
-    brand: 'Xiaomi',
-    modelName: 'Redmi Note 8 Pro',
-    colorVariants: ['Mineral Grey', 'Pearl White', 'Gamma Green'],
-    storageOptions: ['64GB', '128GB'],
-    ramOptions: ['6GB'],
-    displaySpecs: '6.53" IPS LCD 60Hz',
-    chipset: 'MediaTek Helio G90T',
-    cameraSpecs: '64MP Main + 8MP Ultrawide + 2MP Macro + 2MP Depth',
-    batterySpecs: '4500 mAh (18W Wired)',
-    releaseYear: 2019,
-    overview: 'Legendary budget device still very common in resale markets.',
-    pros: ['64MP main camera at launch', 'Huge installed base'],
-    cons: ['60Hz LCD screen'],
-    recommendedFor: 'High-volume resale buyers.',
-    gsmarena_url: 'https://www.gsmarena.com/res.php3?sSearch=Xiaomi%20Redmi%20Note%208%20Pro'
-  },
 ];
