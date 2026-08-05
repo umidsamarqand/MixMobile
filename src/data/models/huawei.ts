@@ -430,4 +430,22 @@ export const HUAWEI_MODELS: PhoneModel[] = [
     recommendedFor: 'Photography-focused resale buyers.',
     gsmarena_url: 'https://www.gsmarena.com/res.php3?sSearch=Huawei%20P50%20Pro'
   },
+  {
+    id: 'm-huawei-enjoy-70x',
+    brand: 'Huawei',
+    modelName: 'Enjoy 70X',
+    colorVariants: ['Black', 'Blue', 'Green'],
+    storageOptions: ['128GB', '256GB'],
+    ramOptions: ['8GB'],
+    displaySpecs: '6.77" IPS LCD 90Hz',
+    chipset: 'Snapdragon 680',
+    cameraSpecs: '50MP Main + 2MP Depth',
+    batterySpecs: '6000 mAh (40W Wired)',
+    releaseYear: 2024,
+    overview: 'Budget-focused Enjoy series with a huge battery.',
+    pros: ['Huge 6000mAh battery', 'Affordable'],
+    cons: ['LCD screen'],
+    recommendedFor: 'Budget buyers wanting long battery life.',
+    gsmarena_url: 'https://www.gsmarena.com/res.php3?sSearch=Enjoy%2070X'
+  },
 ];

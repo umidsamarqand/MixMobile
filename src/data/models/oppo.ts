@@ -446,4 +446,22 @@ export const OPPO_MODELS: PhoneModel[] = [
     recommendedFor: 'Buyers wanting maximum battery and screen size.',
     gsmarena_url: 'https://www.gsmarena.com/res.php3?sSearch=Find%20X9%20Pro%20Max'
   },
+  {
+    id: 'm-oppo-find-n5-flip',
+    brand: 'OPPO',
+    modelName: 'Find N5 Flip',
+    colorVariants: ['Black', 'Pink'],
+    storageOptions: ['256GB', '512GB'],
+    ramOptions: ['12GB'],
+    displaySpecs: '6.8" Inner AMOLED + 4.0" Outer AMOLED',
+    chipset: 'MediaTek Dimensity 9400',
+    cameraSpecs: '50MP Main (OIS) + 50MP Telephoto + 8MP Ultrawide',
+    batterySpecs: '4900 mAh (67W Wired)',
+    releaseYear: 2025,
+    overview: 'Clamshell foldable with a telephoto lens and large outer display.',
+    pros: ['Telephoto lens on a clamshell', 'Large functional outer display'],
+    cons: ['MediaTek instead of Snapdragon'],
+    recommendedFor: 'Clamshell foldable enthusiasts.',
+    gsmarena_url: 'https://www.gsmarena.com/res.php3?sSearch=Find%20N5%20Flip'
+  },
 ];
