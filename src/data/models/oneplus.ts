@@ -383,4 +383,22 @@ export const ONEPLUS_MODELS: PhoneModel[] = [
     recommendedFor: 'Performance-per-dollar buyers.',
     gsmarena_url: 'https://www.gsmarena.com/res.php3?sSearch=OnePlus%20Nord%205'
   },
+  {
+    id: 'm-oneplus-nord-ce4',
+    brand: 'OnePlus',
+    modelName: 'OnePlus Nord CE4',
+    colorVariants: ['Dark Chrome', 'Celadon Marble'],
+    storageOptions: ['128GB', '256GB'],
+    ramOptions: ['8GB', '12GB'],
+    displaySpecs: '6.7" AMOLED 120Hz Curved',
+    chipset: 'Snapdragon 7 Gen 3',
+    cameraSpecs: '50MP Main (OIS) + 8MP Ultrawide',
+    batterySpecs: '5500 mAh (100W Wired)',
+    releaseYear: 2024,
+    overview: 'Value CE-series Nord device with fast charging.',
+    pros: ['Fast 100W charging', 'Curved AMOLED at midrange price'],
+    cons: ['No telephoto lens'],
+    recommendedFor: 'Value midrange buyers.',
+    gsmarena_url: 'https://www.gsmarena.com/res.php3?sSearch=OnePlus%20Nord%20CE4'
+  },
 ];

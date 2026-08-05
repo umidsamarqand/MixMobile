@@ -497,4 +497,22 @@ export const XIAOMI_MODELS: PhoneModel[] = [
     recommendedFor: 'Resale market budget buyers.',
     gsmarena_url: 'https://www.gsmarena.com/res.php3?sSearch=Xiaomi%20Mi%2011%20Lite%205G'
   },
+  {
+    id: 'm-xiaomi-11t',
+    brand: 'Xiaomi',
+    modelName: 'Xiaomi 11T',
+    colorVariants: ['Meteorite Grey', 'Moonlight White', 'Celestial Blue'],
+    storageOptions: ['128GB', '256GB'],
+    ramOptions: ['8GB'],
+    displaySpecs: '6.67" AMOLED 120Hz',
+    chipset: 'MediaTek Dimensity 1200-Ultra',
+    cameraSpecs: '108MP Main + 8MP Ultrawide + 5MP Telemacro',
+    batterySpecs: '5000 mAh (67W Wired)',
+    releaseYear: 2021,
+    overview: 'Popular older T-series device common in resale markets.',
+    pros: ['108MP main camera', 'Fast 67W charging'],
+    cons: ['Older MediaTek chipset'],
+    recommendedFor: 'Resale market value buyers.',
+    gsmarena_url: 'https://www.gsmarena.com/res.php3?sSearch=Xiaomi%2011T'
+  },
 ];

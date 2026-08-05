@@ -392,4 +392,22 @@ export const OPPO_MODELS: PhoneModel[] = [
     recommendedFor: 'Camera enthusiasts.',
     gsmarena_url: 'https://www.gsmarena.com/res.php3?sSearch=OPPO%20Find%20X7'
   },
+  {
+    id: 'm-oppo-reno8',
+    brand: 'OPPO',
+    modelName: 'OPPO Reno8 5G',
+    colorVariants: ['Shimmer Gold', 'Sunset Orange'],
+    storageOptions: ['128GB', '256GB'],
+    ramOptions: ['8GB'],
+    displaySpecs: '6.4" AMOLED 90Hz Curved',
+    chipset: 'MediaTek Dimensity 1300',
+    cameraSpecs: '50MP Main (OIS) + 8MP Ultrawide + 2MP Macro',
+    batterySpecs: '4500 mAh (80W Wired)',
+    releaseYear: 2022,
+    overview: 'Popular older Reno device with fast charging.',
+    pros: ['Fast 80W charging', 'OIS main camera'],
+    cons: ['90Hz refresh rate'],
+    recommendedFor: 'Value resale buyers.',
+    gsmarena_url: 'https://www.gsmarena.com/res.php3?sSearch=OPPO%20Reno8%205G'
+  },
 ];
