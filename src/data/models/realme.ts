@@ -321,4 +321,22 @@ export const REALME_MODELS: PhoneModel[] = [
     recommendedFor: 'Value resale buyers.',
     gsmarena_url: 'https://www.gsmarena.com/res.php3?sSearch=Realme%208'
   },
+  {
+    id: 'm-realme-narzo-60-pro',
+    brand: 'Realme',
+    modelName: 'Realme Narzo 60 Pro 5G',
+    colorVariants: ['Black', 'Green'],
+    storageOptions: ['128GB', '256GB'],
+    ramOptions: ['8GB'],
+    displaySpecs: '6.7" AMOLED 120Hz Curved',
+    chipset: 'MediaTek Dimensity 6100+',
+    cameraSpecs: '100MP Main (OIS) + 2MP Depth',
+    batterySpecs: '5000 mAh (67W Wired)',
+    releaseYear: 2023,
+    overview: 'Value Narzo series device with OIS main camera.',
+    pros: ['OIS main camera at value price', 'Curved AMOLED screen'],
+    cons: ['No ultrawide lens'],
+    recommendedFor: 'Value-focused budget buyers.',
+    gsmarena_url: 'https://www.gsmarena.com/res.php3?sSearch=Realme%20Narzo%2060%20Pro%205G'
+  },
 ];

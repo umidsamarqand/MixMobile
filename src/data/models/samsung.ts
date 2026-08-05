@@ -1155,4 +1155,22 @@ export const SAMSUNG_MODELS: PhoneModel[] = [
     recommendedFor: 'Battery-life focused budget buyers.',
     gsmarena_url: 'https://www.gsmarena.com/res.php3?sSearch=Galaxy%20M34%205G'
   },
+  {
+    id: 'm-samsung-m14-5g',
+    brand: 'Samsung',
+    modelName: 'Galaxy M14 5G',
+    colorVariants: ['Berry Blue', 'Smoky Teal', 'Ice Silver'],
+    storageOptions: ['128GB'],
+    ramOptions: ['4GB', '6GB'],
+    displaySpecs: '6.6" PLS LCD 90Hz',
+    chipset: 'MediaTek Dimensity 700',
+    cameraSpecs: '50MP Main + 2MP Depth + 2MP Macro',
+    batterySpecs: '6000 mAh (25W Wired)',
+    releaseYear: 2023,
+    overview: 'Battery-focused online-exclusive M series device.',
+    pros: ['Huge 6000mAh battery', 'Affordable price'],
+    cons: ['LCD screen'],
+    recommendedFor: 'Battery-life focused budget buyers.',
+    gsmarena_url: 'https://www.gsmarena.com/res.php3?sSearch=Galaxy%20M14%205G'
+  },
 ];
