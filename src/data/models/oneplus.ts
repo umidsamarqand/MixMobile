@@ -173,23 +173,6 @@ export const ONEPLUS_MODELS: PhoneModel[] = [
     recommendedFor: 'Value flagship seekers.'
   },
   {
-    id: 'm-oneplus-14',
-    brand: 'OnePlus',
-    modelName: '14',
-    colorVariants: ['Shadow Black', 'Emerald Aurora', 'Porcelain White'],
-    storageOptions: ['256GB', '512GB', '1TB'],
-    ramOptions: ['16GB', '24GB'],
-    displaySpecs: '6.82" 2K OLED 120Hz 5000 nits',
-    chipset: 'Snapdragon 8 Elite Gen 2',
-    cameraSpecs: 'Triple 50MP Hasselblad Gen 5 System',
-    batterySpecs: '6300 mAh (120W Wired / 50W Wireless)',
-    releaseYear: 2025,
-    overview: '6300 mAh Glacier Battery with 5000 nits screen display and Snapdragon 8 Elite Gen 2.',
-    pros: ['6300 mAh massive battery capacity', '5000 nits display screen', '120W fast charging'],
-    cons: ['Premium cost'],
-    recommendedFor: 'Power Android users.'
-  },
-  {
     id: 'm-oneplus-15',
     brand: 'OnePlus',
     modelName: '15',
@@ -205,23 +188,6 @@ export const ONEPLUS_MODELS: PhoneModel[] = [
     pros: ['6500 mAh battery capacity', '5x Periscope telephoto lens', '5500 nits display brightness', 'IP69 water jet rating'],
     cons: ['Flagship price tag'],
     recommendedFor: 'Ultimate Android power users.'
-  },
-  {
-    id: 'm-oneplus-15-pro',
-    brand: 'OnePlus',
-    modelName: '15 Pro',
-    colorVariants: ['Apex Gold', 'Titanium Black', 'Emerald Satin'],
-    storageOptions: ['512GB', '1TB'],
-    ramOptions: ['24GB'],
-    displaySpecs: '6.85" 2K Quad-Curved AMOLED 144Hz 6000 nits',
-    chipset: 'Snapdragon 8 Elite Max Pro',
-    cameraSpecs: 'Quad 50MP Hasselblad Camera System (1-inch Main + 5x Periscope + 3x Portrait + Ultrawide)',
-    batterySpecs: '7000 mAh Silicon-Carbon (150W Wired / 80W Wireless)',
-    releaseYear: 2026,
-    overview: 'Absolute flagship workhorse with 7000 mAh battery capacity, quad 50MP Hasselblad camera setup, and 150W charging.',
-    pros: ['7000 mAh mega battery', 'Quad 50MP Hasselblad system', '150W wired + 80W wireless charging'],
-    cons: ['Top tier cost'],
-    recommendedFor: 'Pro creators and tech purists.'
   },
   {
     id: 'm-oneplus-15r',
@@ -472,5 +438,23 @@ export const ONEPLUS_MODELS: PhoneModel[] = [
     cons: ['China-focused, limited global availability'],
     recommendedFor: 'Performance & battery-focused buyers.',
     gsmarena_url: 'https://www.gsmarena.com/res.php3?sSearch=Ace%205'
+  },
+  {
+    id: 'm-oneplus-15t',
+    brand: 'OnePlus',
+    modelName: '15T',
+    colorVariants: ['Black', 'Silver'],
+    storageOptions: ['256GB', '512GB'],
+    ramOptions: ['12GB', '16GB'],
+    displaySpecs: '6.32" AMOLED 165Hz',
+    chipset: 'Snapdragon 8 Elite Gen 5',
+    cameraSpecs: '50MP Main (OIS) + 50MP Periscope Telephoto (3.5x, LUMO) + 50MP Ultrawide',
+    batterySpecs: '7500 mAh Silicon-Carbon (100W Wired)',
+    releaseYear: 2026,
+    overview: 'Compact powerhouse with the best battery-to-size ratio in its class; launched exclusively in China with no confirmed global release.',
+    pros: ['7500mAh battery in a compact 194g body', 'Genuine 3.5x periscope telephoto', 'Flagship Snapdragon 8 Elite Gen 5'],
+    cons: ['China-only release, no confirmed global availability'],
+    recommendedFor: 'Buyers wanting flagship power in a compact body.',
+    gsmarena_url: 'https://www.gsmarena.com/res.php3?sSearch=OnePlus%2015T',
   },
 ];
