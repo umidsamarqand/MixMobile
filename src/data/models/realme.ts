@@ -60,7 +60,7 @@ export const REALME_MODELS: PhoneModel[] = [
     colorVariants: ['Mars Orange', 'Galaxy Gray', 'White Light'],
     storageOptions: ['256GB', '512GB', '1TB'],
     ramOptions: ['12GB', '16GB'],
-    displaySpecs: '6.78" RealWorld Eco2 OLED 120Hz 6000 nits IP68/IP69 Underwater Camera Mode',
+    displaySpecs: '6.78" RealWorld Eco2 OLED 120Hz 6500 nits IP68/IP69 Underwater Camera Mode',
     chipset: 'Snapdragon 8 Elite (3nm TSMC)',
     cameraSpecs: '50MP Sony IMX906 Main + 50MP 3x Sony IMX882 Periscope Telephoto + 8MP Ultrawide',
     batterySpecs: '6500 mAh Titan Battery (120W SUPERVOOC)',
