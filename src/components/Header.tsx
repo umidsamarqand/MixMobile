@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Layers, ShoppingBag, Info, Menu, X, Sparkles, Globe, Lock, LogOut, ShieldCheck, PlusCircle, HelpCircle, Box } from 'lucide-react';
 import { Currency, Language } from '../types';
 import { useLanguage } from '../context/LanguageContext';
+import logoImage from '../assets/images/mix_mobile_logo_1785309932571.jpg';
 
 interface HeaderProps {
   activeTab: 'shop' | 'models' | 'add-listing' | 'faq' | 'seller-manage';
@@ -50,7 +51,7 @@ export const Header: React.FC<HeaderProps> = ({
             <div className="relative">
               <div className="w-10 h-10 sm:w-11 sm:h-11 rounded-xl overflow-hidden border border-[#FF2E93]/40 group-hover:border-[#FF2E93] transition-all duration-300 group-hover:shadow-[0_0_15px_rgba(255,46,147,0.6)]">
                 <img 
-                  src="/src/assets/images/mix_mobile_logo_1785309932571.jpg" 
+                  src={logoImage} 
                   alt="Mix Mobile Logo" 
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                   referrerPolicy="no-referrer"

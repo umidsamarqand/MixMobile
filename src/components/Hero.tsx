@@ -2,6 +2,7 @@ import React from 'react';
 import { Search, ShieldCheck, Sparkles, Filter, CheckCircle2 } from 'lucide-react';
 import { FilterState, PhoneModel, Currency } from '../types';
 import { useLanguage } from '../context/LanguageContext';
+import heroImage from '../assets/images/mix_mobile_hero_1785309948618.jpg';
 
 interface HeroProps {
   filters: FilterState;
@@ -84,7 +85,7 @@ export const Hero: React.FC<HeroProps> = ({
               <div className="absolute -inset-1 rounded-3xl bg-gradient-to-r from-[#FF2E93] to-[#00F0FF] opacity-50 blur-xl group-hover:opacity-80 transition duration-500" />
               <div className="relative glass-panel rounded-2xl overflow-hidden border border-[#FF2E93]/40 shadow-2xl">
                 <img
-                  src="/src/assets/images/mix_mobile_hero_1785309948618.jpg"
+                  src={heroImage}
                   alt="Mix Mobile Showcase"
                   className="w-full h-64 sm:h-72 object-cover object-center group-hover:scale-105 transition-transform duration-500"
                   referrerPolicy="no-referrer"

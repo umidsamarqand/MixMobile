@@ -13,6 +13,7 @@ import { Lock } from 'lucide-react';
 import { PhoneModel, PhoneListing, FilterState, Currency, ListingStatus } from './types';
 import { getStoredModels, saveModels, getStoredListings, saveListings, resetToSeedData, getAdminSession, saveAdminSession } from './utils/storage';
 import { useLanguage } from './context/LanguageContext';
+import logoImage from './assets/images/mix_mobile_logo_1785309932571.jpg';
 
 export default function App() {
   const { t } = useLanguage();
@@ -286,7 +287,7 @@ export default function App() {
           <div className="flex items-center gap-3">
             <div className="w-10 h-10 rounded-xl overflow-hidden border border-[#FF2E93]/40">
               <img
-                src="/src/assets/images/mix_mobile_logo_1785309932571.jpg"
+                src={logoImage}
                 alt="Mix Mobile"
                 className="w-full h-full object-cover"
                 referrerPolicy="no-referrer"
