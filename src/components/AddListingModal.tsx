@@ -15,7 +15,7 @@ import {
 import { PhoneListing, PhoneModel, PhysicalCondition, IMEIStatus } from '../types';
 import { downloadImageFile } from '../utils/fileDownloader';
 import { useLanguage } from '../context/LanguageContext';
-import { translateColor } from '../utils/translationsHelper';
+import { translateColor, translateDefect, translateAccessory } from '../utils/translationsHelper';
 
 export interface UploadedImageFile {
   id: string;
@@ -607,7 +607,7 @@ export const AddListingModal: React.FC<AddListingModalProps> = ({
                         : 'bg-white/5 border-white/10 text-[#C3B2D9]'
                     }`}
                   >
-                    {selectedDefects.includes(def) ? '✓ ' : '+ '} {def}
+                    {selectedDefects.includes(def) ? '✓ ' : '+ '} {translateDefect(def, language)}
                   </button>
                 ))}
               </div>
@@ -616,7 +616,7 @@ export const AddListingModal: React.FC<AddListingModalProps> = ({
               <div className="flex gap-2 mt-2">
                 <input
                   type="text"
-                  placeholder="Add custom defect note..."
+                  placeholder={t('customDefectPlaceholder')}
                   value={customDefect}
                   onChange={(e) => setCustomDefect(e.target.value)}
                   className="w-full bg-[#160B24] text-white text-xs rounded-xl px-3 py-2 border border-white/10"
@@ -626,7 +626,7 @@ export const AddListingModal: React.FC<AddListingModalProps> = ({
                   onClick={addCustomDefect}
                   className="px-3 py-2 rounded-xl bg-white/10 text-white text-xs font-bold shrink-0 cursor-pointer"
                 >
-                  Add Note
+                  {t('addNoteBtn')}
                 </button>
               </div>
             </div>
@@ -648,7 +648,7 @@ export const AddListingModal: React.FC<AddListingModalProps> = ({
                         : 'bg-white/5 border-white/10 text-[#C3B2D9]'
                     }`}
                   >
-                    {selectedIncluded.includes(inc) ? '✓ ' : '+ '} {inc}
+                    {selectedIncluded.includes(inc) ? '✓ ' : '+ '} {translateAccessory(inc, language)}
                   </button>
                 ))}
               </div>
