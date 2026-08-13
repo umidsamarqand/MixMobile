@@ -1,6 +1,7 @@
 import { initializeApp, getApps, getApp } from 'firebase/app';
 import { getAuth } from 'firebase/auth';
 import { getFirestore } from 'firebase/firestore';
+import { getAnalytics, isSupported } from 'firebase/analytics';
 
 // All values come from Vite environment variables (must be prefixed VITE_ to be
 // exposed to client-side code). Set these in a local .env file for development
@@ -13,6 +14,7 @@ const firebaseConfig = {
   storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET,
   messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID,
   appId: import.meta.env.VITE_FIREBASE_APP_ID,
+  measurementId: import.meta.env.VITE_FIREBASE_MEASUREMENT_ID,
 };
 
 // Fail loudly and early in dev if config is missing, instead of a confusing
@@ -30,3 +32,15 @@ export const firebaseApp = getApps().length ? getApp() : initializeApp(firebaseC
 
 export const auth = getAuth(firebaseApp);
 export const db = getFirestore(firebaseApp);
+
+// Analytics only works in a real browser (not SSR, not every environment
+// supports it), so it's initialized asynchronously and safely no-ops if
+// unsupported or if measurementId isn't configured.
+export let analytics: ReturnType<typeof getAnalytics> | undefined;
+if (firebaseConfig.measurementId) {
+  isSupported().then((supported) => {
+    if (supported) {
+      analytics = getAnalytics(firebaseApp);
+    }
+  });
+}
