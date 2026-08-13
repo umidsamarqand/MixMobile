@@ -11,7 +11,15 @@ import { ReserveRequestModal } from './components/ReserveRequestModal';
 import { AdminPortalModal } from './components/AdminPortalModal';
 import { Lock } from 'lucide-react';
 import { PhoneModel, PhoneListing, FilterState, Currency, ListingStatus } from './types';
-import { getStoredModels, saveModels, getStoredListings, saveListings, resetToSeedData, getAdminSession, saveAdminSession } from './utils/storage';
+import {
+  subscribeToModels,
+  subscribeToListings,
+  saveModel as saveModelToFirestore,
+  saveListing as saveListingToFirestore,
+  deleteListing as deleteListingFromFirestore,
+} from './firebase/firestore';
+import { seedInitialModelsToFirestore } from './firebase/seed';
+import { useAuth } from './context/AuthContext';
 import { useLanguage } from './context/LanguageContext';
 import logoImage from './assets/images/mix_mobile_logo_1785309932571.jpg';
 
@@ -22,8 +30,9 @@ export default function App() {
   const [currency, setCurrency] = useState<Currency>('USD');
   const [activeTab, setActiveTab] = useState<'shop' | 'models' | 'add-listing' | 'faq' | 'seller-manage'>('shop');
 
-  // Admin Auth state
-  const [isAdmin, setIsAdmin] = useState<boolean>(() => getAdminSession());
+  // Admin Auth state - now backed by real Firebase Authentication instead of
+  // a hardcoded password stored in localStorage.
+  const { isAdmin, isAuthLoading, signOutUser } = useAuth();
   const [isAdminModalOpen, setIsAdminModalOpen] = useState<boolean>(false);
   const [pendingAdminTab, setPendingAdminTab] = useState<'add-listing' | 'seller-manage' | undefined>(undefined);
 
@@ -46,10 +55,18 @@ export default function App() {
     sortBy: 'NEWEST',
   });
 
-  // Load state on mount
+  // Live-subscribe to Firestore. Unlike the old localStorage version, this
+  // does not just load data once on mount - onSnapshot keeps an open
+  // connection and pushes updates the instant data changes on the server
+  // (from this device, another device, or another admin), so every visitor
+  // always sees current data without needing to refresh the page.
   useEffect(() => {
-    setModels(getStoredModels());
-    setListings(getStoredListings());
+    const unsubModels = subscribeToModels(setModels);
+    const unsubListings = subscribeToListings(setListings);
+    return () => {
+      unsubModels();
+      unsubListings();
+    };
   }, []);
 
   const handleRequireAdmin = (targetTab: 'add-listing' | 'seller-manage') => {
@@ -62,8 +79,8 @@ export default function App() {
   };
 
   const handleAdminUnlockSuccess = () => {
-    setIsAdmin(true);
-    saveAdminSession(true);
+    // No manual state to set - useAuth()'s isAdmin flag updates automatically
+    // via Firebase's onAuthStateChanged listener the moment sign-in succeeds.
     if (pendingAdminTab) {
       setActiveTab(pendingAdminTab);
       setPendingAdminTab(undefined);
@@ -71,56 +88,47 @@ export default function App() {
   };
 
   const handleLogoutAdmin = () => {
-    setIsAdmin(false);
-    saveAdminSession(false);
+    signOutUser();
     if (activeTab === 'add-listing' || activeTab === 'seller-manage') {
       setActiveTab('shop');
     }
   };
 
-  // Save changes to storage
-  const handleSaveModel = (newModel: PhoneModel) => {
-    const updated = [newModel, ...models];
-    setModels(updated);
-    saveModels(updated);
+  // Save changes directly to Firestore. There is no local array mutation
+  // needed here anymore - the onSnapshot subscription above will pick up
+  // the change and update `models`/`listings` automatically once the write
+  // lands on the server.
+  const handleSaveModel = async (newModel: PhoneModel) => {
+    await saveModelToFirestore(newModel);
     setActiveTab('models');
   };
 
-  const handleSaveListing = (newListing: PhoneListing) => {
-    const updated = [newListing, ...listings];
-    setListings(updated);
-    saveListings(updated);
+  const handleSaveListing = async (newListing: PhoneListing) => {
+    await saveListingToFirestore(newListing);
     setActiveTab('shop');
   };
 
-  const handleUpdateStatus = (listingId: string, status: ListingStatus) => {
-    const updated = listings.map((l) => (l.id === listingId ? { ...l, status } : l));
-    setListings(updated);
-    saveListings(updated);
+  const handleUpdateStatus = async (listingId: string, status: ListingStatus) => {
+    const listing = listings.find((l) => l.id === listingId);
+    if (!listing) return;
+    await saveListingToFirestore({ ...listing, status });
   };
 
-  const handleDeleteListing = (listingId: string) => {
-    const updated = listings.filter((l) => l.id !== listingId);
-    setListings(updated);
-    saveListings(updated);
+  const handleDeleteListing = async (listingId: string) => {
+    await deleteListingFromFirestore(listingId);
   };
 
-  const handleResetData = () => {
+  const handleResetData = async () => {
     if (confirm(t('resetConfirmText'))) {
-      const { models: m, listings: l } = resetToSeedData();
-      setModels(m);
-      setListings(l);
+      await seedInitialModelsToFirestore();
     }
   };
 
-  const handleSelectListing = (listing: PhoneListing) => {
-    // Increment view counter
-    const updated = listings.map((item) =>
-      item.id === listing.id ? { ...item, views: item.views + 1 } : item
-    );
-    setListings(updated);
-    saveListings(updated);
-    setSelectedListing({ ...listing, views: listing.views + 1 });
+  const handleSelectListing = async (listing: PhoneListing) => {
+    // Increment view counter directly in Firestore.
+    const updatedListing = { ...listing, views: listing.views + 1 };
+    setSelectedListing(updatedListing);
+    await saveListingToFirestore(updatedListing);
   };
 
   // Helper calculation for active counts

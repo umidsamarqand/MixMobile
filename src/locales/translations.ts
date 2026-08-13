@@ -170,14 +170,14 @@ export const translations = {
 
     // Seller Management Dashboard
     manageTitle: "Sotuvchi va Ombor boshqaruvi paneli",
-    resetDemoData: "Demoni qayta tiklash",
+    resetDemoData: "Katalogni Firestore'ga yuklash",
     manageDesc: "Ombordagi smartfonlar maqomini boshqaring (Mavjud, Band qilingan, Sotilgan) yoki eski e'lonlarni o'chiring.",
     statusLabel: "Maqomi:",
     statusAvailable: "🟢 Mavjud",
     statusReserved: "🟡 Band qilingan",
     statusSold: "🔴 Sotilgan",
     deleteListingTitle: "E'lonni o'chirish",
-    resetConfirmText: "Barcha ombor va modellarni dastlabki holatga keltirishga ishonchingiz komilmi?",
+    resetConfirmText: "Bu asosiy telefon katalogini (barcha modellarni) Firestore'ga yuklaydi. Mavjud e'lonlar o'zgarmaydi. Davom etasizmi?",
 
     // Footer
     footerTagline: "ISTAGANINGIZ SHU YERDA — O'ZBEKISTON",
@@ -313,6 +313,16 @@ export const translations = {
     accessDeniedError: "Ruxsat rad etildi: Kalit noto'g'ri",
     verifyUnlockBtn: "Tasdiqlash va Ochish",
     protectedSystemFooter: "🔒 Himoyalangan Tizim • Mix Mobile Boshqaruvi",
+    signInTab: "Kirish",
+    signUpTab: "Ro'yxatdan o'tish",
+    emailLabel: "Email manzil",
+    enterEmailPlaceholder: "Email manzilingizni kiriting...",
+    verifyingBtn: "Tekshirilmoqda...",
+    authErrorInvalidEmail: "Email manzil noto'g'ri formatda",
+    authErrorInvalidCredential: "Email yoki parol noto'g'ri",
+    authErrorEmailInUse: "Bu email allaqachon ro'yxatdan o'tgan",
+    authErrorWeakPassword: "Parol kamida 6 ta belgidan iborat bo'lishi kerak",
+    authErrorTooManyRequests: "Juda ko'p urinish. Birozdan so'ng qayta urinib ko'ring",
     logoutAdminBtn: "Chiqish (Admin)",
   },
   ru: {
@@ -481,14 +491,14 @@ export const translations = {
 
     // Seller Management Dashboard
     manageTitle: "Панель управления продавца и склада",
-    resetDemoData: "Сбросить демо-данные",
+    resetDemoData: "Загрузить каталог в Firestore",
     manageDesc: "Управляйте статусом товаров в наличии (В наличии, Забронировано, Продано) или удаляйте старые объявления.",
     statusLabel: "Статус:",
     statusAvailable: "🟢 В наличии",
     statusReserved: "🟡 Забронировано",
     statusSold: "🔴 Продано",
     deleteListingTitle: "Удалить объявление",
-    resetConfirmText: "Сбросить все данные к исходным демо-настройкам?",
+    resetConfirmText: "Это загрузит основной каталог телефонов (все модели) в Firestore. Существующие объявления не изменятся. Продолжить?",
 
     // Footer
     footerTagline: "ВСЁ ЧТО НУЖНО ЗДЕСЬ — УЗБЕКИСТАН",
@@ -624,6 +634,16 @@ export const translations = {
     accessDeniedError: "Отказ в доступе: Неверный ключ",
     verifyUnlockBtn: "Проверить и Открыть",
     protectedSystemFooter: "🔒 Защищенная система • Mix Mobile Управление",
+    signInTab: "Войти",
+    signUpTab: "Регистрация",
+    emailLabel: "Электронная почта",
+    enterEmailPlaceholder: "Введите email...",
+    verifyingBtn: "Проверка...",
+    authErrorInvalidEmail: "Неверный формат email",
+    authErrorInvalidCredential: "Неверный email или пароль",
+    authErrorEmailInUse: "Этот email уже зарегистрирован",
+    authErrorWeakPassword: "Пароль должен содержать минимум 6 символов",
+    authErrorTooManyRequests: "Слишком много попыток. Попробуйте позже",
     logoutAdminBtn: "Выйти (Админ)",
   },
   en: {
@@ -792,14 +812,14 @@ export const translations = {
 
     // Seller Management Dashboard
     manageTitle: "Seller & Inventory Management Dashboard",
-    resetDemoData: "Reset Demo Data",
+    resetDemoData: "Load Catalog into Firestore",
     manageDesc: "Manage status for physical listings in stock (Available, Reserved, Sold) or clean up old inventory.",
     statusLabel: "Status:",
     statusAvailable: "🟢 Available",
     statusReserved: "🟡 Reserved",
     statusSold: "🔴 Sold",
     deleteListingTitle: "Delete Listing",
-    resetConfirmText: "Are you sure you want to reset all inventory and models to seed defaults?",
+    resetConfirmText: "This will push the master phone catalog (all models) into Firestore. Existing listings will not be affected. Continue?",
 
     // Footer
     footerTagline: "EVERYTHING YOU NEED IS HERE — UZBEKISTAN",
@@ -935,6 +955,16 @@ export const translations = {
     accessDeniedError: "Access Denied: Invalid Security Key",
     verifyUnlockBtn: "Verify & Unlock Portal",
     protectedSystemFooter: "🔒 Protected System • Mix Mobile Master Control",
+    signInTab: "Sign In",
+    signUpTab: "Sign Up",
+    emailLabel: "Email Address",
+    enterEmailPlaceholder: "Enter your email...",
+    verifyingBtn: "Verifying...",
+    authErrorInvalidEmail: "Invalid email format",
+    authErrorInvalidCredential: "Invalid email or password",
+    authErrorEmailInUse: "This email is already registered",
+    authErrorWeakPassword: "Password must be at least 6 characters",
+    authErrorTooManyRequests: "Too many attempts. Please try again later",
     logoutAdminBtn: "Logout (Admin)",
   },
 };

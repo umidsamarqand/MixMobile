@@ -56,7 +56,7 @@ export const SellerManagementModal: React.FC<SellerManagementModalProps> = ({
             <button
               onClick={onResetSeedData}
               className="px-3 py-1.5 rounded-xl bg-white/5 hover:bg-white/10 text-xs font-bold text-[#FF2E93] border border-[#FF2E93]/40 flex items-center gap-1.5 transition-all cursor-pointer"
-              title="Reset inventory & models to initial seed state"
+              title="Push the master phone catalog into Firestore (does not affect existing listings)"
             >
               <RefreshCw className="w-3.5 h-3.5" />
               <span>{t('resetDemoData')}</span>

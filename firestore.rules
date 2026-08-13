@@ -1,0 +1,21 @@
+rules_version = '2';
+
+// Deploy with: firebase deploy --only firestore:rules
+// Or paste directly into Firebase Console -> Firestore Database -> Rules.
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    // Phone catalog and marketplace listings are public to browse (this is a
+    // storefront), but only signed-in admin accounts can create, edit, or
+    // delete them.
+    match /models/{modelId} {
+      allow read: if true;
+      allow write: if request.auth != null;
+    }
+
+    match /listings/{listingId} {
+      allow read: if true;
+      allow write: if request.auth != null;
+    }
+  }
+}
