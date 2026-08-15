@@ -105,7 +105,13 @@ export async function deleteModel(modelId: string): Promise<void> {
 }
 
 export async function saveListing(listing: PhoneListing): Promise<void> {
-  await setDoc(doc(db, LISTINGS_COLLECTION, listing.id), listing);
+  // Create a safe copy of the listing, replacing undefined with an empty string
+  const safeListing = {
+    ...listing,
+    gsmarena_url: listing.gsmarena_url || "",
+  };
+  
+  await setDoc(doc(db, LISTINGS_COLLECTION, listing.id), safeListing);
 }
 
 export async function deleteListing(listingId: string): Promise<void> {
