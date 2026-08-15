@@ -27,6 +27,7 @@ export default function App() {
   const { t } = useLanguage();
   const [models, setModels] = useState<PhoneModel[]>([]);
   const [listings, setListings] = useState<PhoneListing[]>([]);
+  const [dataLoadError, setDataLoadError] = useState<string | null>(null);
   const [currency, setCurrency] = useState<Currency>('USD');
   const [activeTab, setActiveTab] = useState<'shop' | 'models' | 'add-listing' | 'faq' | 'seller-manage'>('shop');
 
@@ -61,8 +62,16 @@ export default function App() {
   // (from this device, another device, or another admin), so every visitor
   // always sees current data without needing to refresh the page.
   useEffect(() => {
-    const unsubModels = subscribeToModels(setModels);
-    const unsubListings = subscribeToListings(setListings);
+    const handleSubscriptionError = (err: unknown) => {
+      const code = (err as { code?: string })?.code;
+      setDataLoadError(
+        code === 'permission-denied'
+          ? 'permission-denied'
+          : 'unknown'
+      );
+    };
+    const unsubModels = subscribeToModels(setModels, handleSubscriptionError);
+    const unsubListings = subscribeToListings(setListings, handleSubscriptionError);
     return () => {
       unsubModels();
       unsubListings();
@@ -154,6 +163,22 @@ export default function App() {
           }}
           onLogoutAdmin={handleLogoutAdmin}
         />
+
+        {dataLoadError && (
+          <div className="bg-red-600 text-white text-center text-sm font-semibold py-2.5 px-4">
+            {dataLoadError === 'permission-denied' ? (
+              <>
+                Couldn't load the catalog: Firestore is rejecting read requests (permission-denied).
+                If you're the site owner, check that your Firestore Security Rules allow{' '}
+                <code className="bg-black/20 px-1.5 py-0.5 rounded">read: if true</code> on the{' '}
+                <code className="bg-black/20 px-1.5 py-0.5 rounded">models</code> and{' '}
+                <code className="bg-black/20 px-1.5 py-0.5 rounded">listings</code> collections.
+              </>
+            ) : (
+              "Couldn't load the catalog right now. Please check your connection and refresh."
+            )}
+          </div>
+        )}
 
         {/* Hero Section (Only shown on Shop tab or Home) */}
         {activeTab === 'shop' && (

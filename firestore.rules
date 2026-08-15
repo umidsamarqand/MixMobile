@@ -1,21 +1,30 @@
 rules_version = '2';
 
-// Deploy with: firebase deploy --only firestore:rules
-// Or paste directly into Firebase Console -> Firestore Database -> Rules.
+// IMPORTANT: Writing this file to the repo does NOT change your live rules.
+// You must copy this into Firebase Console -> Firestore Database -> Rules
+// (or run `firebase deploy --only firestore:rules` if you have the Firebase
+// CLI set up locally) for it to take effect.
 service cloud.firestore {
   match /databases/{database}/documents {
 
-    // Phone catalog and marketplace listings are public to browse (this is a
-    // storefront), but only signed-in admin accounts can create, edit, or
-    // delete them.
+    // Phone catalog: anyone can browse it (this is a public storefront), but
+    // only the single admin account may create, edit, or delete phones.
     match /models/{modelId} {
       allow read: if true;
-      allow write: if request.auth != null;
+      allow write: if request.auth != null
+                   && request.auth.token.email == 'michaelerosif@gmail.com';
     }
 
+    // Marketplace listings: same pattern - public read, admin-only write.
     match /listings/{listingId} {
       allow read: if true;
-      allow write: if request.auth != null;
+      allow write: if request.auth != null
+                   && request.auth.token.email == 'michaelerosif@gmail.com';
+    }
+
+    // Deny everything else by default (no catch-all open access).
+    match /{document=**} {
+      allow read, write: if false;
     }
   }
 }
