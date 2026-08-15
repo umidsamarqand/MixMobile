@@ -8,11 +8,44 @@ import {
   orderBy,
   Unsubscribe,
 } from 'firebase/firestore';
-import { db } from './config';
+import { onAuthStateChanged } from 'firebase/auth';
+import { db, auth } from './config';
 import { PhoneModel, PhoneListing } from '../types';
+import { ADMIN_EMAIL } from '../context/AuthContext';
+import { seedInitialModelsToFirestore } from './seed';
 
 const MODELS_COLLECTION = 'models';
 const LISTINGS_COLLECTION = 'listings';
+
+// --- Auto-seed on first run --------------------------------------------------
+// The Firestore "models" snapshot and Firebase Auth's session restore both
+// resolve asynchronously and can finish in either order on page load, so we
+// track "is the collection empty" independently of "is the admin logged in"
+// and re-check the combined condition whenever either one changes.
+let modelsCollectionIsEmpty: boolean | null = null;
+let hasAttemptedAutoSeed = false;
+
+function maybeAutoSeed() {
+  if (
+    modelsCollectionIsEmpty === true &&
+    !hasAttemptedAutoSeed &&
+    auth.currentUser?.email === ADMIN_EMAIL
+  ) {
+    hasAttemptedAutoSeed = true;
+    seedInitialModelsToFirestore()
+      .then((count) => {
+        console.log(`[Firestore] Auto-seeded ${count} models (collection was empty).`);
+      })
+      .catch((err) => {
+        console.error('[Firestore] Auto-seed failed:', err);
+        hasAttemptedAutoSeed = false; // allow retry, e.g. after a transient network error
+      });
+  }
+}
+
+// Re-run the check the moment sign-in state changes (covers the case where
+// the admin logs in *after* the empty snapshot has already been observed).
+onAuthStateChanged(auth, () => maybeAutoSeed());
 
 // --- Live subscriptions -----------------------------------------------------
 // These use Firestore's onSnapshot listener, which pushes updates the moment
@@ -30,6 +63,9 @@ export function subscribeToModels(
   return onSnapshot(
     q,
     (snapshot) => {
+      modelsCollectionIsEmpty = snapshot.empty;
+      maybeAutoSeed();
+
       const models = snapshot.docs.map((d) => ({ ...(d.data() as PhoneModel), id: d.id }));
       onData(models);
     },

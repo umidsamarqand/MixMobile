@@ -8,13 +8,20 @@ import {
 } from 'firebase/auth';
 import { auth } from '../firebase/config';
 
+// Only this account has admin/seller privileges (Add Phone, Edit Specs,
+// Inventory management). This matches the Firestore security rules, which
+// restrict all writes to this same email server-side - this client-side
+// check only controls what UI is shown, it is not itself a security
+// boundary (the Firestore rules are the real enforcement).
+export const ADMIN_EMAIL = 'michaelerosif@gmail.com';
+
 interface AuthContextType {
   currentUser: User | null;
   isAuthLoading: boolean;
-  // Whether the signed-in user is an admin/seller. For now this is simply
-  // "any successfully authenticated user", matching the previous single
-  // shared-password behavior. If you need real role separation later, store
-  // a role field on a Firestore "users/{uid}" document and check it here.
+  // True only when the signed-in user's email matches ADMIN_EMAIL. Anyone
+  // else who signs in (or signs up) is treated as a regular visitor with no
+  // admin UI shown, and their writes would be rejected by Firestore rules
+  // regardless.
   isAdmin: boolean;
   signIn: (email: string, password: string) => Promise<void>;
   signUp: (email: string, password: string) => Promise<void>;
@@ -53,7 +60,7 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
   const value: AuthContextType = {
     currentUser,
     isAuthLoading,
-    isAdmin: !!currentUser,
+    isAdmin: currentUser?.email === ADMIN_EMAIL,
     signIn,
     signUp,
     signOutUser,
